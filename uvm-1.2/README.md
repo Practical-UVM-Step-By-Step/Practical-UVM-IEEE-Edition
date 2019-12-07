@@ -4,13 +4,13 @@
 PLEASE FORK this repository rather than downloading a zip. I just want to be able to notify
 if anybody makes  any updates or finds issues that are fixed. 
 
-All of the examples are Tested on UVM-1.2 and VCS 2016.06-SP1. 
-I have provided a in each RUN Directory to show example is running properly.
+All of the examples are Tested on UVM-1.2 and VCS 2019.06. 
+I have provided a log file in each RUN Directory to illustrate example is running properly.
 
 compilation log: vcs.log
 run log : simv.log
 
-Since the UVM 1.2 is latest version, the examples are shown to be UVM-1.2 compliant.
+Since the UVM 1.2 is the version used, the examples are shown to be UVM-1.2 compliant.
 I have used the +UVM_NO_DEPRECATED define during compile. 
 
 Some examples therefore may NOT Compile on uvm-1.1d. If you want such a variant, let me know, and I will do my best to address it.
