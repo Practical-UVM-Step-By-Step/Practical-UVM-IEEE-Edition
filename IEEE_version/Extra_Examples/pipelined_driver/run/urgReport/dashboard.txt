@@ -1,0 +1,22 @@
+Dashboard
+
+Date: Mon Jul 22 14:19:45 2019
+
+User: srivats
+
+Version: P-2019.06
+Command line: urg -dir simv.vdb/ -format text 
+
+Number of tests: 1
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  GROUP  
+ 31.32  31.32 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  WEIGHT 
+ 31.32 1      
+

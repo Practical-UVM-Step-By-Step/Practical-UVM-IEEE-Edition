@@ -1,0 +1,243 @@
+plan reg_CTRL;
+    attribute string path = "";
+
+    feature HC1R_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.HC1R";
+        endmeasure
+    endfeature
+    feature HC1E_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.HC1E";
+        endmeasure
+    endfeature
+    feature HC0R_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.HC0R";
+        endmeasure
+    endfeature
+    feature HCOE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.HCOE";
+        endmeasure
+    endfeature
+    feature BL_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.BL";
+        endmeasure
+    endfeature
+    feature CSL_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.CSL";
+        endmeasure
+    endfeature
+    feature VSL_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.VSL";
+        endmeasure
+    endfeature
+    feature HSL_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.HSL";
+        endmeasure
+    endfeature
+    feature PC_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.PC";
+        endmeasure
+    endfeature
+    feature CD_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.CD";
+        endmeasure
+    endfeature
+    feature VBL_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.VBL";
+        endmeasure
+    endfeature
+    feature CBSWE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.CBSWE";
+        endmeasure
+    endfeature
+    feature VBSWE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.VBSWE";
+        endmeasure
+    endfeature
+    feature CBSIE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.CBSIE";
+        endmeasure
+    endfeature
+    feature VBSIE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.VBSIE";
+        endmeasure
+    endfeature
+    feature HIE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.HIE";
+        endmeasure
+    endfeature
+    feature VIE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.VIE";
+        endmeasure
+    endfeature
+    feature VEN_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_CTRL::cg_bits.${path}_bits.VEN";
+        endmeasure
+    endfeature
+endplan
+
+
+plan reg_STAT;
+    attribute string path = "";
+
+    feature HC1A_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.HC1A";
+        endmeasure
+    endfeature
+    feature HC0A_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.HC0A";
+        endmeasure
+    endfeature
+    feature ACMP_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.ACMP";
+        endmeasure
+    endfeature
+    feature AVMP_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.AVMP";
+        endmeasure
+    endfeature
+    feature CBSINT_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.CBSINT";
+        endmeasure
+    endfeature
+    feature VBSINT_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.VBSINT";
+        endmeasure
+    endfeature
+    feature HINT_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.HINT";
+        endmeasure
+    endfeature
+    feature VINT_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.VINT";
+        endmeasure
+    endfeature
+    feature LUINT_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.LUINT";
+        endmeasure
+    endfeature
+    feature SINT_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_STAT::cg_bits.${path}_bits.SINT";
+        endmeasure
+    endfeature
+endplan
+
+
+plan reg_HTIM;
+    attribute string path = "";
+
+    feature THSYNC_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_HTIM::cg_bits.${path}_bits.THSYNC";
+        endmeasure
+    endfeature
+    feature THGDEL_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_HTIM::cg_bits.${path}_bits.THGDEL";
+        endmeasure
+    endfeature
+    feature THGATE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_HTIM::cg_bits.${path}_bits.THGATE";
+        endmeasure
+    endfeature
+endplan
+
+
+plan reg_VTIM;
+    attribute string path = "";
+
+    feature TVSYNC_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_VTIM::cg_bits.${path}_bits.TVSYNC";
+        endmeasure
+    endfeature
+    feature TVGDEL_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_VTIM::cg_bits.${path}_bits.TVGDEL";
+        endmeasure
+    endfeature
+    feature TVGATE_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_VTIM::cg_bits.${path}_bits.TVGATE";
+        endmeasure
+    endfeature
+endplan
+
+
+plan reg_C1CR;
+    attribute string path = "";
+
+    feature CODD_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_C1CR::cg_bits.${path}_bits.CODD";
+        endmeasure
+    endfeature
+    feature CEVEN_bits;
+        measure Group fcov;
+            source = "group instance:**::ral_reg_C1CR::cg_bits.${path}_bits.CEVEN";
+        endmeasure
+    endfeature
+endplan
+
+
+plan block_vga_lcd;
+    attribute string path = "";
+
+    feature reg_CTRL;
+        subplan reg_CTRL #(path="CTRL");
+    endfeature
+    feature reg_STAT;
+        subplan reg_STAT #(path="STAT");
+    endfeature
+    feature reg_HTIM;
+        subplan reg_HTIM #(path="HTIM");
+    endfeature
+    feature reg_VTIM;
+        subplan reg_VTIM #(path="VTIM");
+    endfeature
+    feature reg_C1CR;
+        subplan reg_C1CR #(path="C1CR");
+    endfeature
+
+    feature address_map;
+        measure Group fcov;
+            source = "group instance:**::ral_block_vga_lcd::cg_addr";
+        endmeasure
+    endfeature
+
+    feature field_values;
+        measure Group fcov;
+            source = "group instance:**::cg_vals";
+        endmeasure
+    endfeature
+endplan
+
+

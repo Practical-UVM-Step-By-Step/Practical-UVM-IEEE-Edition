@@ -1,0 +1,53 @@
+Command: /SCRATCH/srivats/vs/new_book_examples/IEEE_version/Advanced_UVM_Topics/registers_example/run/./simv +UVM_TESTNAME=simple_reg_access_test -l simple_reg_access_test.log
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Dec  6 20:56 2019
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_WARNING @ 0: reporter [BDTYP] Cannot create a component of type 'simple_reg_access_test' because it is not registered with the factory.
+UVM_FATAL @ 0: reporter [INVTST] Requested test from command line +UVM_TESTNAME=simple_reg_access_test not found.
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 0: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 0: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    2
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    1
+** Report counts by id
+[BDTYP]     1
+[INVTST]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 172.
+$finish at simulation time                    0
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ps
+CPU Time:      0.470 seconds;       Data structure size:   0.4Mb
+Fri Dec  6 20:56:49 2019

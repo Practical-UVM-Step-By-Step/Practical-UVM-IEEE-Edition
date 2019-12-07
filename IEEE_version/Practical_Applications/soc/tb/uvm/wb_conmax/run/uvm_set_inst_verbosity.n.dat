@@ -1,0 +1,76 @@
+     1	Command: /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l uvm_set_inst_verbosity.dat +uvm_set_verbosity=uvm_test_top.env.master_agent[00].mast_drv,_ALL_,UVM_DEBUG,run +UVM_TESTNAME=wb_conmax_flat_seq_test
+     2	Chronologic VCS simulator copyright 1991-2019
+     3	Contains Synopsys proprietary information.
+     4	Compiler version P-2019.06; Runtime version P-2019.06;  Jun 29 13:54 2019
+     5	UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+     6	  ***********       IMPORTANT RELEASE NOTES         ************
+....
+....
+   115	UVM_INFO @ 305000: uvm_test_top.env.Scoreboard.comparator          0 [Comparator Match] 
+   116	UVM_INFO ../../common/wb_master.sv(271) @ 315000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER] 
+      ----------------------------------------------------------------------------------------------------------
+   117	Name                           Type            Size  Value                                                
+   118	----------------------------------------------------------------------------------------------------------
+   119	req                            wb_transaction  -     @6707                                                
+   120	  address                      integral        32    'h4                                                  
+   121	  data                         integral        32    'hbeefdead                                           
+   122	  sel                          integral        4     'h7                                                  
+   123	  tga                          integral        16    'hefdd                                               
+   124	  tgc                          integral        16    'h4b01                                               
+   125	  lock                         integral        1     'h0                                                  
+   126	  num_wait_states              integral        32    'h0                                                  
+   127	  kind                         kinds_e         32    WRITE                                                
+   128	  status                       status_e        32    ACK                                                  
+   129	  next_cycle                   pipelining_e    32    CLASSIC                                              
+   130	  begin_time                   time            64    245000                                               
+   131	  depth                        int             32    'd2                                                  
+   132	  parent sequence (name)       string          10    sequence_1                                           
+   133	  parent sequence (full name)  string          53    uvm_test_top.env.master_agent[00].mast_sqr.sequence_1
+   134	  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr           
+   135	----------------------------------------------------------------------------------------------------------
+   136	
+   137	UVM_INFO ../../common/wb_master.sv(191) @ 315000: uvm_test_top.env.master_agent[00].mast_drv [wb_env_DRIVER] Completed transaction...
+   138	UVM_INFO ../../common/wb_master.sv(163) @ 315000: uvm_test_top.env.master_agent[00].mast_drv [wb_env_DRIVER] Starting transaction...
+   139	UVM_INFO ../../common/wb_master.sv(241) @ 325000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a write transaction
+   140	UVM_INFO ../../common/wb_slave.sv(158) @ 346000: uvm_test_top.env.slave_agent[00].slv_drv [uvm_test_top.env.slave_agent[00].slv_drv] responding in this cycle
+   141	UVM_INFO ../../common/wb_slave_mon.sv(141) @ 346000: uvm_test_top.env.slave_agent[00].slv_mon [WB slave Monitor] got a write transaction  from Master 
+   142	UVM_INFO ../../common/wb_slave.sv(198) @ 375000: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Completed transaction...
+   143	UVM_INFO @ 375000: uvm_test_top.env.Scoreboard.comparator          0 [Comparator Match] 
+   144	UVM_INFO ../../common/wb_master.sv(271) @ 385000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER] 
+       ----------------------------------------------------------------------------------------------------------
+   145	Name                           Type            Size  Value                                                
+   146	----------------------------------------------------------------------------------------------------------
+   147	req                            wb_transaction  -     @6761                                                
+   148	  address                      integral        32    'h5                                                  
+   149	  data                         integral        32    'h23456678                                           
+   150	  sel                          integral        4     'h3                                                  
+   151	  tga                          integral        16    'h609a                                               
+   152	  tgc                          integral        16    'he2c2                                               
+   153	  lock                         integral        1     'h0                                                  
+   154	  num_wait_states              integral        32    'h0                                                  
+   155	  kind                         kinds_e         32    WRITE                                                
+   156	  status                       status_e        32    ACK                                                  
+   157	  next_cycle                   pipelining_e    32    CLASSIC                                              
+   158	  begin_time                   time            64    315000                                               
+   159	  depth                        int             32    'd2                                                  
+   160	  parent sequence (name)       string          10    sequence_1                                           
+   161	  parent sequence (full name)  string          53    uvm_test_top.env.master_agent[00].mast_sqr.sequence_1
+   162	  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr           
+   163	----------------------------------------------------------------------------------------------------------
+   164	
+   165	UVM_INFO ../../common/wb_master.sv(191) @ 385000: uvm_test_top.env.master_agent[00].mast_drv [wb_env_DRIVER] Completed transaction...
+   166	UVM_INFO ../../common/wb_master.sv(163) @ 385000: uvm_test_top.env.master_agent[00].mast_drv [wb_env_DRIVER] Starting transaction...
+   167	UVM_INFO ../../common/wb_master.sv(201) @ 395000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a read transaction
+   168	UVM_INFO ../../common/wb_slave.sv(158) @ 416000: uvm_test_top.env.slave_agent[00].slv_drv [uvm_test_top.env.slave_agent[00].slv_drv] responding in this cycle
+   169	UVM_INFO ../../common/wb_slave_mon.sv(151) @ 416000: uvm_test_top.env.slave_agent[00].slv_mon [Wb_slave Monitor] got a read transaction  
+   170	UVM_INFO ../../common/wb_slave.sv(198) @ 445000: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Completed transaction...
+   171	UVM_INFO @ 445000: uvm_test_top.env.Scoreboard.comparator          0 [Comparator Match] 
+   172	UVM_INFO ../../common/wb_master.sv(191) @ 455000: uvm_test_top.env.master_agent[00].mast_drv [wb_env_DRIVER] Completed transaction...
+   173	UVM_INFO ../../common/wb_master.sv(163) @ 455000: uvm_test_top.env.master_agent[00].mast_drv [wb_env_DRIVER] Starting transaction...
+   174	UVM_INFO ../../common/wb_master.sv(201) @ 465000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a read transaction
+   175	UVM_INFO ../../common/wb_slave.sv(158) @ 486000: uvm_test_top.env.slave_agent[00].slv_drv [uvm_test_top.env.slave_agent[00].slv_drv] responding in this cycle
+   176	UVM_INFO ../../common/wb_slave_mon.sv(151) @ 486000: uvm_test_top.env.slave_agent[00].slv_mon [Wb_slave Monitor] got a read transaction  
+   177	UVM_INFO ../../common/wb_slave.sv(198) @ 515000: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Completed transaction...
+   178	UVM_INFO @ 515000: uvm_test_top.env.Scoreboard.comparator          0 [Comparator Match] 
+   179	UVM_INFO ../../common/wb_master.sv(191) @ 525000: uvm_test_top.env.master_agent[00].mast_drv [wb_env_DRIVER] Completed transaction...
+   180	UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 525000: reporter [UVM/REPORT/CATCHER] 

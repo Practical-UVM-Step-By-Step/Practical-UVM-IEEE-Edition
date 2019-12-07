@@ -1,0 +1,24 @@
+UVM Version : 2 
+Complete Env.(1) OR Individual Template(2)? : 1 
+Want to create your own methods[Instead of uvm shorthand macros]? : n 
+RAL env? : n 
+Env. Name : wb_env 
+Agents? : y 
+Name of master agent:  : wb_master_agent 
+Name of sequencer in wb_master_agent master agent:  : wb_master_seqr 
+Name of driver in wb_master_agent master agent:  : wb_master 
+Name of monitor in wb_master_agent master agent:  : wb_master_mon 
+Name of interface related to wb_master_agent master agent:  : wb_master_if 
+Name of transaction in wb_master_agent master agent:  : wb_transaction 
+BU class for this transaction? : n 
+Name of slave agent:  : wb_slave_agent 
+Name of sequencer in wb_slave_agent slave agent:  : wb_slave_seqr 
+Name of driver in wb_slave_agent slave agent:  : wb_slave 
+Name of monitor in wb_slave_agent slave agent:  : wb_slave_mon 
+Name of physical interface related to wb_slave_agent slave agent:  : wb_slave_if 
+Name of transaction related to wb_slave_agent slave agent:  : wb_transaction 
+Driver information for the slave agent wb_slave_agent :  :  
+Driver Type : Driver, PULL DRIVER (uvm_driver) 
+Driver information for the master agent wb_master_agent :  :  
+Driver Type : Driver, PULL DRIVER (uvm_driver) 
+Scoreboard? : n 

@@ -1,0 +1,25 @@
+`ifndef WB_MASTER_SEQR_SEQUENCE_LIBRARY
+ `define WB_MASTER_SEQR_SEQUENCE_LIBRARY
+
+typedef class wb_transaction;
+
+class wb_master_seqr_sequence_library extends uvm_sequence_library # (wb_transaction);
+   `uvm_sequence_library_utils(wb_master_seqr_sequence_library)
+
+   function new(string name = "simple_seq_lib");
+      super.new(name);
+      init_sequence_library();
+   endfunction
+
+endclass  
+
+`include "sequences/wb_master_agent_base_sequence.sv"
+`include "sequences/wb_master_agent_sequence_0.sv"
+`include "sequences/wb_master_agent_sequence_1.sv"
+`include "sequences/wb_master_agent_sequence_2.sv"
+`include "sequences/wb_master_agent_repeated_read_sequence.sv"
+`include "sequences/wb_master_agent_grab_sequence.sv"
+`include "sequences/wb_master_agent_lock_sequence.sv"
+`include "sequences/wb_master_agent_priority_sequence.sv"
+`include "sequences/wb_master_agent_parallel_sequence.sv"
+`endif

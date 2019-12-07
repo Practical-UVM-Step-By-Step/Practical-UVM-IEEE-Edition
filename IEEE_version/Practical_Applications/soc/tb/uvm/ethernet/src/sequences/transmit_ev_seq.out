@@ -1,0 +1,46 @@
+     1	class send_2_packets_event_sync_sequence extends base_sequence;
+     2	
+     3	   init_tx_seq tx_seq;
+     4	   setup_txbd_sequence  txbd_sequence;
+     5	   tx_interrupt_seq  tx_int_sequence;
+     6	   initialize_txbd_rxbd_sequence  initialize_desc_seq;
+     7	   write_master_single single_seq;
+     8	   read_master_single single_seq_read;
+     9	   uvm_event send_2_pkt_event;
+    10	
+    11	   `uvm_object_utils(send_2_packets_event_sync_sequence)
+    12	   
+    13	
+    14	   function new(string name = "send_2_packets_event_sync_sequence");
+    15	      super.new(name);
+    16	   endfunction:new
+    17	
+    18	   virtual task body();
+    19	      uvm_reg_data_t reg_data;
+    20	      uvm_status_e reg_status;
+    21	
+    22	      uvm_config_db #(uvm_event)::get(null,"","transmit_b",send_2_pkt_event);
+    23	
+   ..... 
+      // Object Creation and other activity. See listing.
+   .....
+
+    33	      // Clean up descriptors
+    34	      initialize_desc_seq.start(p_sequencer);
+    35	      // p_sequencer.regmodel.TX_BD_NUM.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(1));
+    36	
+    37	      p_sequencer.regmodel.INT_MASK.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(32'h0000007f));
+    38	      p_sequencer.regmodel.MODER.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(32'h00002403));
+    39	
+    ...... 
+    ......
+    51	
+    52	      single_seq_read.read_address = 32'h00000400;
+    53	      single_seq_read.read_data = 32'h007c5800;
+    54	
+    55	      repeat (5)  // Apparently this is a magic number that kicks off the machine
+    56		single_seq_read.start(p_sequencer);
+    57	      send_2_pkt_event.trigger();
+    58	   endtask
+    59	endclass
+    60	

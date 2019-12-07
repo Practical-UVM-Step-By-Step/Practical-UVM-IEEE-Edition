@@ -1,0 +1,6 @@
+`include "sequences/wb_master_agent_wb_master_seqr_sequence_library.sv"
+`include "sequences/wb_master_agent_base_sequence.sv"
+`include "sequences/wb_master_agent_sequence_0.sv"
+`include "sequences/wb_master_agent_sequence_1.sv"
+`include "sequences/wb_master_agent_repeated_read_sequence.sv"
+`include "sequences/wb_master_agent_objection_in_sequence.sv"

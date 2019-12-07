@@ -1,0 +1,4 @@
+dut.v
+verilog_tb.v
+wb_master.v
+wb_slave_behavioral.v

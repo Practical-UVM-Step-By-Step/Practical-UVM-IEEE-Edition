@@ -1,0 +1,65 @@
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Jun 29 13:42 2019
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_factory_instance_override_test_cmdline...
+UVM_INFO @ 0: reporter [UVM_CMDLINE_PROC] Applying type override from the command line: +uvm_set_type_override=wb_master_agent,wb_master_agent_n
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
+#### Factory Configuration (*)
+
+No instance overrides are registered with this factory
+
+Type Overrides:
+
+  Requested Type   Override Type    
+  ---------------  -----------------
+  wb_master_agent  wb_master_agent_n
+
+All types registered with the factory: 184 total
+
+  .... listing of all master_agent replaced by master_agent_n
+
+  
+
+####
+
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------------
+Name            Type                                              Size  Value
+-----------------------------------------------------------------------------
+<unnamed>       uvm_root                                          -     @71  
+  uvm_test_top  wb_conmax_factory_instance_override_test_cmdline  -     @185 
+    env         wb_conmax_env                                     -     @297 
+...
+460:      master_agent[00]            wb_master_agent_n                                 -     @316    
+...
+484:      master_agent[01]            wb_master_agent_n                                 -     @328    
+...
+508:      master_agent[02]            wb_master_agent_n                                 -     @339    
+...
+532:      master_agent[03]            wb_master_agent_n                                 -     @350    
+...
+556:      master_agent[04]            wb_master_agent_n                                 -     @361    
+...
+580:      master_agent[05]            wb_master_agent_n                                 -     @372    
+...
+604:      master_agent[06]            wb_master_agent_n                                 -     @383    
+...
+628:      master_agent[07]            wb_master_agent_n                                 -     @394    
+...

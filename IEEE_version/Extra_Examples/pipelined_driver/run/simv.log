@@ -1,0 +1,586 @@
+Command: /SCRATCH/srivats/vs/IEEE_Book/pipelined_driver/run/./simv -l simv.log -lca +ntb_random_seed=1 +UVM_TESTNAME=wb_env_slave_test +UVM_TR_RECORD +UVM_LOG_RECORD +UVM_CONFIG_DB_TRACE +UVM_CONFIG_DB_TRACE
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Aug 20 13:56 2019
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer P-2019.06 Copyright (c) 1991-2019 by Synopsys Inc.
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/vcs/uvm_custom_install_vcs_recorder.sv(85) @ 0: reporter [VCS_TR_AUTO] +UVM_TR_RECORD implicitly enables recording_details to UVM_FULL for all components. For explicit control use +UVM_DISABLE_AUTO_COMPONENT and set recording_detail on components accordingly
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='*' name='recording_detail' (type logic signed[4095:0]) set accessor= = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.master_agent' name='mst_if' (type virtual interface wb_master_if#(5,3)) set accessor= = (virtual interface wb_master_if#(5,3)) wb_env_top_mod.mast_if : '{clk:'hx, rst:'h0, DAT_I:'hxxxxxxxxxxxxxxxx, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hxxxx, TGD_O:'hzzzz, ACK_I:'hx, ADR_O:'hxxxxxxxxxxxxxxxx, CYC_O:'hx, ERR_I:'hx, LOCK_O:'hx, RTY_I:'hx, SEL_O:'hxx, STB_O:'hx, TGA_O:'hxxxx, TGC_O:'hxxxx, WE_O:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.slave_agent' name='slv_if' (type virtual interface wb_slave_if#(5,3)) set accessor= = (virtual interface wb_slave_if#(5,3)) wb_env_top_mod.slave_if : '{clk:'h0, rst:'h0, CYC_I:'hx, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hxxxxxxxxxxxxxxxx, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hxxxx, ACK_O:'hx, ADR_I:'hxxxxxxxxxxxxxxxx, ERR_O:'hx, LOCK_I:'hx, RTY_O:'hx, SEL_I:'hxx, STB_I:'hx, TGA_I:'hxxxx, TGC_I:'hxxxx, WE_I:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='' name='max_n_wss' (type int) set accessor= = (int) 10
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='' name='min_addr' (type int) set accessor= = (int) 0
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='' name='max_addr' (type int) set accessor= = (int) 10000000
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='env.slave_agent' name='is_active' (type bit) set accessor= = (bit) 1
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='env.master_agent' name='is_active' (type bit) set accessor= = (bit) 1
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top = (logic signed[4095:0]) 400
+UVM_INFO @ 0: reporter [RNTST] Running test wb_env_slave_test...
+UVM_INFO @ 0: reporter [CFGAPL] applying configuration to field max_addr type=int value=10000000
+UVM_INFO @ 0: reporter [CFGAPL] applying configuration to field max_n_wss type=int value=10
+UVM_INFO @ 0: reporter [CFGAPL] applying configuration to field min_addr type=int value=0
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.main_phase' name='default_sequence' (type class uvm_pkg::uvm_object_wrapper) set accessor=uvm_test_top = (class uvm_pkg::uvm_object_wrapper) '{}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.main_phase' name='default_sequence' (type class uvm_pkg::uvm_object_wrapper) set accessor=uvm_test_top = (class uvm_pkg::uvm_object_wrapper) '{}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.master_agent' name='config' (type class wb_env_tb_mod.wb_config) set accessor=uvm_test_top = (class wb_env_tb_mod.wb_config) '{m_leaf_name:"wb_master_config", m_inst_id:267, m_inst_count:282, enable_coverage:'h0, port_size:BYTE, granularity:BYTE, cycles:CLASSIC, max_n_wss:10, min_addr:'h0, max_addr:'h989680}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.slave_agent' name='config' (type class wb_env_tb_mod.wb_config) set accessor=uvm_test_top = (class wb_env_tb_mod.wb_config) '{m_leaf_name:"wb_slave_config", m_inst_id:268, m_inst_count:285, enable_coverage:'h0, port_size:BYTE, granularity:BYTE, cycles:CLASSIC, max_n_wss:10, min_addr:'h0, max_addr:'h989680}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.cov' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.cov = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.cov.Coverage Analysis' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.cov.Coverage Analysis = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.cov.Coverage Analysis' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.cov.Coverage Analysis = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.mon2cov' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.mon2cov = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent' name='config' (type class wb_env_tb_mod.wb_config) read accessor=uvm_test_top.env.master_agent = (class wb_env_tb_mod.wb_config) '{m_leaf_name:"wb_master_config", m_inst_id:267, m_inst_count:366, enable_coverage:'h0, port_size:BYTE, granularity:BYTE, cycles:CLASSIC, max_n_wss:10, min_addr:'h0, max_addr:'h989680}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_mon' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_mon = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_mon.mon_analysis_port' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_mon.mon_analysis_port = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_mon.mon_analysis_port' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_mon.mon_analysis_port = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.rsp_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.rsp_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.rsp_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.rsp_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.put_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.put_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.put_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.put_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.get_peek_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.get_peek_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.get_peek_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.put_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.put_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.put_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.put_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.get_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.get_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.get_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.get_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.analysis_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.analysis_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.analysis_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.sqr_rsp_analysis_fifo.analysis_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo.put_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo.put_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo.put_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo.put_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo.get_peek_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo.get_peek_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo.get_peek_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo.put_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo.put_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo.put_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo.put_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo.get_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo.get_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.req_fifo.get_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.req_fifo.get_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.seq_item_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.seq_item_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_sqr.seq_item_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_sqr.seq_item_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_drv' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_drv = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_drv.seq_item_port' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_drv.seq_item_port = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_drv.seq_item_port' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_drv.seq_item_port = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_drv.rsp_port' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_drv.rsp_port = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_drv.rsp_port' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.master_agent.mast_drv.rsp_port = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent' name='mst_if' (type virtual interface wb_master_if#(5,3)) read accessor=uvm_test_top.env.master_agent = (virtual interface wb_master_if#(5,3)) wb_env_top_mod.mast_if : '{clk:'h0, rst:'h0, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_I:'hx, ADR_O:'hxxxxxxxxxxxxxxxx, CYC_O:'hx, ERR_I:'hx, LOCK_O:'hx, RTY_I:'hx, SEL_O:'hxx, STB_O:'hx, TGA_O:'hxxxx, TGC_O:'hxxxx, WE_O:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.master_agent.mast_drv' name='mst_if' (type virtual interface wb_master_if#(5,3)) set accessor=uvm_test_top.env.master_agent = (virtual interface wb_master_if#(5,3)) wb_env_top_mod.mast_if : '{clk:'h0, rst:'h0, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_I:'hx, ADR_O:'hxxxxxxxxxxxxxxxx, CYC_O:'hx, ERR_I:'hx, LOCK_O:'hx, RTY_I:'hx, SEL_O:'hxx, STB_O:'hx, TGA_O:'hxxxx, TGC_O:'hxxxx, WE_O:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.master_agent.mast_mon' name='mon_if' (type virtual interface wb_master_if#(5,3)) set accessor=uvm_test_top.env.master_agent = (virtual interface wb_master_if#(5,3)) wb_env_top_mod.mast_if : '{clk:'h0, rst:'h0, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_I:'hx, ADR_O:'hxxxxxxxxxxxxxxxx, CYC_O:'hx, ERR_I:'hx, LOCK_O:'hx, RTY_I:'hx, SEL_O:'hxx, STB_O:'hx, TGA_O:'hxxxx, TGC_O:'hxxxx, WE_O:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.put_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.put_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.put_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.put_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.get_peek_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.get_peek_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.get_peek_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.put_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.put_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.put_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.put_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.get_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.get_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.get_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.get_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.analysis_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.analysis_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.expected_wb_transaction_fifo.analysis_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.expected_wb_transaction_fifo.analysis_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.put_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.put_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.put_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.put_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.get_peek_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.get_peek_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.get_peek_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.put_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.put_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.put_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.put_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.get_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.get_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.get_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.get_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.analysis_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.analysis_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.sb.actual_wb_transaction_fifo.analysis_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.sb.actual_wb_transaction_fifo.analysis_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent' name='config' (type class wb_env_tb_mod.wb_config) read accessor=uvm_test_top.env.slave_agent = (class wb_env_tb_mod.wb_config) '{m_leaf_name:"wb_slave_config", m_inst_id:268, m_inst_count:811, enable_coverage:'h0, port_size:BYTE, granularity:BYTE, cycles:CLASSIC, max_n_wss:10, min_addr:'h0, max_addr:'h989680}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_mon' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_mon = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_mon.mon_analysis_port' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_mon.mon_analysis_port = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_mon.mon_analysis_port' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_mon.mon_analysis_port = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.rsp_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.rsp_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.rsp_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.rsp_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.put_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.put_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.put_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.put_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.get_peek_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.get_peek_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.get_peek_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.put_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.put_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.put_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.put_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.get_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.get_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.get_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.get_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.analysis_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.analysis_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.analysis_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.sqr_rsp_analysis_fifo.analysis_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo.put_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo.put_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo.put_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo.put_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo.get_peek_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo.get_peek_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo.get_peek_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo.get_peek_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo.put_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo.put_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo.put_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo.put_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo.get_ap' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo.get_ap = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.req_fifo.get_ap' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.req_fifo.get_ap = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.seq_item_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.seq_item_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.seq_item_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.seq_item_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.slave_get_port' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.slave_get_port = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_seqr.slave_get_port' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_seqr.slave_get_port = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_drv = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv.seq_item_port' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_drv.seq_item_port = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv.seq_item_port' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_drv.seq_item_port = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv.rsp_port' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_drv.rsp_port = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv.rsp_port' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_drv.rsp_port = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv.slv_get_export' name='recording_detail' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_drv.slv_get_export = (logic signed[4095:0]) 400
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv.slv_get_export' name='check_connection_relationships' (type logic signed[4095:0]) read accessor=uvm_test_top.env.slave_agent.slv_drv.slv_get_export = null (failed lookup)
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent' name='slv_if' (type virtual interface wb_slave_if#(5,3)) read accessor=uvm_test_top.env.slave_agent = (virtual interface wb_slave_if#(5,3)) wb_env_top_mod.slave_if : '{clk:'h0, rst:'h0, CYC_I:'hx, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_O:'hx, ADR_I:'hxxxxxxxxxxxxxxxx, ERR_O:'hx, LOCK_I:'hx, RTY_O:'hx, SEL_I:'hxx, STB_I:'hx, TGA_I:'hxxxx, TGC_I:'hxxxx, WE_I:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv' name='slv_if' (type virtual interface wb_slave_if#(5,3)) set accessor=uvm_test_top.env.slave_agent = (virtual interface wb_slave_if#(5,3)) wb_env_top_mod.slave_if : '{clk:'h0, rst:'h0, CYC_I:'hx, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_O:'hx, ADR_I:'hxxxxxxxxxxxxxxxx, ERR_O:'hx, LOCK_I:'hx, RTY_O:'hx, SEL_I:'hxx, STB_I:'hx, TGA_I:'hxxxx, TGC_I:'hxxxx, WE_I:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/SET] Configuration scope='uvm_test_top.env.slave_agent.slv_mon' name='mon_if' (type virtual interface wb_slave_if#(5,3)) set accessor=uvm_test_top.env.slave_agent = (virtual interface wb_slave_if#(5,3)) wb_env_top_mod.slave_if : '{clk:'h0, rst:'h0, CYC_I:'hx, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_O:'hx, ADR_I:'hxxxxxxxxxxxxxxxx, ERR_O:'hx, LOCK_I:'hx, RTY_O:'hx, SEL_I:'hxx, STB_I:'hx, TGA_I:'hxxxx, TGC_I:'hxxxx, WE_I:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_drv' name='mst_if' (type virtual interface wb_master_if#(5,3)) read accessor=uvm_test_top.env.master_agent.mast_drv = (virtual interface wb_master_if#(5,3)) wb_env_top_mod.mast_if : '{clk:'h0, rst:'h0, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_I:'hx, ADR_O:'hxxxxxxxxxxxxxxxx, CYC_O:'hx, ERR_I:'hx, LOCK_O:'hx, RTY_I:'hx, SEL_O:'hxx, STB_O:'hx, TGA_O:'hxxxx, TGC_O:'hxxxx, WE_O:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.master_agent.mast_mon' name='mon_if' (type virtual interface wb_master_if#(5,3)) read accessor=uvm_test_top.env.master_agent.mast_mon = (virtual interface wb_master_if#(5,3)) wb_env_top_mod.mast_if : '{clk:'h0, rst:'h0, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_I:'hx, ADR_O:'hxxxxxxxxxxxxxxxx, CYC_O:'hx, ERR_I:'hx, LOCK_O:'hx, RTY_I:'hx, SEL_O:'hxx, STB_O:'hx, TGA_O:'hxxxx, TGC_O:'hxxxx, WE_O:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_drv' name='slv_if' (type virtual interface wb_slave_if#(5,3)) read accessor=uvm_test_top.env.slave_agent.slv_drv = (virtual interface wb_slave_if#(5,3)) wb_env_top_mod.slave_if : '{clk:'h0, rst:'h0, CYC_I:'hx, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_O:'hx, ADR_I:'hxxxxxxxxxxxxxxxx, ERR_O:'hx, LOCK_I:'hx, RTY_O:'hx, SEL_I:'hxx, STB_I:'hx, TGA_I:'hxxxx, TGC_I:'hxxxx, WE_I:'hx}
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh(161) @ 0: reporter [CFGDB/GET] Configuration scope='uvm_test_top.env.slave_agent.slv_mon' name='mon_if' (type virtual interface wb_slave_if#(5,3)) read accessor=uvm_test_top.env.slave_agent.slv_mon = (virtual interface wb_slave_if#(5,3)) wb_env_top_mod.slave_if : '{clk:'h0, rst:'h0, CYC_I:'hx, DAT_I:'hzzzzzzzzzzzzzzzz, DAT_O:'hzzzzzzzzzzzzzzzz, RST_I:'h1, TGD_I:'hzzzz, TGD_O:'hzzzz, ACK_O:'hx, ADR_I:'hxxxxxxxxxxxxxxxx, ERR_O:'hx, LOCK_I:'hx, RTY_O:'hx, SEL_I:'hxx, STB_I:'hx, TGA_I:'hxxxx, TGC_I:'hxxxx, WE_I:'hx}
+UVM_INFO ../src/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent.slv_seqr [WB_SLAVE_SEQR] Initializing memory
+----------------------------------------------
+Name             Type           Size  Value   
+----------------------------------------------
+wb_slave_config  wb_config      -     @268    
+  port_size      sizes_e        32    BYTE    
+  granularity    sizes_e        32    BYTE    
+  cycles         cycle_types_e  32    CLASSIC 
+  max_n_wss      integral       32    'ha     
+  min_addr       integral       64    'h0     
+  max_addr       integral       64    'h989680
+----------------------------------------------
+UVM_INFO ../src/wb_master.sv(156) @ 35: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_master.sv(233) @ 45: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a write transaction
+UVM_INFO ../src/wb_master_mon.sv(160) @ 45: uvm_test_top.env.master_agent.mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave.sv(154) @ 45: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_mon.sv(146) @ 45: uvm_test_top.env.slave_agent.slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(50) @ 45: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] In SLAVE SEQUENCER, Transaction address = 0000000000000003   kind = WRITE
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(56) @ 45: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000003   kind = WRITE data = 00000000deadbeef
+UVM_INFO ../src/wb_master.sv(182) @ 155: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1248                                            
+  address                      integral        64    'h3                                              
+  data                         integral        64    'hdeadbeef                                       
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h7f5f                                           
+  tgc                          integral        16    'hb857                                           
+  lock                         integral        1     'h1                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    WRITE                                            
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    35                                               
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(185) @ 155: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(45) @ 155: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+---------------------------------------------------
+Name               Type            Size  Value     
+---------------------------------------------------
+tr                 wb_transaction  -     @1269     
+  address          integral        64    'h3       
+  data             integral        64    'hdeadbeef
+  sel              integral        8     'h1       
+  tga              integral        16    'h7f5f    
+  tgc              integral        16    'hb857    
+  lock             integral        1     'h0       
+  num_wait_states  integral        32    'h0       
+  kind             kinds_e         32    WRITE     
+  status           status_e        32    ACK       
+  next_cycle       pipelining_e    32    CLASSIC   
+---------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(47) @ 155: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+---------------------------------------------------
+Name               Type            Size  Value     
+---------------------------------------------------
+tr                 wb_transaction  -     @1259     
+  address          integral        64    'h3       
+  data             integral        64    'hdeadbeef
+  sel              integral        8     'h1       
+  tga              integral        16    'h7f5f    
+  tgc              integral        16    'hb857    
+  lock             integral        1     'h0       
+  num_wait_states  integral        32    'h0       
+  kind             kinds_e         32    WRITE     
+  status           status_e        32    ACK       
+  next_cycle       pipelining_e    32    CLASSIC   
+---------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 155: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(156) @ 155: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(180) @ 165: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(233) @ 165: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a write transaction
+UVM_INFO ../src/wb_master_mon.sv(160) @ 165: uvm_test_top.env.master_agent.mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_mon.sv(146) @ 165: uvm_test_top.env.slave_agent.slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave.sv(154) @ 165: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(50) @ 165: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] In SLAVE SEQUENCER, Transaction address = 0000000000000004   kind = WRITE
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(56) @ 165: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000004   kind = WRITE data = 00000000beefdead
+UVM_INFO ../src/wb_master.sv(182) @ 275: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1307                                            
+  address                      integral        64    'h4                                              
+  data                         integral        64    'hbeefdead                                       
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'hf794                                           
+  tgc                          integral        16    'h1903                                           
+  lock                         integral        1     'h0                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    WRITE                                            
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    155                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(185) @ 275: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(45) @ 275: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+---------------------------------------------------
+Name               Type            Size  Value     
+---------------------------------------------------
+tr                 wb_transaction  -     @1327     
+  address          integral        64    'h4       
+  data             integral        64    'hbeefdead
+  sel              integral        8     'h1       
+  tga              integral        16    'hf794    
+  tgc              integral        16    'h1903    
+  lock             integral        1     'h0       
+  num_wait_states  integral        32    'h0       
+  kind             kinds_e         32    WRITE     
+  status           status_e        32    ACK       
+  next_cycle       pipelining_e    32    CLASSIC   
+---------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(47) @ 275: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+---------------------------------------------------
+Name               Type            Size  Value     
+---------------------------------------------------
+tr                 wb_transaction  -     @1322     
+  address          integral        64    'h4       
+  data             integral        64    'hbeefdead
+  sel              integral        8     'h1       
+  tga              integral        16    'hf794    
+  tgc              integral        16    'h1903    
+  lock             integral        1     'h0       
+  num_wait_states  integral        32    'h0       
+  kind             kinds_e         32    WRITE     
+  status           status_e        32    ACK       
+  next_cycle       pipelining_e    32    CLASSIC   
+---------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 275: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(156) @ 275: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(180) @ 285: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(233) @ 285: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a write transaction
+UVM_INFO ../src/wb_master_mon.sv(160) @ 285: uvm_test_top.env.master_agent.mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_mon.sv(146) @ 285: uvm_test_top.env.slave_agent.slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave.sv(154) @ 285: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(50) @ 285: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] In SLAVE SEQUENCER, Transaction address = 0000000000000005   kind = WRITE
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(56) @ 285: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000005   kind = WRITE data = 0000000123456678
+UVM_INFO ../src/wb_master.sv(182) @ 395: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1353                                            
+  address                      integral        64    'h5                                              
+  data                         integral        64    'h123456678                                      
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h6cf4                                           
+  tgc                          integral        16    'h56b7                                           
+  lock                         integral        1     'h1                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    WRITE                                            
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    275                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(185) @ 395: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(45) @ 395: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+----------------------------------------------------
+Name               Type            Size  Value      
+----------------------------------------------------
+tr                 wb_transaction  -     @1372      
+  address          integral        64    'h5        
+  data             integral        64    'h123456678
+  sel              integral        8     'h1        
+  tga              integral        16    'h6cf4     
+  tgc              integral        16    'h56b7     
+  lock             integral        1     'h0        
+  num_wait_states  integral        32    'h0        
+  kind             kinds_e         32    WRITE      
+  status           status_e        32    ACK        
+  next_cycle       pipelining_e    32    CLASSIC    
+----------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(47) @ 395: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+----------------------------------------------------
+Name               Type            Size  Value      
+----------------------------------------------------
+tr                 wb_transaction  -     @1367      
+  address          integral        64    'h5        
+  data             integral        64    'h123456678
+  sel              integral        8     'h1        
+  tga              integral        16    'h6cf4     
+  tgc              integral        16    'h56b7     
+  lock             integral        1     'h0        
+  num_wait_states  integral        32    'h0        
+  kind             kinds_e         32    WRITE      
+  status           status_e        32    ACK        
+  next_cycle       pipelining_e    32    CLASSIC    
+----------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 395: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(156) @ 395: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(180) @ 405: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(194) @ 405: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a read transaction
+UVM_INFO ../src/wb_master_mon.sv(167) @ 405: uvm_test_top.env.master_agent.mast_mon [Wb_master Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave_mon.sv(153) @ 405: uvm_test_top.env.slave_agent.slv_mon [Wb_slave Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave.sv(160) @ 405: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a read transaction  
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(50) @ 405: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] In SLAVE SEQUENCER, Transaction address = 0000000000000003   kind = READ
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(56) @ 405: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000003   kind = READ data = 00000000deadbeef
+UVM_INFO ../src/wb_master.sv(182) @ 515: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1398                                            
+  address                      integral        64    'h3                                              
+  data                         integral        64    'hdeadbeef                                       
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h1d04                                           
+  tgc                          integral        16    'hbfc7                                           
+  lock                         integral        1     'h0                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    READ                                             
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    395                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(185) @ 515: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(45) @ 515: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1417  
+  address          integral        64    'h3    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h1d04 
+  tgc              integral        16    'hbfc7 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(47) @ 515: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1412  
+  address          integral        64    'h3    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h1d04 
+  tgc              integral        16    'hbfc7 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 515: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(156) @ 515: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(180) @ 525: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(194) @ 525: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a read transaction
+UVM_INFO ../src/wb_master_mon.sv(167) @ 525: uvm_test_top.env.master_agent.mast_mon [Wb_master Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave_mon.sv(153) @ 525: uvm_test_top.env.slave_agent.slv_mon [Wb_slave Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave.sv(160) @ 525: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a read transaction  
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(50) @ 525: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] In SLAVE SEQUENCER, Transaction address = 0000000000000004   kind = READ
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(56) @ 525: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000004   kind = READ data = 00000000beefdead
+UVM_INFO ../src/wb_master.sv(182) @ 635: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1443                                            
+  address                      integral        64    'h4                                              
+  data                         integral        64    'hbeefdead                                       
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h6730                                           
+  tgc                          integral        16    'hd2e2                                           
+  lock                         integral        1     'h1                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    READ                                             
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    515                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(185) @ 635: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(45) @ 635: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1462  
+  address          integral        64    'h4    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h6730 
+  tgc              integral        16    'hd2e2 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(47) @ 635: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1457  
+  address          integral        64    'h4    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h6730 
+  tgc              integral        16    'hd2e2 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 635: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(156) @ 635: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(180) @ 645: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(194) @ 645: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a read transaction
+UVM_INFO ../src/wb_master_mon.sv(167) @ 645: uvm_test_top.env.master_agent.mast_mon [Wb_master Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave_mon.sv(153) @ 645: uvm_test_top.env.slave_agent.slv_mon [Wb_slave Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave.sv(160) @ 645: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a read transaction  
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(50) @ 645: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] In SLAVE SEQUENCER, Transaction address = 0000000000000005   kind = READ
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(56) @ 645: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000005   kind = READ data = 0000000123456678
+UVM_INFO ../src/wb_master.sv(182) @ 755: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1488                                            
+  address                      integral        64    'h5                                              
+  data                         integral        64    'h123456678                                      
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h6094                                           
+  tgc                          integral        16    'h139c                                           
+  lock                         integral        1     'h0                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    READ                                             
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    635                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(185) @ 755: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(45) @ 755: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1507  
+  address          integral        64    'h5    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h6094 
+  tgc              integral        16    'h139c 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(47) @ 755: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1502  
+  address          integral        64    'h5    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h6094 
+  tgc              integral        16    'h139c 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 755: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 755: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 755: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  210
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[CFGAPL]     3
+[CFGDB/GET]   109
+[CFGDB/SET]    16
+[RNTST]     1
+[SCOREBOARD]    12
+[SLAVE_DRIVER]     5
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[VCS_TR_AUTO]     1
+[WB SCOREBOARD]     6
+[WB master Monitor]     3
+[WB slave Monitor]     3
+[WB_SLAVE_SEQR]     1
+[Wb master]     6
+[Wb_master Monitor]     3
+[Wb_slave]     6
+[Wb_slave Monitor]     3
+[uvm_test_top.env.slave_agent.slv_seqr.ram_sequence]    12
+[wb_env_DRIVER]    18
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish at simulation time                  755
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 755
+CPU Time:      0.720 seconds;       Data structure size:   0.4Mb
+Tue Aug 20 13:56:26 2019

@@ -1,0 +1,118 @@
+Command: /SCRATCH/srivats/vs/IEEE_Book_modified/Practical-UVM-IEEE-Edition/Practical_Applications/soc/tb/uvm/vga_lcd/run/./simv +UVM_TESTNAME=vga_lcd_reg_single_access_test_bkdoor -l vga_lcd_reg_single_access_test_bkdoor.log
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Nov 22 18:05 2019
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test vga_lcd_reg_single_access_test_bkdoor...
+
+Note-[FCICIO] Instance coverage is ON
+/SCRATCH/srivats/vs/IEEE_Book_modified/Practical-UVM-IEEE-Edition/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 992
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_block_vga_lcd::cg_addr"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_block_vga_lcd::cg_addr'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_addr 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/SCRATCH/srivats/vs/IEEE_Book_modified/Practical-UVM-IEEE-Edition/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 29
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_CTRL::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_CTRL::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/SCRATCH/srivats/vs/IEEE_Book_modified/Practical-UVM-IEEE-Edition/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 244
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_STAT::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_STAT::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/SCRATCH/srivats/vs/IEEE_Book_modified/Practical-UVM-IEEE-Edition/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 368
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_HTIM::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_HTIM::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/SCRATCH/srivats/vs/IEEE_Book_modified/Practical-UVM-IEEE-Edition/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 549
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_VTIM::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_VTIM::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/SCRATCH/srivats/vs/IEEE_Book_modified/Practical-UVM-IEEE-Edition/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 729
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_C1CR::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_C1CR::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_driver.svh(90) @ 0: uvm_test_top.env.slave_agent.slv_drv [DRVCONNECT] the driver is not connected to a sequencer via the standard mechanisms enabled by connect()
+UVM_INFO ../tests/vga_lcd_reg_single_access_bkdoor.sv(24) @ 0: uvm_test_top [uvm_test_top] Starting Backdoor write access to VTIM
+UVM_INFO ../tests/vga_lcd_reg_single_access_bkdoor.sv(26) @ 0: uvm_test_top [uvm_test_top] Ending Backdoor write access to VTIM
+UVM_INFO ../tests/vga_lcd_reg_single_access_bkdoor.sv(27) @ 0: uvm_test_top [uvm_test_top] Starting Backdoor read access to VTIM
+UVM_INFO ../tests/vga_lcd_reg_single_access_bkdoor.sv(29) @ 0: uvm_test_top [uvm_test_top] Ending Backdoor read access to VTIM
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 200000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 200000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    7
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRVCONNECT]     1
+[RNTST]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[uvm_test_top]     4
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish at simulation time               200000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000 ps
+CPU Time:      0.510 seconds;       Data structure size:   0.5Mb
+Fri Nov 22 18:05:36 2019

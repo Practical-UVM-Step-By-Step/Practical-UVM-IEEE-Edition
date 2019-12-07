@@ -1,0 +1,1 @@
+s/uvm_bitstream_t/int/g

@@ -1,0 +1,88 @@
+Only in /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src: dump.do
+Only in /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src: Makefile
+Only in /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src: mon_dri
+Only in /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src: sedfile
+Only in /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src: uvm2uvm_8667.patch
+Only in /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src: wb_master_agent_sequence_library.sv.orig
+Only in /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src: wb_master_agent_sequence_library.sv.rej
+diff -r /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src/wb_ral_sequence_bitbash.sv /tmp/qe9bIXp1eR/wb_ral_sequence_bitbash.sv
+16c16,17
+< virtual task body();
+---
+> virtual task body(); uvm_phase phase_=get_starting_phase();
+> 
+19,20c20,21
+<   if(starting_phase != null) 
+< 	 starting_phase.raise_objection(this);
+---
+>   if(get_starting_phase()!= null) 
+> 	 phase_.raise_objection(this);
+22,23c23,24
+<   if(starting_phase != null) 
+< 	 starting_phase.drop_objection(this);
+---
+>   if(get_starting_phase()!= null) 
+> 	 phase_.drop_objection(this);
+diff -r /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src/wb_ral_sequence.sv /tmp/qe9bIXp1eR/wb_ral_sequence.sv
+16c16,17
+< virtual task body();
+---
+> virtual task body(); uvm_phase phase_=get_starting_phase();
+> 
+19,20c20,21
+<   if(starting_phase != null) 
+< 	 starting_phase.raise_objection(this);
+---
+>   if(get_starting_phase()!= null) 
+> 	 phase_.raise_objection(this);
+33,34c34,35
+<   if(starting_phase != null) 
+< 	 starting_phase.drop_objection(this);
+---
+>   if(get_starting_phase()!= null) 
+> 	 phase_.drop_objection(this);
+diff -r /slowfs/vgcs13/srivats/xactors/uvm_scoreboard_phase_callbacks/src/wb_slave_agent_sequence_library.sv /tmp/qe9bIXp1eR/wb_slave_agent_sequence_library.sv
+27,29c27,30
+<   virtual task pre_body();
+<     if (starting_phase != null)
+<       starting_phase.raise_objection(this);
+---
+>   virtual task pre_body(); uvm_phase phase_=get_starting_phase();
+> 
+>     if (get_starting_phase()!= null)
+>       phase_.raise_objection(this);
+31,33c32,35
+<   virtual task post_body();
+<     if (starting_phase != null)
+<       starting_phase.drop_objection(this);
+---
+>   virtual task post_body(); uvm_phase phase_=get_starting_phase();
+> 
+>     if (get_starting_phase()!= null)
+>       phase_.drop_objection(this);
+59,60c61,63
+<  virtual task pre_body();
+<     if (starting_phase!=null) begin
+---
+>  virtual task pre_body(); uvm_phase phase_=get_starting_phase();
+> 
+>     if (get_starting_phase()!=null) begin
+64,65c67,68
+<                            starting_phase.get_name()), UVM_MEDIUM);
+<        starting_phase.raise_objection(this);
+---
+>                            phase_.get_name()), UVM_MEDIUM);
+>        phase_.raise_objection(this);
+71,72c74,76
+<   virtual task post_body();
+<     if (starting_phase!=null) begin
+---
+>   virtual task post_body(); uvm_phase phase_=get_starting_phase();
+> 
+>     if (get_starting_phase()!=null) begin
+76,77c80,81
+<                            starting_phase.get_name()), UVM_MEDIUM);
+<     starting_phase.drop_objection(this);
+---
+>                            phase_.get_name()), UVM_MEDIUM);
+>     phase_.drop_objection(this);

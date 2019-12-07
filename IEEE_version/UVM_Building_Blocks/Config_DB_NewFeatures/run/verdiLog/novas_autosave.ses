@@ -1,0 +1,85 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_P-2019.06
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = TRUE
+TBHierShow = 1
+powerDumped = 0
+[UvmRsrc]
+QFShow = 1
+QF1_val0 = "config"
+QF1_ckb0 = FALSE
+QF1_val1 = 
+QF1_ckb1 = FALSE
+QF1_val2 = "(class wb_config) @2"
+QF1_ckb2 = FALSE
+QF1_val3 = "class wb_env_tb_mod.wb_config"
+QF1_ckb3 = FALSE
+QF1_val4 = "\"All Calls\""
+QF1_ckb4 = TRUE
+QF1_val5 = "Select resources..."
+QF1_ckb5 = FALSE
+SelectedRsrc = "config  class wb_env_tb_mod.wb_config"
+RsrcTopViewShow = 1
+RsrcSeTcl = "uvmRsrcWinClick -row 0"
+RsrcBotViewShow = 1
+[UvmWin]
+RescShow = TRUE
+[hb]
+postSimFile = /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/inter.fsdb
+syncTime = 45
+viewport = 183 25 1549 790 0 0 246 1023
+activeNode = "wb_env_slave_test.env.master_agent.mast_drv.write"
+activeScope = "wb_env_slave_test.env.master_agent.mast_drv.write"
+activeFile = "../src/wb_master.sv#inc__wb_env_tb_mod__183#"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 255
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "wb_env_slave_test.env.master_agent.mast_drv.write"
+Scope2 = "wb_env_top_mod"
+rangeSelection = 269 269 1 13 1 1
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-simflow" "-dbdir" "./simv.daidir" 
+invokeDir = /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run
+[hb.sourceTab.1]
+scope = wb_env_slave_test.env.master_agent.mast_drv.write
+File = /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/src/wb_master.sv#inc__wb_env_tb_mod__183#
+Line = 256
+[nMemoryManager]
+WaveformFile = /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/inter.fsdb
+UserActionNum = 0
+nMemWindowNum = 0

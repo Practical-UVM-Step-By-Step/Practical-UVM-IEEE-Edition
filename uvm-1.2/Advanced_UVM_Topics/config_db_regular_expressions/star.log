@@ -1,0 +1,144 @@
+Command: vcs -sverilog -ntb_opts uvm-1.2 my_env_pkg.sv star.sv -q -l star.log -R \
+
+
+5 modules and 0 UDP read.
+make[1]: Entering directory `/SCRATCH/srivats/vs/new_book_examples/uvm-1.2/Advanced_UVM_Topics/config_db_regular_expressions/csrc' \
+
+ld -shared -m elf_i386  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o \
+
+rm -f _csrc0.so
+../simv up to date
+make[1]: Leaving directory `/SCRATCH/srivats/vs/new_book_examples/uvm-1.2/Advanced_UVM_Topics/config_db_regular_expressions/csrc' \
+
+Command: /SCRATCH/srivats/vs/new_book_examples/uvm-1.2/Advanced_UVM_Topics/config_db_regular_expressions/./simv -q -a star.log
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-1.2/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test ...
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+value of V in B.u1.v is           7
+value of V in D.u1.v is           7
+value of S in B.u1.s is          32
+value of S in D.u1.s is           0
+value of v in inst00.u1.v is           7
+value of v in inst01.u1.v is           7
+value of v in inst02.u1.v is           7
+value of v in inst03.u1.v is           7
+value of v in inst04.u1.v is           7
+value of v in tom05.u1.v is           7
+value of v in tom06.u1.v is           7
+value of v in tom07.u1.v is           7
+value of v in tom08.u1.v is           7
+value of v in tom09.u1.v is           7
+value of v in tomm10.u1.v is           7
+value of v in tomm11.u1.v is           7
+value of v in tommm12.u1.v is           7
+value of v in tommm13.u1.v is           7
+value of v in tommmm14.u1.v is           7
+value of v in tomm15.u1.v is           7
+value of v in tommommomm16.u1.v is           7
+value of v in tommommommomm17.u1.v is           7
+value of v in TOMMMM18.u1.v is           7
+value of v in TOMMMM19.u1.v is           7
+value of v in tom20.u1.v is           7
+value of v in tom21.u1.v is           7
+value of v in tom22.u1.v is           7
+value of v in tom23.u1.v is           7
+value of v in tom24.u1.v is           7
+value of s in inst00.u1.s is           0
+value of s in inst01.u1.s is           0
+value of s in inst02.u1.s is           0
+value of s in inst03.u1.s is           0
+value of s in inst04.u1.s is           0
+value of s in tom05.u1.s is           0
+value of s in tom06.u1.s is           0
+value of s in tom07.u1.s is           0
+value of s in tom08.u1.s is           0
+value of s in tom09.u1.s is           0
+value of s in tomm10.u1.s is           0
+value of s in tomm11.u1.s is           0
+value of s in tommm12.u1.s is           0
+value of s in tommm13.u1.s is           0
+value of s in tommmm14.u1.s is           0
+value of s in tomm15.u1.s is           0
+value of s in tommommomm16.u1.s is           0
+value of s in tommommommomm17.u1.s is           0
+value of s in TOMMMM18.u1.s is           0
+value of s in TOMMMM19.u1.s is           0
+value of s in tom20.u1.s is           0
+value of s in tom21.u1.s is           0
+value of s in tom22.u1.s is           0
+value of s in tom23.u1.s is           0
+value of s in tom24.u1.s is           0
+value of s in a.u1.s is           0
+value of s in aa.u1.s is           0
+value of s in aaa.u1.s is           0
+value of s in aaaaa.u1.s is           0
+value of s in b.u1.s is           0
+value of s in ab.u1.s is           0
+value of s in aaaaab.u1.s is           0
+value of s in abc.u1.s is           0
+value of s in abbc.u1.s is           0
+value of s in abbbc.u1.s is           0
+value of s in aaaaabbbb.u1.s is           0
+value of s in aaabbbccc.u1.s is           0
+value of s in abd.u1.s is           0
+value of s in abcdef.u1.s is           0
+value of s in abcdefabc.u1.s is           0
+value of s in cab.u1.s is           0
+value of s in caab.u1.s is           0
+value of s in cb.u1.s is           0
+value of s in def.u1.s is           0
+value of v in a.u1.v is           7
+value of v in aa.u1.v is           7
+value of v in aaa.u1.v is           7
+value of v in aaaaa.u1.v is           7
+value of v in b.u1.v is           7
+value of v in ab.u1.v is           7
+value of v in aaaaab.u1.v is           7
+value of v in abc.u1.v is           7
+value of v in abbc.u1.v is           7
+value of v in abbbc.u1.v is           7
+value of v in aaaaabbbb.u1.v is           7
+value of v in aaabbbccc.u1.v is           7
+value of v in abd.u1.v is           7
+value of v in abcdef.u1.v is           7
+value of v in abcdefabc.u1.v is           7
+value of v in cab.u1.v is           7
+value of v in caab.u1.v is           7
+value of v in cb.u1.v is           7
+value of v in def.u1.v is           7
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 10: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    3
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-1.2/base/uvm_root.svh", line 613.
+$finish at simulation time                   10

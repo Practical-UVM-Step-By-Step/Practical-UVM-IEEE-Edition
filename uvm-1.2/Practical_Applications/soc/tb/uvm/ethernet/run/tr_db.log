@@ -1,0 +1,21 @@
+  CREATE_STREAM @255000 {NAME:send_2_packets_bar_ev_sync_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:6450}
+  CREATE_STREAM @255000 {NAME:tx_int_bar_seq_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:6453}
+  CREATE_STREAM @375000 {NAME:initialize_desc_sequence T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:6590}
+  CREATE_STREAM @10735000 {NAME:TXBD data Sequence T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:8956}
+  CREATE_STREAM @11075000 {NAME:single_seq T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:9148}
+  CREATE_STREAM @255000 {NAME:send_2_packets_bar_ev_sync_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5803}
+  CREATE_STREAM @255000 {NAME:tx_int_bar_seq_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5806}
+  CREATE_STREAM @375000 {NAME:initialize_desc_sequence T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5903}
+  CREATE_STREAM @255000 {NAME:send_2_packets_bar_ev_sync_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5803}
+  CREATE_STREAM @255000 {NAME:tx_int_bar_seq_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5806}
+  CREATE_STREAM @255000 {NAME:send_2_packets_bar_ev_sync_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5803}
+  CREATE_STREAM @255000 {NAME:tx_int_bar_seq_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5806}
+  CREATE_STREAM @255000 {NAME:send_2_packets_bar_ev_sync_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5803}
+  CREATE_STREAM @255000 {NAME:tx_int_bar_seq_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5806}
+  CREATE_STREAM @255000 {NAME:send_2_packets_bar_ev_sync_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5803}
+  CREATE_STREAM @255000 {NAME:tx_int_bar_seq_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5806}
+  CREATE_STREAM @255000 {NAME:send_2_packets_bar_ev_sync_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5803}
+  CREATE_STREAM @255000 {NAME:tx_int_bar_seq_inst T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5806}
+  CREATE_STREAM @375000 {NAME:initialize_desc_sequence T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:5903}
+  CREATE_STREAM @10735000 {NAME:TXBD data Sequence T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:8269}
+  CREATE_STREAM @11075000 {NAME:single_seq T:Transactions SCOPE:uvm_test_top.env.wb_master_agt.mast_sqr STREAM:8461}

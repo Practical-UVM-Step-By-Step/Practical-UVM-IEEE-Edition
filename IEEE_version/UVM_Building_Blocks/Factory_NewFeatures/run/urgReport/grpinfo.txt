@@ -1,0 +1,185 @@
+Group : wb_env_top_mod.test::wb_env_cov::cg_trans
+
+===============================================================================
+Group : wb_env_top_mod.test::wb_env_cov::cg_trans
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+ 28.77 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Factory_NewFeatures/run/../src/wb_env_cov.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   wb_env_top_mod.test::wb_env_cov::cg_trans
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 33       27        6       28.77   
+
+
+Variables for Group  wb_env_top_mod.test::wb_env_cov::cg_trans
+
+
+VARIABLE           EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+tr.kind            5        3         2       40.00   100  1      1        0                    
+tr.address         3        2         1       33.33   100  1      1        0                    
+tr.lock            2        1         1       50.00   100  1      1        2                    
+tr.status          7        6         1       14.29   100  1      1        0                    
+tr.num_wait_states 16       15        1       6.25    100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable tr.kind
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 5        3         2       40.00   
+
+
+Automatically Generated Bins for tr.kind
+
+
+Uncovered bins
+
+NAME        COUNT AT LEAST NUMBER 
+auto_BLK_RD 0     1        1      
+auto_BLK_WR 0     1        1      
+auto_RMW    0     1        1      
+
+
+Covered bins
+
+NAME       COUNT AT LEAST 
+auto_READ  3     1        
+auto_WRITE 3     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable tr.address
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        2         1       33.33   
+
+
+User Defined Bins for tr.address
+
+
+Uncovered bins
+
+NAME COUNT AT LEAST NUMBER 
+high 0     1        1      
+mid  0     1        1      
+
+
+Covered bins
+
+NAME COUNT AT LEAST 
+low  6     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable tr.lock
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 2        1         1       50.00   
+
+
+Automatically Generated Bins for tr.lock
+
+
+Uncovered bins
+
+NAME      COUNT AT LEAST NUMBER 
+[auto[1]] 0     1        1      
+
+
+Covered bins
+
+NAME    COUNT AT LEAST 
+auto[0] 6     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable tr.status
+
+
+CATEGORY                     EXPECTED UNCOVERED COVERED PERCENT 
+Automatically Generated Bins 7        6         1       14.29   
+
+
+Automatically Generated Bins for tr.status
+
+
+Uncovered bins
+
+NAME          COUNT AT LEAST NUMBER 
+auto_OK       0     1        1      
+auto_RTY      0     1        1      
+auto_ERR      0     1        1      
+auto_TIMEOUT  0     1        1      
+auto_INFLIGHT 0     1        1      
+auto_UNKNOWN  0     1        1      
+
+
+Covered bins
+
+NAME     COUNT AT LEAST 
+auto_ACK 6     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable tr.num_wait_states
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 16       15        1       6.25    
+
+
+User Defined Bins for tr.num_wait_states
+
+
+Uncovered bins
+
+NAME     COUNT AT LEAST NUMBER 
+legal_1  0     1        1      
+legal_2  0     1        1      
+legal_3  0     1        1      
+legal_4  0     1        1      
+legal_5  0     1        1      
+legal_6  0     1        1      
+legal_7  0     1        1      
+legal_8  0     1        1      
+legal_9  0     1        1      
+legal_10 0     1        1      
+legal_11 0     1        1      
+legal_12 0     1        1      
+legal_13 0     1        1      
+legal_14 0     1        1      
+legal_15 0     1        1      
+
+
+Excluded/Illegal bins
+
+NAME COUNT STATUS  
+ib   0     Illegal 
+
+
+Covered bins
+
+NAME    COUNT AT LEAST 
+legal_0 6     1        
+
+

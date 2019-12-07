@@ -1,0 +1,9 @@
+	./simv +UVM_TESTNAME=simple_ral_env_test -l simple_ral_env_test.log
+	./simv +UVM_TESTNAME=simple_RC_register_test -l simple_RC_register_test.log
+	./simv +UVM_TESTNAME=simple_reg_access_test_callback_test -l simple_reg_access_test_callback_test.log
+	./simv +UVM_TESTNAME=simple_reg_access_test_factory -l simple_reg_access_test_factory.log
+	./simv +UVM_TESTNAME=simple_reg_access_test_resdb -l simple_reg_access_test_resdb.log
+	./simv +UVM_TESTNAME=simple_reg_access_test -l simple_reg_access_test.log
+	./simv +UVM_TESTNAME=simple_backdoor_test -l simple_backdoor_test.log
+	./simv +UVM_TESTNAME=reg_hw_reset_test -l reg_hw_reset_test.log
+	./simv +UVM_TESTNAME=simple_uvm_reg_bit_bash_seq_test -l simple_uvm_reg_bit_bash_seq_test.log
