@@ -1,0 +1,220 @@
+Command: /u/srivats/proj_area/new_book_examples/IEEE_version/UVM_Quickstart/UVM_TestBench/run/./simv +UVM_TESTNAME=wb_env_test_extended -l wb_env_test_extended.log
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Jan  3 23:02 2020
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test wb_env_test_extended...
+UVM_INFO ../src/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent.slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../src/wb_scoreboard.sv(49) @ 0: uvm_test_top.env.sb [SCOREBOARD] Scoreboard received reset
+UVM_INFO ../src/reset_driver.sv(79) @ 0: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../src/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed Reset
+----------------------------------------------
+Name             Type           Size  Value   
+----------------------------------------------
+wb_slave_config  wb_config      -     @228    
+  port_size      sizes_e        32    BYTE    
+  granularity    sizes_e        32    BYTE    
+  cycles         cycle_types_e  32    CLASSIC 
+  max_n_wss      integral       32    'ha     
+  min_addr       integral       64    'h0     
+  max_addr       integral       64    'h989680
+----------------------------------------------
+UVM_INFO ../src/reset_sequence.sv(30) @ 0: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Starting Reset Sequence
+UVM_INFO ../src/reset_sequence.sv(32) @ 0: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Deasserting Reset 
+UVM_INFO ../src/reset_driver.sv(107) @ 25: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Completed transaction...
+UVM_INFO ../src/reset_driver.sv(79) @ 25: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../src/reset_sequence.sv(34) @ 25: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Asserting Reset 
+UVM_INFO ../src/reset_driver.sv(107) @ 75: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Completed transaction...
+UVM_INFO ../src/reset_driver.sv(79) @ 75: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../src/reset_sequence.sv(36) @ 75: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Deasserting Reset 
+UVM_INFO ../src/reset_driver.sv(107) @ 95: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Completed transaction...
+UVM_INFO ../src/reset_driver.sv(79) @ 95: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../src/reset_sequence.sv(39) @ 95: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Ended Reset Sequence
+UVM_INFO ../src/sequences/sequence_0.sv(18) @ 95: uvm_test_top.env.master_agent.mast_sqr@@sequence_0 [SEQUENCE0] sequence_0 pre_start() raising main objection
+UVM_INFO ../src/wb_master.sv(110) @ 95: uvm_test_top.env.master_agent.mast_drv [WB_MASTER_DRV] Starting transaction...
+UVM_INFO ../src/wb_master.sv(148) @ 105: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a read transaction
+UVM_INFO ../src/wb_master_mon.sv(121) @ 105: uvm_test_top.env.master_agent.mast_mon [Wb_master Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave.sv(142) @ 105: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a read transaction  
+UVM_INFO ../src/wb_slave_mon.sv(110) @ 105: uvm_test_top.env.slave_agent.slv_mon [Wb_slave Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 105: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000007   kind = READ
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 105: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000007   kind = READ data = 0000000000000046
+UVM_INFO ../src/wb_master.sv(140) @ 215: uvm_test_top.env.master_agent.mast_drv [WB_MASTER_DRV] Completed           1 transactions...
+UVM_INFO ../src/wb_scoreboard.sv(54) @ 215: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+---------------------------------------------------------
+Name               Type                     Size  Value  
+---------------------------------------------------------
+tr                 wb_transaction_extended  -     @1275  
+  address          integral                 64    'h7    
+  data             integral                 64    'h0    
+  sel              integral                 8     'h1    
+  tga              integral                 16    'h1570 
+  tgc              integral                 16    'hac35 
+  lock             integral                 1     'h0    
+  num_wait_states  integral                 32    'h0    
+  kind             kinds_e                  32    READ   
+  status           status_e                 32    ACK    
+  next_cycle       pipelining_e             32    CLASSIC
+---------------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 215: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+---------------------------------------------------------
+Name               Type                     Size  Value  
+---------------------------------------------------------
+tr                 wb_transaction_extended  -     @1265  
+  address          integral                 64    'h7    
+  data             integral                 64    'h0    
+  sel              integral                 8     'h1    
+  tga              integral                 16    'h1570 
+  tgc              integral                 16    'hac35 
+  lock             integral                 1     'h0    
+  num_wait_states  integral                 32    'h0    
+  kind             kinds_e                  32    READ   
+  status           status_e                 32    ACK    
+  next_cycle       pipelining_e             32    CLASSIC
+---------------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(63) @ 215: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(110) @ 215: uvm_test_top.env.master_agent.mast_drv [WB_MASTER_DRV] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(162) @ 225: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(187) @ 225: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a write transaction
+UVM_INFO ../src/wb_master_mon.sv(114) @ 225: uvm_test_top.env.master_agent.mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_mon.sv(103) @ 225: uvm_test_top.env.slave_agent.slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave.sv(136) @ 225: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 225: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000007   kind = WRITE
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 225: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000007   kind = WRITE data = 15a629b676a0441c
+UVM_INFO ../src/wb_master.sv(140) @ 335: uvm_test_top.env.master_agent.mast_drv [WB_MASTER_DRV] Completed           2 transactions...
+UVM_INFO ../src/wb_scoreboard.sv(54) @ 335: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+--------------------------------------------------------------------
+Name               Type                     Size  Value             
+--------------------------------------------------------------------
+tr                 wb_transaction_extended  -     @1316             
+  address          integral                 64    'h7               
+  data             integral                 64    'h15a629b676a0441c
+  sel              integral                 8     'h1               
+  tga              integral                 16    'hdc08            
+  tgc              integral                 16    'hacf2            
+  lock             integral                 1     'h0               
+  num_wait_states  integral                 32    'h0               
+  kind             kinds_e                  32    WRITE             
+  status           status_e                 32    ACK               
+  next_cycle       pipelining_e             32    CLASSIC           
+--------------------------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 335: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+--------------------------------------------------------------------
+Name               Type                     Size  Value             
+--------------------------------------------------------------------
+tr                 wb_transaction_extended  -     @1311             
+  address          integral                 64    'h7               
+  data             integral                 64    'h15a629b676a0441c
+  sel              integral                 8     'h1               
+  tga              integral                 16    'hdc08            
+  tgc              integral                 16    'hacf2            
+  lock             integral                 1     'h0               
+  num_wait_states  integral                 32    'h0               
+  kind             kinds_e                  32    WRITE             
+  status           status_e                 32    ACK               
+  next_cycle       pipelining_e             32    CLASSIC           
+--------------------------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(63) @ 335: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(110) @ 335: uvm_test_top.env.master_agent.mast_drv [WB_MASTER_DRV] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(162) @ 345: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(187) @ 345: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a write transaction
+UVM_INFO ../src/wb_master_mon.sv(114) @ 345: uvm_test_top.env.master_agent.mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_mon.sv(103) @ 345: uvm_test_top.env.slave_agent.slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave.sv(136) @ 345: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 345: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000007   kind = WRITE
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 345: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000007   kind = WRITE data = 15a629b676a0441c
+UVM_INFO ../src/wb_master.sv(140) @ 455: uvm_test_top.env.master_agent.mast_drv [WB_MASTER_DRV] Completed           3 transactions...
+UVM_INFO ../src/wb_scoreboard.sv(54) @ 455: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+--------------------------------------------------------------------
+Name               Type                     Size  Value             
+--------------------------------------------------------------------
+tr                 wb_transaction_extended  -     @1351             
+  address          integral                 64    'h7               
+  data             integral                 64    'h15a629b676a0441c
+  sel              integral                 8     'h1               
+  tga              integral                 16    'hdc08            
+  tgc              integral                 16    'hacf2            
+  lock             integral                 1     'h0               
+  num_wait_states  integral                 32    'h0               
+  kind             kinds_e                  32    WRITE             
+  status           status_e                 32    ACK               
+  next_cycle       pipelining_e             32    CLASSIC           
+--------------------------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(56) @ 455: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+--------------------------------------------------------------------
+Name               Type                     Size  Value             
+--------------------------------------------------------------------
+tr                 wb_transaction_extended  -     @1346             
+  address          integral                 64    'h7               
+  data             integral                 64    'h15a629b676a0441c
+  sel              integral                 8     'h1               
+  tga              integral                 16    'hdc08            
+  tgc              integral                 16    'hacf2            
+  lock             integral                 1     'h0               
+  num_wait_states  integral                 32    'h0               
+  kind             kinds_e                  32    WRITE             
+  status           status_e                 32    ACK               
+  next_cycle       pipelining_e             32    CLASSIC           
+--------------------------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(63) @ 455: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/sequences/sequence_0.sv(31) @ 455: uvm_test_top.env.master_agent.mast_sqr@@sequence_0 [SEQUENCE0] sequence_0 post_start() dropping main objection
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 455: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 455: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   56
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RAM_SEQUENCE]     6
+[RESET_DRIVER]     7
+[RESET_SEQUENCE]     5
+[RNTST]     1
+[SCOREBOARD]     7
+[SEQUENCE0]     2
+[SLAVE_DRIVER]     4
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[WB SCOREBOARD]     3
+[WB master Monitor]     2
+[WB slave Monitor]     2
+[WB_MASTER_DRV]     6
+[WB_SLAVE_SEQR]     1
+[Wb master]     3
+[Wb_master Monitor]     1
+[Wb_slave]     3
+[Wb_slave Monitor]     1
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish at simulation time                  455
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 455
+CPU Time:      0.680 seconds;       Data structure size:   0.4Mb
+Fri Jan  3 23:02:00 2020

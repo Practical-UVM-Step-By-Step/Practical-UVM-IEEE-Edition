@@ -1,0 +1,72 @@
+Invoking simulator...
+
+./simv +UVM_TESTNAME=wb_env_slave_test -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" "./simv.daidir"
+*Verdi* Loading libsscore_vcs201906.so
+
+FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+
+*Verdi* : Create FSDB file '/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/inter.fsdb'
+
+*Verdi* : Flush all FSDB Files at 0 s.
+
+*Verdi* : Enable RPC Server(27057)
+
+srcTBInvokeSim
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Jul  2 21:58 2019
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+Verdi>run
+*Verdi* Enable Verdi Message Catcher.
+*Verdi* Enable Verdi Factory Dumping.
+UVM_INFO @ 0: reporter [RNTST] Running test wb_env_slave_test...
+UVM_FATAL ../src/wb_master.sv(98) @ 0: uvm_test_top.env.master_agent.mast_drv [MASTER DRIVER]  Got a null configuration
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 0: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 0: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    3
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    1
+** Report counts by id
+[MASTER DRIVER]     1
+[RNTST]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 172.
+$finish at simulation time                    0
+Simulation complete, time is 0.
+uvm_pkg.sv, 1 : //
+Note-[SAFE-STOP] Signal TSTP received. Will stop at the earliest stable point.
+
+Note-[SAFE-CONT] Signal CONT received. Signal TSTP cancelled.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0
+CPU Time:      0.500 seconds;       Data structure size:   0.4Mb
+Tue Jul  2 22:01:22 2019
+debExit

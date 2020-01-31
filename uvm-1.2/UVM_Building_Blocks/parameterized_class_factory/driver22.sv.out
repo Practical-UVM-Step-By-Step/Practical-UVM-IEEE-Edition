@@ -1,0 +1,15 @@
+1   class my_driver22 #(type T=uvm_object) extends my_driver1 #(T);
+   2   
+     3     `uvm_component_param_utils(my_driver22 #(T))
+   4   
+     5     function new(string name, uvm_component parent=null);
+	6       super.new(name,parent);
+	7     endfunction
+   8   
+     9     const static string type_name = {"my_driver22 #(",T::type_name,")"};
+   10     virtual function string get_type_name();
+      11       return type_name;
+      12     endfunction
+   13   
+     14   endclass
+15   

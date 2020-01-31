@@ -1,0 +1,397 @@
+Command: vcs -sverilog -ntb_opts uvm-ieee ../src/do_execute_op.sv +incdir+../src \
+-R -l do_execute_op.log
+                         Chronologic VCS (TM)
+            Version P-2019.06 -- Thu Dec  5 15:58:57 2019
+               Copyright (c) 1991-2019 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_version_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_global_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_message_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_phase_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_printer_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_comparer_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_recorder_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_resource_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_packer_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_copier_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_object_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_tlm_defines.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm_imps.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_tlm_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_sequence_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_callback_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/macros/uvm_reg_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_dpi.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_hdl.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_dpi.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_dpi.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_regex.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_dpi.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_version.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_object_globals.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_misc.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_coreservice.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_globals.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_object.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_registry.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_pool.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_queue.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_specializations.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_resource_db_options.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_config_db.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_policy.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_field_op.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_copier.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_printer.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_comparer.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_packer.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_links.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_tr_database.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_text_tr_database.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_tr_stream.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_text_tr_stream.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_recorder.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_event_callback.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_event.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_barrier.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_callback.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_macros.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_callback.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_message.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_handler.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_object.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_transaction.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_phase.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_domain.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_bottomup_phase.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_topdown_phase.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_task_phase.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_common_phases.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_runtime_phases.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_run_test_callback.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_component.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_component.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_objection.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_heartbeat.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_cmdline_processor.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_traversal.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_dap.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_set_get_dap_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_dap.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_simple_lock_dap.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_dap.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_get_to_lock_dap.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_dap.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_set_before_get_dap.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/dap/uvm_dap.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_port_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm_imps.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_imps.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_ports.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_exports.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_analysis_port.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_sqr_connections.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm1/uvm_tlm.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_pair.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_policies.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_in_order_comparator.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_subscriber.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_monitor.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_driver.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_push_driver.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_scoreboard.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_agent.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_env.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_test.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/comps/uvm_comps.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequence_item.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequencer_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequencer_param_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequencer.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_push_sequencer.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequence_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequence.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequence_library.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm_time.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/tlm2/uvm_tlm2.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_item.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_adapter.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_predictor.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_sequence.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_cbs.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_backdoor.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_field.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_vreg_field.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_indirect.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_fifo.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_file.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_mem_mam.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_vreg.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_mem.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_block.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Parsing included file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/snps_uvm_reg_bank.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_model.svh'.
+Back to file '/global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv'.
+Parsing design file '../src/do_execute_op.sv'
+Top Level Modules:
+       top
+No TimeScale specified
+Starting vcs inline pass...
+
+4 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package uvm_pkg
+recompiling module top
+All of 4 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared -m elf_i386  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o \
+
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -m32 -m32 -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/global/apps/vcs_2019.06/linux/lib -L/global/apps/vcs_2019.06/linux/lib \
+-Wl,-rpath-link=./  /global/apps/vcs_2019.06/linux/lib/vpdlogstub.o uvm_dpi.o    \
+_13515_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so    rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lvirsim -lerrorinf \
+-lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /global/apps/vcs_2019.06/linux/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o \
+/global/apps/vcs_2019.06/linux/lib/vcs_save_restore_new.o /global/apps/vcs_2019.06/linux/lib/ctype-stubs_32.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Command: /SCRATCH/srivats/vs/new_book_examples/IEEE_version/UVM_Building_Blocks/Uvm_Core_Utils/run/./simv -a do_execute_op.log
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Dec  5 15:59 2019
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO ../src/do_execute_op.sv(87) @ 0: reporter [POLICY] Operation Name print
+-----------------------------------------
+Name           Type      Size  Value     
+-----------------------------------------
+first_inst     class_P   -     @116      
+  par_int      integral  32    'hdc1c6b6b
+  par_address  integral  32    'hffffffa1
+-----------------------------------------
+UVM_INFO ../src/do_execute_op.sv(87) @ 0: reporter [POLICY] Operation Name print
+-----------------------------------------
+Name           Type      Size  Value     
+-----------------------------------------
+second_inst    class_P   -     @126      
+  par_int      integral  32    'h76760997
+  par_address  integral  32    'h7a      
+-----------------------------------------
+UVM_INFO ../src/do_execute_op.sv(87) @ 0: reporter [POLICY] Operation Name copy
+UVM_INFO ../src/do_execute_op.sv(87) @ 0: reporter [POLICY] Operation Name print
+-----------------------------------------
+Name           Type      Size  Value     
+-----------------------------------------
+second_inst    class_P   -     @126      
+  par_int      integral  32    'hdc1c6b6b
+  par_address  integral  32    'hffffffa1
+-----------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0
+CPU Time:      0.370 seconds;       Data structure size:   0.1Mb
+Thu Dec  5 15:59:03 2019
+CPU time: 4.729 seconds to compile + .200 seconds to elab + .257 seconds to link + .402 seconds in simulation

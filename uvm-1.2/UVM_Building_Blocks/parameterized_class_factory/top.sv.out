@@ -1,0 +1,45 @@
+1   
+  2   import uvm_pkg::*;
+3    `include "pkt.sv"
+4   `include "simple_drv.sv"
+5   `include "simple_mon.sv"
+6   `include "simple_agent.sv"
+7   `include "param_drv.sv"
+8   `include "param_mon.sv"
+9   `include "param_agent.sv"
+10   `include "env.sv"
+11   
+  12   module top;
+   13   
+     14     env env0;
+   15   
+     16     initial begin
+	17   /*
+	      18       // Being registered first, the following overrides take precedence
+	      19       // over any overrides made within env0's construction & build.
+	      20   
+	      21       // Replace all base drivers with derived drivers...
+	      22       my_driver1::type_id::set_type_override(my_driver2::get_type());
+	      23   
+	      24       // ...except for agent0.driver0, whose type remains a base driver.
+	      25       //     (Both methods below have the equivalent result.)
+	      26   
+	      27       // - via the component's proxy (preferred)
+	      28       my_driver1::type_id::set_inst_override(my_driver1::get_type(),
+	      29                                            "env0.agent0.driver0");
+	      30   
+	      31       // - via a direct call to a factory method
+	      32       factory.set_inst_override_by_type(my_driver1::get_type(),
+	      33                                         my_driver1::get_type(),
+	      34                                     {get_full_name(),"env0.agent0.driver0"});
+	      35   */
+	  36       // now, create the environment; our factory configuration will
+	    37       // govern what topology gets created
+	      38       env0 = new("env0");
+	39   
+	  40       // run the test (will execute build phase)
+	    41       run_test();
+	42   
+	  43     end
+   44   
+     45   endmodule

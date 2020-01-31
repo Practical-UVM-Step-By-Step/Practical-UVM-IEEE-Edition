@@ -1,0 +1,521 @@
+Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l uvm_set_inst_verbosity.dat +uvm_set_verbosity=uvm_test_top.env.master_agent[00].mast_drv,_ALL_,UVM_DEBUG,run +UVM_TESTNAME=wb_conmax_flat_seq_test
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Jan 10 22:12 2020
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_flat_seq_test...
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
+#### Factory Configuration (*)
+
+  No instance or type overrides are registered with this factory
+
+All types registered with the factory: 199 total
+  Type Name
+  ---------
+  base_sequence
+  parallel_sequence
+  ral_reg_CFG
+  reset_agent
+  reset_base_sequence
+  reset_driver
+  reset_monitor
+  reset_sequence
+  reset_sequencer
+  reset_trans
+  sequence_0
+  sequence_1
+  sequence_2
+  snps_uvm_reg_bank_group
+  snps_uvm_reg_map
+  wb_config
+  wb_conmax_alter_message_test
+  wb_conmax_alter_verbosity_all_components_test
+  wb_conmax_alter_verbosity_specific_component_test
+  wb_conmax_alter_verbosity_test
+  wb_conmax_base_test
+  wb_conmax_commandline_test_1
+  wb_conmax_env
+  wb_conmax_env_cfg
+  wb_conmax_env_cov
+  wb_conmax_env_ral_block
+  wb_conmax_factory_instance_override_test
+  wb_conmax_factory_instance_override_test_cmdline
+  wb_conmax_factory_type_override_test
+  wb_conmax_flat_seq_test
+  wb_conmax_instance_callback_test
+  wb_conmax_parallel_seq_test
+  wb_conmax_report_file_test
+  wb_conmax_scoreboard
+  wb_conmax_simple_cmdline_proc
+  wb_conmax_typewide_callback_test
+  wb_conmax_virtual_sequence
+  wb_conmax_virtual_sequencer
+  wb_master
+  wb_master_agent
+  wb_master_agent_n
+  wb_master_mon
+  wb_master_monitor_2cov_connect
+  wb_master_seqr
+  wb_master_txn
+  wb_slave
+  wb_slave_agent
+  wb_slave_mon
+  wb_slave_seqr
+  wb_transaction
+(*) Types with no associated type name will be printed as <unknown>
+
+####
+
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[00].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[01].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[02].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[03].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[04].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[05].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[06].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[07].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[08].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[09].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[10].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[11].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[12].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[13].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[14].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[15].slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/reset_driver.sv(79) @ 0: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Completed Reset
+------------------------------------------------------
+Name                     Type           Size  Value   
+------------------------------------------------------
+slave_configuration[00]  wb_config      -     @252    
+  port_size              sizes_e        32    DWORD   
+  granularity            sizes_e        32    BYTE    
+  cycles                 cycle_types_e  32    CLASSIC 
+  max_n_wss              integral       32    'h2     
+  min_addr               integral       32    'h0     
+  max_addr               integral       32    'hfffffe
+------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[01].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[01].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[01]  wb_config      -     @253     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h1fffffd
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[02].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[02].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[02]  wb_config      -     @254     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h2fffffc
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[03].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[03].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[03]  wb_config      -     @255     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h3fffffb
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[04].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[04].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[04]  wb_config      -     @256     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h4fffffa
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[05].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[05].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[05]  wb_config      -     @257     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h5fffff9
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[06].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[06].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[06]  wb_config      -     @258     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h6fffff8
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[07].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[07].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[07]  wb_config      -     @259     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h7fffff7
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[08].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[08].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[08]  wb_config      -     @260     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h8fffff6
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[09].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[09].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[09]  wb_config      -     @261     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'h9fffff5
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[10].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[10].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[10]  wb_config      -     @262     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'hafffff4
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[11].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[11].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[11]  wb_config      -     @263     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'hbfffff3
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[12].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[12].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[12]  wb_config      -     @264     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'hcfffff2
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[13].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[13].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[13]  wb_config      -     @265     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'hdfffff1
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[14].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[14].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[14]  wb_config      -     @266     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'hefffff0
+-------------------------------------------------------
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[15].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[15].slv_drv [SLAVE_DRIVER] Completed Reset
+-------------------------------------------------------
+Name                     Type           Size  Value    
+-------------------------------------------------------
+slave_configuration[15]  wb_config      -     @267     
+  port_size              sizes_e        32    DWORD    
+  granularity            sizes_e        32    BYTE     
+  cycles                 cycle_types_e  32    CLASSIC  
+  max_n_wss              integral       32    'h2      
+  min_addr               integral       32    'h0      
+  max_addr               integral       32    'hfffffef
+-------------------------------------------------------
+UVM_INFO ../../common/reset_sequence.sv(30) @ 0: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Starting Reset Sequence
+UVM_INFO ../../common/reset_sequence.sv(32) @ 0: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Deasserting Reset 
+UVM_INFO ../../common/reset_driver.sv(81) @ 0: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] -----------------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                             
+-----------------------------------------------------------------------------------------------------
+req                            reset_trans   -     @9501                                             
+  cycles                       integral      32    'h3                                               
+  reset_kind                   reset_kind_e  32    DEASSERT                                          
+  begin_time                   time          64    0                                                 
+  depth                        int           32    'd2                                               
+  parent sequence (name)       string        14    reset_sequence                                    
+  parent sequence (full name)  string        50    uvm_test_top.env.rst_agent.mast_sqr.reset_sequence
+  sequencer                    string        35    uvm_test_top.env.rst_agent.mast_sqr               
+-----------------------------------------------------------------------------------------------------
+
+UVM_INFO ../../common/reset_monitor.sv(68) @ 5000: uvm_test_top.env.rst_agent.mast_mon [RESET_MON] Reset cleared
+UVM_INFO ../../common/reset_driver.sv(97) @ 25000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Completed transaction...
+UVM_INFO ../../common/reset_driver.sv(79) @ 25000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../../common/reset_sequence.sv(34) @ 25000: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Asserting Reset 
+UVM_INFO ../../common/reset_driver.sv(81) @ 25000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] -----------------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                             
+-----------------------------------------------------------------------------------------------------
+req                            reset_trans   -     @9517                                             
+  cycles                       integral      32    'h5                                               
+  reset_kind                   reset_kind_e  32    ASSERT                                            
+  begin_time                   time          64    25000                                             
+  depth                        int           32    'd2                                               
+  parent sequence (name)       string        14    reset_sequence                                    
+  parent sequence (full name)  string        50    uvm_test_top.env.rst_agent.mast_sqr.reset_sequence
+  sequencer                    string        35    uvm_test_top.env.rst_agent.mast_sqr               
+-----------------------------------------------------------------------------------------------------
+
+UVM_INFO ../../common/reset_monitor.sv(65) @ 25000: uvm_test_top.env.rst_agent.mast_mon [RESET_MON] Reset triggered
+UVM_INFO ../../common/reset_driver.sv(97) @ 75000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Completed transaction...
+UVM_INFO ../../common/reset_driver.sv(79) @ 75000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../../common/reset_sequence.sv(36) @ 75000: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Deasserting Reset 
+UVM_INFO ../../common/reset_driver.sv(81) @ 75000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] -----------------------------------------------------------------------------------------------------
+Name                           Type          Size  Value                                             
+-----------------------------------------------------------------------------------------------------
+req                            reset_trans   -     @9531                                             
+  cycles                       integral      32    'h2                                               
+  reset_kind                   reset_kind_e  32    DEASSERT                                          
+  begin_time                   time          64    75000                                             
+  depth                        int           32    'd2                                               
+  parent sequence (name)       string        14    reset_sequence                                    
+  parent sequence (full name)  string        50    uvm_test_top.env.rst_agent.mast_sqr.reset_sequence
+  sequencer                    string        35    uvm_test_top.env.rst_agent.mast_sqr               
+-----------------------------------------------------------------------------------------------------
+
+UVM_INFO ../../common/reset_monitor.sv(68) @ 75000: uvm_test_top.env.rst_agent.mast_mon [RESET_MON] Reset cleared
+UVM_INFO ../../common/reset_driver.sv(97) @ 95000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Completed transaction...
+UVM_INFO ../../common/reset_driver.sv(79) @ 95000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../../common/reset_sequence.sv(39) @ 95000: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Ended Reset Sequence
+UVM_INFO ../../common/wb_master.sv(95) @ 95000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO ../../common/wb_master.sv(95) @ 95000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO ../../common/wb_master.sv(95) @ 95000: uvm_test_top.env.master_agent[02].mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO ../../common/wb_master.sv(95) @ 95000: uvm_test_top.env.master_agent[03].mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO ../../common/wb_master.sv(95) @ 95000: uvm_test_top.env.master_agent[04].mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO ../../common/wb_master.sv(95) @ 95000: uvm_test_top.env.master_agent[05].mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO ../../common/wb_master.sv(95) @ 95000: uvm_test_top.env.master_agent[06].mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO ../../common/wb_master.sv(95) @ 95000: uvm_test_top.env.master_agent[07].mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO ../src/wb_master_agent_sequence_library.sv(68) @ 95000: uvm_test_top.env.master_agent[00].mast_sqr@@sequence_1 [SEQUENCE0] Starting Sequence sequence_0 
+UVM_INFO ../../common/wb_master.sv(112) @ 95000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Starting transaction...
+UVM_INFO ../../common/wb_master.sv(113) @ 95000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] ----------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                
+----------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9778                                                
+  address                      integral        32    'h3                                                  
+  data                         integral        32    'hdeadbeef                                           
+  sel                          integral        4     'hf                                                  
+  tga                          integral        16    'hbfec                                               
+  tgc                          integral        16    'h8801                                               
+  lock                         integral        1     'h0                                                  
+  num_wait_states              integral        32    'h0                                                  
+  kind                         kinds_e         32    WRITE                                                
+  status                       status_e        32    OK                                                   
+  next_cycle                   pipelining_e    32    CLASSIC                                              
+  begin_time                   time            64    95000                                                
+  depth                        int             32    'd2                                                  
+  parent sequence (name)       string          10    sequence_1                                           
+  parent sequence (full name)  string          53    uvm_test_top.env.master_agent[00].mast_sqr.sequence_1
+  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr           
+----------------------------------------------------------------------------------------------------------
+...
+UVM_INFO ../../common/wb_master.sv(189) @ 105000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a write transaction
+UVM_INFO ../../common/wb_master_mon.sv(118) @ 105000: uvm_test_top.env.master_agent[00].mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../../common/wb_slave.sv(136) @ 126000: uvm_test_top.env.slave_agent[00].slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../../common/wb_slave_mon.sv(114) @ 126000: uvm_test_top.env.slave_agent[00].slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../../common/wb_master.sv(218) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [wb_master_driver: ] Timeout waiting for ACK_I, RTY_I or ERR_I
+UVM_INFO ../../common/wb_master.sv(138) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] ----------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                
+----------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9778                                                
+  address                      integral        32    'h3                                                  
+  data                         integral        32    'hdeadbeef                                           
+  sel                          integral        4     'hf                                                  
+  tga                          integral        16    'hbfec                                               
+  tgc                          integral        16    'h8801                                               
+  lock                         integral        1     'h0                                                  
+  num_wait_states              integral        32    'h0                                                  
+  kind                         kinds_e         32    WRITE                                                
+  status                       status_e        32    TIMEOUT                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                              
+  begin_time                   time            64    95000                                                
+  depth                        int             32    'd2                                                  
+  parent sequence (name)       string          10    sequence_1                                           
+  parent sequence (full name)  string          53    uvm_test_top.env.master_agent[00].mast_sqr.sequence_1
+  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr           
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../../common/wb_master.sv(142) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
+UVM_INFO ../../common/wb_master.sv(112) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Starting transaction...
+UVM_INFO ../../common/wb_master.sv(113) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] ----------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                
+----------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9819                                                
+  address                      integral        32    'h3                                                  
+  data                         integral        32    'h5a184b01                                           
+  sel                          integral        4     'h7                                                  
+  tga                          integral        16    'h76dc                                               
+  tgc                          integral        16    'hefdd                                               
+  lock                         integral        1     'h1                                                  
+  num_wait_states              integral        32    'h0                                                  
+  kind                         kinds_e         32    READ                                                 
+  status                       status_e        32    OK                                                   
+  next_cycle                   pipelining_e    32    CLASSIC                                              
+  begin_time                   time            64    165000                                               
+  depth                        int             32    'd2                                                  
+  parent sequence (name)       string          10    sequence_1                                           
+  parent sequence (full name)  string          53    uvm_test_top.env.master_agent[00].mast_sqr.sequence_1
+  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr           
+----------------------------------------------------------------------------------------------------------
+...
+UVM_INFO ../../common/wb_master.sv(150) @ 175000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../../common/wb_slave_mon.sv(121) @ 175000: uvm_test_top.env.slave_agent[00].slv_mon [Wb_slave Monitor] got a read transaction  
+UVM_INFO ../../common/wb_master.sv(138) @ 235000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] ----------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                
+----------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9819                                                
+  address                      integral        32    'h3                                                  
+  data                         integral        32    'h0                                                  
+  sel                          integral        4     'h7                                                  
+  tga                          integral        16    'h76dc                                               
+  tgc                          integral        16    'hefdd                                               
+  lock                         integral        1     'h1                                                  
+  num_wait_states              integral        32    'h0                                                  
+  kind                         kinds_e         32    READ                                                 
+  status                       status_e        32    TIMEOUT                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                              
+  begin_time                   time            64    165000                                               
+  depth                        int             32    'd2                                                  
+  parent sequence (name)       string          10    sequence_1                                           
+  parent sequence (full name)  string          53    uvm_test_top.env.master_agent[00].mast_sqr.sequence_1
+  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr           
+----------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../../common/wb_master.sv(142) @ 235000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 235000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 235000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  103
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RESET_DRIVER]    10
+[RESET_MON]     3
+[RESET_SEQUENCE]     5
+[RNTST]     1
+[SEQUENCE0]     1
+[SLAVE_DRIVER]    32
+[UVM/CONFIGDB/SPELLCHK]     9
+[UVM/FACTORY/PRINT]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[WB master Monitor]     1
+[WB slave Monitor]     1
+[WB_MASTER]     8
+[WB_MASTER_DRV]     8
+[WB_SLAVE_SEQR]    16
+[Wb master]     2
+[Wb_slave]     1
+[Wb_slave Monitor]     1
+[wb_master_driver: ]     1
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish at simulation time               235000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 235000 ps
+CPU Time:      1.830 seconds;       Data structure size:   1.2Mb
+Fri Jan 10 22:12:51 2020

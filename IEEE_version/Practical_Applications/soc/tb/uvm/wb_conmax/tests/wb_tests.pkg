@@ -1,0 +1,20 @@
+package wb_tests; 
+  import uvm_pkg::*;
+ `include "wb_conmax_env_inc.sv"
+ `include "wb_conmax_base_test.sv"
+ `include "wb_conmax_alter_verbosity.sv"
+ `include "wb_conmax_env_tb_mod.sv"
+ `include "wb_conmax_factory_instance_override.sv"
+ `include "wb_conmax_factory_type_override.sv"
+ `include "wb_conmax_flat_sequence.sv"
+ `include "wb_conmax_instance_callback_test.sv"
+ `include "wb_conmax_parallel_sequence.sv"
+ `include "wb_conmax_typewide_callback_test.sv"
+ `include "wb_conmax_commandline_test_1.sv"
+ `include "wb_conmax_simple_cmdline_proc.sv"
+ `include "wb_conmax_factory_instance_override_cmdline.sv"
+ `include "wb_conmax_report_file.sv"
+ `include "wb_conmax_alter_message.sv"
+ `include "wb_conmax_alter_verbosity_all_components.sv"
+ `include "wb_conmax_alter_verbosity_specific_component.sv"
+endpackage

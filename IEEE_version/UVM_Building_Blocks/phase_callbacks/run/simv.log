@@ -1,0 +1,816 @@
+Command: /SCRATCH/srivats/vs/new_book_examples/IEEE_version/UVM_Building_Blocks/phase_callbacks/run/./simv -l simv.log -lca +ntb_random_seed=1 +UVM_TESTNAME=wb_env_phase_cb_test +UVM_LOG_RECORD
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Dec 12 20:01 2019
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+VCD+ Writer P-2019.06 Copyright (c) 1991-2019 by Synopsys Inc.
+UVM_INFO @ 0: reporter [RNTST] Running test wb_env_phase_cb_test...
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: build , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: build , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: build , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: connect , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: connect , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: connect , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: connect , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: connect , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: connect , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: connect , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: end_of_elaboration , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: end_of_elaboration , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: end_of_elaboration , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: end_of_elaboration , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: end_of_elaboration , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: end_of_elaboration , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: end_of_elaboration , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: start_of_simulation , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: start_of_simulation , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: start_of_simulation , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: start_of_simulation , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../src/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent.slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: start_of_simulation , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: start_of_simulation , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: start_of_simulation , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: run , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: run , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: run , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: run , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+----------------------------------------------
+Name             Type           Size  Value   
+----------------------------------------------
+wb_slave_config  wb_config      -     @227    
+  port_size      sizes_e        32    BYTE    
+  granularity    sizes_e        32    BYTE    
+  cycles         cycle_types_e  32    CLASSIC 
+  max_n_wss      integral       32    'ha     
+  min_addr       integral       64    'h0     
+  max_addr       integral       64    'h989680
+----------------------------------------------
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_reset , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_reset , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_reset , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_reset , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_reset , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_reset , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_reset , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_reset , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: reset , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: reset , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: reset , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: reset , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: reset , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: reset , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: reset , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: reset , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_reset , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_reset , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_reset , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_reset , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_reset , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_reset , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_reset , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_reset , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_configure , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_configure , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_configure , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_configure , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_configure , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_configure , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_configure , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_configure , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: configure , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: configure , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: configure , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: configure , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: configure , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: configure , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: configure , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: configure , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_configure , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_configure , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_configure , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_configure , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_configure , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_configure , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_configure , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: post_configure , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_main , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_main , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_main , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_main , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_main , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_main , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_main , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: pre_main , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: main , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: main , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: main , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 0: reporter [PHASE STATE_CHANGE ] phase name: main , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../src/wb_master.sv(136) @ 0: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_master.sv(212) @ 15: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a write transaction
+UVM_INFO ../src/wb_master_mon.sv(118) @ 15: uvm_test_top.env.master_agent.mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave.sv(148) @ 15: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_mon.sv(114) @ 15: uvm_test_top.env.slave_agent.slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 15: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000003   kind = WRITE
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 15: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000003   kind = WRITE data = 00000000deadbeef
+UVM_INFO ../src/wb_master.sv(161) @ 125: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1175                                            
+  address                      integral        64    'h3                                              
+  data                         integral        64    'hdeadbeef                                       
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h7f5f                                           
+  tgc                          integral        16    'hb857                                           
+  lock                         integral        1     'h1                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    WRITE                                            
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    0                                                
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(164) @ 125: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(48) @ 125: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+---------------------------------------------------
+Name               Type            Size  Value     
+---------------------------------------------------
+tr                 wb_transaction  -     @1193     
+  address          integral        64    'h3       
+  data             integral        64    'hdeadbeef
+  sel              integral        8     'h1       
+  tga              integral        16    'h7f5f    
+  tgc              integral        16    'hb857    
+  lock             integral        1     'h0       
+  num_wait_states  integral        32    'h0       
+  kind             kinds_e         32    WRITE     
+  status           status_e        32    ACK       
+  next_cycle       pipelining_e    32    CLASSIC   
+---------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(50) @ 125: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+---------------------------------------------------
+Name               Type            Size  Value     
+---------------------------------------------------
+tr                 wb_transaction  -     @1183     
+  address          integral        64    'h3       
+  data             integral        64    'hdeadbeef
+  sel              integral        8     'h1       
+  tga              integral        16    'h7f5f    
+  tgc              integral        16    'hb857    
+  lock             integral        1     'h0       
+  num_wait_states  integral        32    'h0       
+  kind             kinds_e         32    WRITE     
+  status           status_e        32    ACK       
+  next_cycle       pipelining_e    32    CLASSIC   
+---------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(57) @ 125: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(136) @ 125: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(174) @ 135: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(212) @ 135: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a write transaction
+UVM_INFO ../src/wb_master_mon.sv(118) @ 135: uvm_test_top.env.master_agent.mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_mon.sv(114) @ 135: uvm_test_top.env.slave_agent.slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave.sv(148) @ 135: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 135: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000004   kind = WRITE
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 135: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000004   kind = WRITE data = 00000000beefdead
+UVM_INFO ../src/wb_master.sv(161) @ 245: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1224                                            
+  address                      integral        64    'h4                                              
+  data                         integral        64    'hbeefdead                                       
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'hf794                                           
+  tgc                          integral        16    'h1903                                           
+  lock                         integral        1     'h0                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    WRITE                                            
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    125                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(164) @ 245: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(48) @ 245: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+---------------------------------------------------
+Name               Type            Size  Value     
+---------------------------------------------------
+tr                 wb_transaction  -     @1241     
+  address          integral        64    'h4       
+  data             integral        64    'hbeefdead
+  sel              integral        8     'h1       
+  tga              integral        16    'hf794    
+  tgc              integral        16    'h1903    
+  lock             integral        1     'h0       
+  num_wait_states  integral        32    'h0       
+  kind             kinds_e         32    WRITE     
+  status           status_e        32    ACK       
+  next_cycle       pipelining_e    32    CLASSIC   
+---------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(50) @ 245: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+---------------------------------------------------
+Name               Type            Size  Value     
+---------------------------------------------------
+tr                 wb_transaction  -     @1236     
+  address          integral        64    'h4       
+  data             integral        64    'hbeefdead
+  sel              integral        8     'h1       
+  tga              integral        16    'hf794    
+  tgc              integral        16    'h1903    
+  lock             integral        1     'h0       
+  num_wait_states  integral        32    'h0       
+  kind             kinds_e         32    WRITE     
+  status           status_e        32    ACK       
+  next_cycle       pipelining_e    32    CLASSIC   
+---------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(57) @ 245: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(136) @ 245: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(174) @ 255: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(212) @ 255: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a write transaction
+UVM_INFO ../src/wb_master_mon.sv(118) @ 255: uvm_test_top.env.master_agent.mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_mon.sv(114) @ 255: uvm_test_top.env.slave_agent.slv_mon [WB slave Monitor] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave.sv(148) @ 255: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 255: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000005   kind = WRITE
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 255: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000005   kind = WRITE data = 0000000123456678
+UVM_INFO ../src/wb_master.sv(161) @ 365: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1266                                            
+  address                      integral        64    'h5                                              
+  data                         integral        64    'h123456678                                      
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h6cf4                                           
+  tgc                          integral        16    'h56b7                                           
+  lock                         integral        1     'h1                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    WRITE                                            
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    245                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(164) @ 365: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(48) @ 365: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+----------------------------------------------------
+Name               Type            Size  Value      
+----------------------------------------------------
+tr                 wb_transaction  -     @1282      
+  address          integral        64    'h5        
+  data             integral        64    'h123456678
+  sel              integral        8     'h1        
+  tga              integral        16    'h6cf4     
+  tgc              integral        16    'h56b7     
+  lock             integral        1     'h0        
+  num_wait_states  integral        32    'h0        
+  kind             kinds_e         32    WRITE      
+  status           status_e        32    ACK        
+  next_cycle       pipelining_e    32    CLASSIC    
+----------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(50) @ 365: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+----------------------------------------------------
+Name               Type            Size  Value      
+----------------------------------------------------
+tr                 wb_transaction  -     @1277      
+  address          integral        64    'h5        
+  data             integral        64    'h123456678
+  sel              integral        8     'h1        
+  tga              integral        16    'h6cf4     
+  tgc              integral        16    'h56b7     
+  lock             integral        1     'h0        
+  num_wait_states  integral        32    'h0        
+  kind             kinds_e         32    WRITE      
+  status           status_e        32    ACK        
+  next_cycle       pipelining_e    32    CLASSIC    
+----------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(57) @ 365: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(136) @ 365: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(174) @ 375: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(173) @ 375: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a read transaction
+UVM_INFO ../src/wb_master_mon.sv(125) @ 375: uvm_test_top.env.master_agent.mast_mon [Wb_master Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave_mon.sv(121) @ 375: uvm_test_top.env.slave_agent.slv_mon [Wb_slave Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave.sv(154) @ 375: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a read transaction  
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 375: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000003   kind = READ
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 375: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000003   kind = READ data = 00000000deadbeef
+UVM_INFO ../src/wb_master.sv(161) @ 485: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1307                                            
+  address                      integral        64    'h3                                              
+  data                         integral        64    'hdeadbeef                                       
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h1d04                                           
+  tgc                          integral        16    'hbfc7                                           
+  lock                         integral        1     'h0                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    READ                                             
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    365                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(164) @ 485: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(48) @ 485: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1323  
+  address          integral        64    'h3    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h1d04 
+  tgc              integral        16    'hbfc7 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(50) @ 485: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1318  
+  address          integral        64    'h3    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h1d04 
+  tgc              integral        16    'hbfc7 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(57) @ 485: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(136) @ 485: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(174) @ 495: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(173) @ 495: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a read transaction
+UVM_INFO ../src/wb_master_mon.sv(125) @ 495: uvm_test_top.env.master_agent.mast_mon [Wb_master Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave_mon.sv(121) @ 495: uvm_test_top.env.slave_agent.slv_mon [Wb_slave Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave.sv(154) @ 495: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a read transaction  
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 495: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000004   kind = READ
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 495: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000004   kind = READ data = 00000000beefdead
+UVM_INFO ../src/wb_master.sv(161) @ 605: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1348                                            
+  address                      integral        64    'h4                                              
+  data                         integral        64    'hbeefdead                                       
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h6730                                           
+  tgc                          integral        16    'hd2e2                                           
+  lock                         integral        1     'h1                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    READ                                             
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    485                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(164) @ 605: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(48) @ 605: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1364  
+  address          integral        64    'h4    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h6730 
+  tgc              integral        16    'hd2e2 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(50) @ 605: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1359  
+  address          integral        64    'h4    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h6730 
+  tgc              integral        16    'hd2e2 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(57) @ 605: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../src/wb_master.sv(136) @ 605: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Starting transaction...
+UVM_INFO ../src/wb_slave.sv(174) @ 615: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_master.sv(173) @ 615: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a read transaction
+UVM_INFO ../src/wb_master_mon.sv(125) @ 615: uvm_test_top.env.master_agent.mast_mon [Wb_master Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave_mon.sv(121) @ 615: uvm_test_top.env.slave_agent.slv_mon [Wb_slave Monitor] got a read transaction  
+UVM_INFO ../src/wb_slave.sv(154) @ 615: uvm_test_top.env.slave_agent.slv_drv [Wb_slave] got a read transaction  
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(45) @ 615: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] In SLAVE SEQUENCER, Transaction address = 0000000000000005   kind = READ
+UVM_INFO ../src/wb_slave_agent_sequence_library.sv(51) @ 615: uvm_test_top.env.slave_agent.slv_seqr@@ram_sequence [RAM_SEQUENCE] SLAVE SEQUENCER OUTPUT, Transaction address = 0000000000000005   kind = READ data = 0000000123456678
+UVM_INFO ../src/wb_master.sv(161) @ 725: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] ------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                            
+------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @1389                                            
+  address                      integral        64    'h5                                              
+  data                         integral        64    'h123456678                                      
+  sel                          integral        8     'h1                                              
+  tga                          integral        16    'h6094                                           
+  tgc                          integral        16    'h139c                                           
+  lock                         integral        1     'h0                                              
+  num_wait_states              integral        32    'h0                                              
+  kind                         kinds_e         32    READ                                             
+  status                       status_e        32    ACK                                              
+  next_cycle                   pipelining_e    32    CLASSIC                                          
+  begin_time                   time            64    605                                              
+  depth                        int             32    'd2                                              
+  parent sequence (name)       string          10    sequence_1                                       
+  parent sequence (full name)  string          49    uvm_test_top.env.master_agent.mast_sqr.sequence_1
+  sequencer                    string          38    uvm_test_top.env.master_agent.mast_sqr           
+------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../src/wb_master.sv(164) @ 725: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
+UVM_INFO ../src/wb_scoreboard.sv(48) @ 725: uvm_test_top.env.sb [SCOREBOARD] EXPECTED TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1405  
+  address          integral        64    'h5    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h6094 
+  tgc              integral        16    'h139c 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(50) @ 725: uvm_test_top.env.sb [SCOREBOARD] ACTUAL TRANSACTION
+------------------------------------------------
+Name               Type            Size  Value  
+------------------------------------------------
+tr                 wb_transaction  -     @1400  
+  address          integral        64    'h5    
+  data             integral        64    'h0    
+  sel              integral        8     'h1    
+  tga              integral        16    'h6094 
+  tgc              integral        16    'h139c 
+  lock             integral        1     'h0    
+  num_wait_states  integral        32    'h0    
+  kind             kinds_e         32    READ   
+  status           status_e        32    ACK    
+  next_cycle       pipelining_e    32    CLASSIC
+------------------------------------------------
+UVM_INFO ../src/wb_scoreboard.sv(57) @ 725: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: main , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: main , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: main , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: main , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_main , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_main , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_main , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_main , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_main , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_main , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_main , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_main , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: pre_shutdown , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: pre_shutdown , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: pre_shutdown , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: pre_shutdown , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: pre_shutdown , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: pre_shutdown , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: pre_shutdown , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: pre_shutdown , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: shutdown , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: shutdown , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: shutdown , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: shutdown , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: shutdown , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: shutdown , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: shutdown , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: shutdown , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_shutdown , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_shutdown , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_shutdown , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_shutdown , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: run , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_shutdown , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_READY_TO_END
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: run , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: run , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: run , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: extract , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_shutdown , OLD STATE UVM_PHASE_READY_TO_END, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_shutdown , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: post_shutdown , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched_end , OLD STATE UVM_PHASE_UNINITIALIZED, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched_end , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched_end , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched_end , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_sched_end , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_end , OLD STATE UVM_PHASE_UNINITIALIZED, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_end , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_end , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_end , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: uvm_end , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: extract , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: extract , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: extract , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: extract , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: extract , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: extract , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: check , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: check , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: check , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: check , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: check , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: check , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: check , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: report , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: report , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: report , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: report , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: report , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: report , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: report , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: final , OLD STATE UVM_PHASE_DORMANT, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: final , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: final , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: final , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: final , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_ENDED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: final , OLD STATE UVM_PHASE_ENDED, NEW STATE : UVM_PHASE_CLEANUP
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: final , OLD STATE UVM_PHASE_CLEANUP, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: common_end , OLD STATE UVM_PHASE_UNINITIALIZED, NEW STATE : UVM_PHASE_SCHEDULED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: common_end , OLD STATE UVM_PHASE_SCHEDULED, NEW STATE : UVM_PHASE_SYNCING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: common_end , OLD STATE UVM_PHASE_SYNCING, NEW STATE : UVM_PHASE_STARTED
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: common_end , OLD STATE UVM_PHASE_STARTED, NEW STATE : UVM_PHASE_EXECUTING
+
+UVM_INFO ../tests/wb_env_test_phase_cb.sv(12) @ 725: reporter [PHASE STATE_CHANGE ] phase name: common_end , OLD STATE UVM_PHASE_EXECUTING, NEW STATE : UVM_PHASE_DONE
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 725: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 725: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  262
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[PHASE STATE_CHANGE ]   181
+[RAM_SEQUENCE]    12
+[RNTST]     1
+[SCOREBOARD]    12
+[SLAVE_DRIVER]     5
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[WB SCOREBOARD]     6
+[WB master Monitor]     3
+[WB slave Monitor]     3
+[WB_SLAVE_SEQR]     1
+[Wb master]     6
+[Wb_master Monitor]     3
+[Wb_slave]     6
+[Wb_slave Monitor]     3
+[wb_env_DRIVER]    18
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish at simulation time                  725
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 725
+CPU Time:      0.760 seconds;       Data structure size:   0.4Mb
+Thu Dec 12 20:01:39 2019

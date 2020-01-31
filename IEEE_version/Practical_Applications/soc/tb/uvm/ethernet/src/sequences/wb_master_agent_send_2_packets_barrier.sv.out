@@ -1,0 +1,64 @@
+     1	   // BARRIER Class tests
+     2	
+     3	class send_2_packets_barrier extends base_sequence;
+     4	
+     5	   init_tx_seq tx_seq;
+     6	   setup_txbd_sequence  txbd_sequence;
+     7	   tx_interrupt_seq  tx_int_sequence;
+     8	   initialize_txbd_rxbd_sequence  initialize_desc_seq;
+     9	   write_master_single single_seq;
+    10	   read_master_single single_seq_read;
+    11	   uvm_barrier send_2_pkt_barrier;
+    12	
+    13	   `uvm_object_utils(send_2_packets_barrier)
+    14	   
+    15	
+    16	   function new(string name = "send_2_packets_barrier");
+    17	      super.new(name);
+    18	   endfunction:new
+    19	
+    20	   virtual task body();
+    21	      uvm_reg_data_t reg_data;
+    22	      uvm_status_e reg_status;
+    23	
+    24	      uvm_config_db #(uvm_barrier)::get(null,"","transmit_b",send_2_pkt_barrier);
+    25	
+    26	      p_sequencer.regmodel.MODER.write(.status(reg_status), .value(0), .path(UVM_FRONTDOOR), .parent(this));
+    27	      p_sequencer.regmodel.MAC_ADDR0.write(.status(reg_status), .value(32'h03040506), .path(UVM_FRONTDOOR), .parent(this));
+    28	      p_sequencer.regmodel.MAC_ADDR1.write(.status(reg_status), .value(32'h00001020), .path(UVM_FRONTDOOR), .parent(this));
+    29	      tx_seq = init_tx_seq::type_id::create("tx seq");
+    30	      txbd_sequence = setup_txbd_sequence::type_id::create("TXBD data Sequence");
+    31	      initialize_desc_seq = initialize_txbd_rxbd_sequence::type_id::create("initialize_desc_sequence");
+    32	      tx_int_sequence = tx_interrupt_seq::type_id::create("tx_init_sequence");
+    33	      single_seq_read = read_master_single::type_id::create("single_seq");
+    34	      single_seq = write_master_single::type_id::create("simple seq read");
+    35	      // Clean up descriptors
+    36	      initialize_desc_seq.start(p_sequencer);
+    37	      // p_sequencer.regmodel.TX_BD_NUM.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(1));
+    38	
+    39	      p_sequencer.regmodel.INT_MASK.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(32'h0000007f));
+    40	      p_sequencer.regmodel.MODER.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(32'h00002403));
+    41	
+    42	      txbd_sequence.packet_lenght = 80;
+    43	      txbd_sequence.buffer_num = 0;
+    44	      txbd_sequence.mem_addr = 1000;
+    45	      txbd_sequence.start(p_sequencer);
+    46	      txbd_sequence.packet_lenght = 80;
+    47	      txbd_sequence.buffer_num = 1;
+    48	      txbd_sequence.mem_addr = 1000;
+    49	      txbd_sequence.packet_lenght = 80;
+    50	      txbd_sequence.buffer_num = 2;
+    51	      txbd_sequence.mem_addr = 1000;
+    52	      txbd_sequence.start(p_sequencer);
+    53	      single_seq_read.read_address = 32'h00000400;
+    54	      single_seq_read.read_data = 32'h007c5800;
+    55	      single_seq_read.start(p_sequencer);
+    56	      single_seq_read.start(p_sequencer);
+    57	      single_seq_read.start(p_sequencer);
+    58	      single_seq_read.start(p_sequencer);
+    59	      // tx_int_sequence.start(p_sequencer);
+    60	      single_seq_read.start(p_sequencer);
+    61	      send_2_pkt_barrier.wait_for();
+    62	   endtask
+    63	endclass
+    64	

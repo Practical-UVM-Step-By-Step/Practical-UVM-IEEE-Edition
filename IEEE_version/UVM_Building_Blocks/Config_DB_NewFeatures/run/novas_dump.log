@@ -1,0 +1,229 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: msvEnableDumpingMode('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvEnableDumpingMode')
+ANF: msvGetVersion('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetVersion')
+ANF: msvGetInstProp('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetInstProp')
+ANF: msvIsSpiceEngineReady('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvIsSpiceEngineReady')
+ANF: msvSetAddProbeCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvSetAddProbeCallback')
+ANF: msvGetInstHandle('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetInstHandle')
+ANF: msvGetProbeByInst('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetProbeByInst')
+ANF: msvGetSigHandle('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetSigHandle')
+ANF: msvGetProbeBySig('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetProbeBySig')
+ANF: msvGetProbeInfo('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetProbeInfo')
+ANF: msvRelease('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvRelease')
+ANF: msvSetVcCallbackFunc('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvSetVcCallbackFunc')
+ANF: msvCheckVcCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvCheckVcCallback')
+ANF: msvAddVcCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvAddVcCallback')
+ANF: msvRemoveVcCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvRemoveVcCallback')
+ANF: msvGetLatestValue('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetLatestValue')
+ANF: msvSetEndofSimCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvSetEndofSimCallback')
+ANF: msvIgnoredProbe('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvIgnoredProbe')
+ANF: msvGetThruNetInfo('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetThruNetInfo')
+ANF: msvFreeThruNetInfo('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvFreeThruNetInfo')
+ANF: PI_ace_get_output_time_unit('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: PI_ace_get_output_time_unit')
+ANF: PI_ace_sim_sync('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: PI_ace_sim_sync')
+ANF: msvGetRereadInitFile('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetRereadInitFile')
+ANF: msvSetBeforeRereadCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvSetBeforeRereadCallback')
+ANF: msvSetAfterRereadCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvSetAfterRereadCallback')
+ANF: msvSetForceCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvSetForceCallback')
+ANF: msvSetReleaseCallback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvSetReleaseCallback')
+ANF: msvGetForceStatus('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: msvGetForceStatus')
+ANF: vhdi_dt_get_type('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv: undefined symbol: vhdi_node_ist_get_value_addr')
+VCS compile option:
+ option[0]: /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv
+ option[1]: +UVM_TESTNAME=wb_env_slave_test
+ option[2]: -sml=verdi
+ option[3]: +UVM_VERDI_TRACE=UVM_AWARE
+ option[4]: +fsdb+gate=off
+ option[5]: -ucli2Proc
+ option[6]: -ucli
+ option[7]: -l
+ option[8]: /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/verdiLog/sim.log
+ option[9]: /global/apps/vcs_2019.06/linux/bin/vcs1
+ option[10]: -Mcc=gcc
+ option[11]: -Mcplusplus=g++
+ option[12]: -Masflags=--32
+ option[13]: -Mcfl= -pipe -m32 -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -O -I/global/apps/vcs_2019.06/include 
+ option[14]: -Mxcflags= -pipe -m32 -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -I/global/apps/vcs_2019.06/include
+ option[15]: -Mldflags= -m32 -m32 -rdynamic 
+ option[16]: -Mout=simv
+ option[17]: -Mamsrun=
+ option[18]: -Mvcsaceobjs=
+ option[19]: -Mobjects= /global/apps/vcs_2019.06/linux/lib/libvirsim.so /global/apps/vcs_2019.06/linux/lib/liberrorinf.so /global/apps/vcs_2019.06/linux/lib/libsnpsmalloc.so /global/apps/vcs_2019.06/linux/lib/libvfs.so 
+ option[20]: -Mexternalobj=
+ option[21]: -Msaverestoreobj=/global/apps/vcs_2019.06/linux/lib/vcs_save_restore_new.o
+ option[22]: -Mcrt0=
+ option[23]: -Mcrtn=
+ option[24]: -Mcsrc=/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_dpi.cc /global/apps/vcs_2019.06/etc/uvm-ieee/verdi/dpi/uvm_verdi_dpi.cpp 
+ option[25]: -Msyslibs=/global/apps/verdi_2019.06/share/PLI/VCS/LINUX/pli.a /global/apps/vcs_2019.06/linux/lib/ctype-stubs_32.a -ldl 
+ option[26]: -l
+ option[27]: vcs.log
+ option[28]: +define+UVM_VERDI_VIF_RECORD
+ option[29]: +define+UVM_VCS_RECORD
+ option[30]: +incdir+/global/apps/vcs_2019.06/etc/uvm-ieee/vcs
+ option[31]: /global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv
+ option[32]: /global/apps/vcs_2019.06/etc/uvm-ieee/vcs/uvm_custom_install_vcs_recorder.sv
+ option[33]: +incdir+/global/apps/vcs_2019.06/etc/uvm-ieee/verdi
+ option[34]: /global/apps/vcs_2019.06/etc/uvm-ieee/verdi/uvm_custom_install_verdi_recorder.sv
+ option[35]: -ntb_opts
+ option[36]: uvm-ieee
+ option[37]: +incdir+/global/apps/vcs_2019.06/etc/uvm-ieee/
+ option[38]: +define+UVM_NO_DEPRECATED
+ option[39]: +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR
+ option[40]: -debug_access+all
+ option[41]: +vpi
+ option[42]: +vcsd1
+ option[43]: +itf+/global/apps/vcs_2019.06/linux/lib/vcsdp_lite.tab
+ option[44]: -kdb
+ option[45]: -Xufe=2steps
+ option[46]: -picarchive
+ option[47]: -P
+ option[48]: /global/apps/verdi_2019.06/share/PLI/VCS/LINUX/verdi.tab
+ option[49]: -fsdb
+ option[50]: -sverilog
+ option[51]: -gen_obj
+ option[52]: +incdir+../include+../src+../env+../tests+../hdl
+ option[53]: ../tests/wb_env_tb_mod.sv
+ option[54]: ../hdl/wb_env_top.sv
+ option[55]: ../hdl/dut2.v
+ option[56]: -load
+ option[57]: /global/apps/verdi_2019.06/share/PLI/VCS/LINUX/libnovas.so:FSDBDumpCmd
+Chronologic Simulation VCS Release P-2019.06
+Linux 2.6.32-754.11.1.el6.x86_64 #1 SMP Tue Feb 26 15:38:56 UTC 2019 x86_64
+CPU cores: 20
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8219 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked		64 kbytes
+maxproc		515633
+======================================
+(Special)Runtime environment variables:
+
+Cannot get runtime environment variables: environ is NULL
+Runtime command line arguments:
+argv[0]=/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv
+argv[1]=+UVM_TESTNAME=wb_env_slave_test
+argv[2]=-sml=verdi
+argv[3]=+UVM_VERDI_TRACE=UVM_AWARE
+argv[4]=+fsdb+gate=off
+argv[5]=-ucli2Proc
+argv[6]=-ucli
+argv[7]=-l
+argv[8]=/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/verdiLog/sim.log
+191 profile - 100
+          CPU/Mem usage: 0.010 sys,  0.140 user,  200.86M mem
+192 Elapsed time:    0:00:01    Tue Jul  2 22:01:31 2019
+193 pliAppInit
+194 ndpGetenv(FSDB_FILE): /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/inter.fsdb
+195 ndpGetenv(FSDB_SVA_STATUS): 1
+196 ndpGetenv(FSDB_VHDL_PROTECTED): 1
+197 FSDB_GATE & FSDB_RTL is disabled.
+198 FSDB_FIELDTYPE is set.
+199 Enable Parallel Dumping.
+200 pliAppMiscSet: New Sim Round
+201 pliEntryInit
+202 LIBSSCORE=found /global/apps/verdi_2019.06/share/PLI/lib/LINUX/libsscore_vcs201906.so through $NOVAS_HOME setting.
+203 FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux, 05/26/2019
+204 (C) 1996 - 2019 by Synopsys, Inc.
+205 sps_tcl_fsdbDumpfile_main at 0
+206 argv[0]: /SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/inter.fsdb
+207 *Verdi* : Create FSDB file '/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/inter.fsdb'
+208 compile option from '/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/UVM_Building_Blocks/Config_DB_NewFeatures/run/simv.daidir/vcs_rebuild'.
+209   "vcs '-sverilog' '-l' 'vcs.log' '-ntb_opts' 'uvm-ieee' '+incdir+../include+../src+../env+../tests+../hdl' '+define+UVM_NO_DEPRECATED' '+define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR' '-debug_access+all' '-kdb' '../tests/wb_env_tb_mod.sv' '../hdl/wb_env_top.sv' '../hdl/dut2.v' 2>&1"
+210 sps_tcl_fsdbDumpflush_vd_main
+211 *Verdi* : Flush all FSDB Files at 0 s.
+212 sps_tcl_fsdbDumpflush_vd_main
+213 *Verdi* : Flush all FSDB Files at 0 s.
+214 sps_tcl_fsdbDumpflush_vd_main
+215 *Verdi* : Flush all FSDB Files at 45 s.
+216 End of simulation at 45
+217 Elapsed time:    0:01:10    Tue Jul  2 22:02:40 2019
+218 Begin FSDB profile info:
+219 FSDB Writer : bc1(0) bcn(721) mtf/stf(0/3)
+FSDB Writer elapsed time : flush(0.396749) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+220 End FSDB profile info
+221 Parallel profile    -  Flush:7 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
+222                        ProduceTime:0.542296143 ConsumerTime:0.000000000 Buffer:64MB
+223 SimExit
+224 Elapsed time:    0:01:10    Tue Jul  2 22:02:40 2019
+225 Sim process exit

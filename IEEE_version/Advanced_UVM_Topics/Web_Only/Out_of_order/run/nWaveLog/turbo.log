@@ -1,0 +1,3 @@
+Command Line: /global/apps/verdi_2019.06/platform/LINUXAMD64/bin/Novas -nWave -ssf novas.fsdb
+uname(Linux snpsemt980 2.6.32-754.11.1.el6.x86_64 #1 SMP Tue Feb 26 15:38:56 UTC 2019 x86_64)
+au time 434628.875986 2935.402751 3700.572427 delta 228065280 228065280 total 665939968 665939968

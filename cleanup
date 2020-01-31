@@ -1,6 +1,10 @@
  find . -type f -name "vcdplus.vpd" -exec rm -rf {} \;
+ find . -type f -name "inter.vpd" -exec rm -rf {} \;
  find . -type f -name "simv" -exec rm -rf {} \;
  find . -type d -name "simv.daidir" -exec rm -rf {} \;
  find . -type d -name "simv.vdb" -exec rm -rf {} \;
  find . -type d -name "csrc" -exec rm -rf {} \;
+
+ find . -type f -name ".inter.vpd.uvm" -exec rm -rf {} \;
+ find . -type f -name "inter.fsdb" -exec rm -rf {} \;
 

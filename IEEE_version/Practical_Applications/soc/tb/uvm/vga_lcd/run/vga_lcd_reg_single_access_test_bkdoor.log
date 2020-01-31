@@ -1,0 +1,136 @@
+Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/vga_lcd/run/./simv +UVM_TESTNAME=vga_lcd_reg_single_access_test_bkdoor -l vga_lcd_reg_single_access_test_bkdoor.log
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Jan 11 15:47 2020
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test vga_lcd_reg_single_access_test_bkdoor...
+
+Note-[FCICIO] Instance coverage is ON
+/slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 992
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_block_vga_lcd::cg_addr"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_block_vga_lcd::cg_addr'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_addr 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 29
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_CTRL::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_CTRL::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 244
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_STAT::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_STAT::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 368
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_HTIM::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_HTIM::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 549
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_VTIM::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_VTIM::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+
+Note-[FCICIO] Instance coverage is ON
+/slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/vga_lcd/run/../env/ral_vga_lcd_env.sv, 729
+vga_lcd_test_pkg, "vga_lcd_test_pkg::ral_reg_C1CR::cg_bits"
+  Instance coverage is set (option.per_instance = 1) for covergroup 
+  'vga_lcd_test_pkg::ral_reg_C1CR::cg_bits'
+  
+  Covergroup Instance: vga_lcd_env_top.test.m_inst.obj.cg_bits 
+  Design hierarchy: vga_lcd_test_pkg
+
+UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent.slv_seqr [WB_SLAVE_SEQR] Initializing memory
+UVM_INFO ../../common/reset_driver.sv(79) @ 0: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
+UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent.slv_drv [SLAVE_DRIVER] Completed Reset
+--------------------------------------------------------
+Name                     Type           Size  Value     
+--------------------------------------------------------
+slave_configuration[00]  wb_config      -     @232      
+  port_size              sizes_e        32    DWORD     
+  granularity            sizes_e        32    BYTE      
+  cycles                 cycle_types_e  32    CLASSIC   
+  max_n_wss              integral       32    'ha       
+  min_addr               integral       32    'h0       
+  max_addr               integral       32    'hfffffffe
+--------------------------------------------------------
+UVM_INFO ../tests/vga_lcd_reg_single_access_bkdoor.sv(24) @ 0: uvm_test_top [uvm_test_top] Starting Backdoor write access to VTIM
+UVM_INFO ../tests/vga_lcd_reg_single_access_bkdoor.sv(26) @ 0: uvm_test_top [uvm_test_top] Ending Backdoor write access to VTIM
+UVM_INFO ../tests/vga_lcd_reg_single_access_bkdoor.sv(27) @ 0: uvm_test_top [uvm_test_top] Starting Backdoor read access to VTIM
+UVM_INFO ../tests/vga_lcd_reg_single_access_bkdoor.sv(29) @ 0: uvm_test_top [uvm_test_top] Ending Backdoor read access to VTIM
+UVM_INFO ../../common/wb_master.sv(95) @ 0: uvm_test_top.env.master_agent.mast_drv [WB_MASTER] Got Reset completed
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 200000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 200000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   12
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RESET_DRIVER]     1
+[RNTST]     1
+[SLAVE_DRIVER]     2
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[WB_MASTER]     1
+[WB_SLAVE_SEQR]     1
+[uvm_test_top]     4
+
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish at simulation time               200000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 200000 ps
+CPU Time:      0.630 seconds;       Data structure size:   0.5Mb
+Sat Jan 11 15:47:35 2020

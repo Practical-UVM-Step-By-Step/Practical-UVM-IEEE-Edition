@@ -1,0 +1,63 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synopsys::xml set_array_limit <data limit="50" />
+synopsys::xml set_depth_limit <data limit="100" />
+synopsys::xml set_string_limit <data limit="1000" />
+synopsys::xml set_only_active_frame <data value="1" />
+synopsys::xml set_variable_frame_id <data value="1" />
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpvz3b2I
+synUtils::sendTool -active {_icl_start_rpc -version "P-2019.06" -sync_file /tmp/vcs_dve_rpc.srivats.44950}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.srivats.44950}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+dump -add / -depth 0
+run 400000
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 95000
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+synopsys::xml get_stop_data
+synopsys::xml {frames <data updateType="preserve" itemId="none" viewId="Stack.1" />}
+synopsys::xml {locals <data updateType="preserve" itemId="none" frame_id="frame(431:0:5)" viewId="Local.1" />}
+next
+set ucliGUI::state
+set ucliGUI::state
+synopsys::xml get_stop_data
+synopsys::xml {frames <data updateType="preserve" itemId="none" viewId="Stack.1" > <item frame_id="frame(wb_conmax_tb_top.test)" /></data>}
+synopsys::xml {locals <data updateType="preserve" itemId="none" frame_id="frame(431:0:5)" viewId="Local.1" />}
+synopsys::step -prog
+set ucliGUI::state
+set synopsys::env(time) 2675385000
+set synopsys::env(time) 5356020000
+set synopsys::env(time) 7995200000
+ucliCore::getToolPID
+ucliCore::stopTool -no_signal
+set synopsys::env(time) 10663895000
+set ucliGUI::state
+synopsys::xml get_stop_data
+synopsys::xml {frames <data updateType="preserve" itemId="none" viewId="Stack.1" > <item frame_id="frame(wb_conmax_tb_top.test)" /></data>}
+synopsys::xml {locals <data updateType="preserve" itemId="none" frame_id="frame(431:0:5)" viewId="Local.1" />}
+synopsys::dump -add {wb_conmax_tb_top.mast_if0 wb_conmax_tb_top.mast_if1 wb_conmax_tb_top.mast_if2 wb_conmax_tb_top.mast_if3 wb_conmax_tb_top.mast_if4 wb_conmax_tb_top.mast_if5 wb_conmax_tb_top.mast_if6 wb_conmax_tb_top.mast_if7 wb_conmax_tb_top.rst_if wb_conmax_tb_top.slave_if0 wb_conmax_tb_top.slave_if1 wb_conmax_tb_top.slave_if10 wb_conmax_tb_top.slave_if11 wb_conmax_tb_top.slave_if12 wb_conmax_tb_top.slave_if13 wb_conmax_tb_top.slave_if14 wb_conmax_tb_top.slave_if15 wb_conmax_tb_top.slave_if2 wb_conmax_tb_top.slave_if3 wb_conmax_tb_top.slave_if4 wb_conmax_tb_top.slave_if5 wb_conmax_tb_top.slave_if6 wb_conmax_tb_top.slave_if7 wb_conmax_tb_top.slave_if8 wb_conmax_tb_top.slave_if9 } -aggregates  -fid VPD0
+ucliCore::getToolPID
+ucliCore::getToolPID
+ucliCore::getToolPID
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

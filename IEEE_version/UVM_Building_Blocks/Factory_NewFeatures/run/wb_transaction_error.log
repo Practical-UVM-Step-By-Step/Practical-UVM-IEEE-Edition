@@ -1,0 +1,28 @@
+Command: /SCRATCH/srivats/vs/new_book_examples/IEEE_version/UVM_Building_Blocks/Factory_NewFeatures/run/./simv +UVM_TESTNAME=wb_env_base_test +NEW_PACKET= -l wb_transaction_error.log
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Dec 12 20:30 2019
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+Fatal: "../tests/wb_env_tb_mod.sv", 27: wb_env_top_mod.test: at time 0
+no override. test will fail
+$finish called from file "../tests/wb_env_tb_mod.sv", line 27.
+$finish at simulation time                    0
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0
+CPU Time:      0.510 seconds;       Data structure size:   0.4Mb
+Thu Dec 12 20:30:19 2019

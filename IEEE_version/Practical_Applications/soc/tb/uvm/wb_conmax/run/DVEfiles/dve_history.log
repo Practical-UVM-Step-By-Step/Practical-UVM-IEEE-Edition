@@ -1,0 +1,188 @@
+# Preference setting overrides
+gui_set_pref_value -category {Class} -key {showTotalMemory} -value {true}
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {dlg_settings}
+gui_create_pref_key -category {dlg_settings} -key {tableWithImmediatePopup} -value_type {bool} -value {true}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_cov_databases -value {{gui_open_cov  -hier /slowfs/vgcs13/srivats/SV/assertion/systemverilog/tests/simv.vdb -testdir  {/slowfs/vgcs13/srivats/SV/assertion/systemverilog/tests/simv.vdb} -test { /slowfs/vgcs13/srivats/SV/assertion/systemverilog/tests/simv/test } -merge MergedTest} /slowfs/vgcs13/srivats/LEARN/ces_sva_2014.03/labs/lab3/simv.vdb {gui_open_cov  -hier /slowfs/vgcs13/srivats/LEARN/ces_sva_2014.03/labs/lab3/simv.vdb -testdir  {/slowfs/vgcs13/srivats/LEARN/ces_sva_2014.03/labs/lab3/simv.vdb} -test { /slowfs/vgcs13/srivats/LEARN/ces_sva_2014.03/labs/lab3/simv/test } -merge MergedTest}}
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file inter.vpd} {gui_open_db -file vcdplus.vpd} {gui_open_db -file /slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/inter.vpd -design V1} {gui_open_db -file /slowfs/vgcs13/srivats/SV/assertion/systemverilog/tests/vcdplus.vpd -design V1} {gui_open_db -file /remote/vgvip_armipforsoc/srivats/integrated_intel_example/registers_example/run/inter.vpd -design V1}}
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /remote/vgvip_armipforsoc/srivats/integrated_intel_example/registers_example/run/session.inter.vpd.tcl}}
+gui_set_state_value -category Layout -key child_assertion_size_x -value 1437
+gui_set_state_value -category Layout -key child_assertion_size_y -value 140
+gui_set_state_value -category Layout -key child_console_size_x -value 1421
+gui_set_state_value -category Layout -key child_console_size_y -value 165
+gui_set_state_value -category Layout -key child_covdetail_docknewline -value false
+gui_set_state_value -category Layout -key child_covdetail_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_covdetail_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_covdetail_size_x -value 1483
+gui_set_state_value -category Layout -key child_covdetail_size_y -value 499
+gui_set_state_value -category Layout -key child_coveragetable_docknewline -value false
+gui_set_state_value -category Layout -key child_coveragetable_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_coveragetable_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_coveragetable_size_x -value 1483
+gui_set_state_value -category Layout -key child_coveragetable_size_y -value 499
+gui_set_state_value -category Layout -key child_data_coltype -value 161
+gui_set_state_value -category Layout -key child_data_colvalue -value 151
+gui_set_state_value -category Layout -key child_data_colvariable -value 341
+gui_set_state_value -category Layout -key child_data_docknewline -value false
+gui_set_state_value -category Layout -key child_data_dockstate -value undocked
+gui_set_state_value -category Layout -key child_data_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_data_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_data_showstate -value maximized
+gui_set_state_value -category Layout -key child_data_size_x -value 663
+gui_set_state_value -category Layout -key child_data_size_y -value 428
+gui_set_state_value -category Layout -key child_driver_size_x -value 1161
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 539
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 248
+gui_set_state_value -category Layout -key child_hier_size_x -value 762
+gui_set_state_value -category Layout -key child_hier_size_y -value 433
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 663
+gui_set_state_value -category Layout -key child_source_size_y -value 428
+gui_set_state_value -category Layout -key child_transaction_col_caller -value 65
+gui_set_state_value -category Layout -key child_transaction_col_expand -value 16
+gui_set_state_value -category Layout -key child_transaction_col_message -value 59
+gui_set_state_value -category Layout -key child_transaction_col_name -value 40
+gui_set_state_value -category Layout -key child_transaction_col_relation -value 53
+gui_set_state_value -category Layout -key child_transaction_col_scope -value 86
+gui_set_state_value -category Layout -key child_transaction_col_severity -value 54
+gui_set_state_value -category Layout -key child_transaction_col_target -value 43
+gui_set_state_value -category Layout -key child_transaction_col_time -value 59
+gui_set_state_value -category Layout -key child_transaction_col_type -value 36
+gui_set_state_value -category Layout -key child_transaction_size_x -value 1428
+gui_set_state_value -category Layout -key child_transaction_size_y -value 140
+gui_set_state_value -category Layout -key child_wave_colname -value 207
+gui_set_state_value -category Layout -key child_wave_colvalue -value 207
+gui_set_state_value -category Layout -key child_wave_docknewline -value false
+gui_set_state_value -category Layout -key child_wave_left -value 419
+gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_wave_right -value 1022
+gui_set_state_value -category Layout -key child_wave_size_x -value 1473
+gui_set_state_value -category Layout -key child_wave_size_y -value 454
+gui_set_state_value -category Layout -key cov_main_pos_x -value 33
+gui_set_state_value -category Layout -key cov_main_pos_y -value 129
+gui_set_state_value -category Layout -key cov_main_size_x -value 1711
+gui_set_state_value -category Layout -key cov_main_size_y -value 892
+gui_set_state_value -category Layout -key main_pos_x -value 129
+gui_set_state_value -category Layout -key main_pos_y -value 279
+gui_set_state_value -category Layout -key main_size_x -value 1550
+gui_set_state_value -category Layout -key main_size_y -value 976
+gui_set_state_value -category Layout -key stand_source_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_source_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_source_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_source_child_size_x -value 504
+gui_set_state_value -category Layout -key stand_source_child_size_y -value 248
+gui_set_state_value -category Layout -key stand_source_top_pos_x -value 552
+gui_set_state_value -category Layout -key stand_source_top_pos_y -value 476
+gui_set_state_value -category Layout -key stand_source_top_size_x -value 1051
+gui_set_state_value -category Layout -key stand_source_top_size_y -value 875
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1451
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 581
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 471
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 291
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1917
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 976
+gui_set_state_value -category Assertion -key show_assertion_type -value all
+gui_set_state_value -category Class -key showOVM -value false
+gui_set_state_value -category Class -key showRVM -value false
+gui_set_state_value -category Class -key showUVM -value false
+gui_set_state_value -category Class -key showVMM -value false
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd1|HSPane.1|pages|Class.1|hbox|textfilter -value_type string -value {*RO* wb_transaction* *transaction*}
+gui_create_state_key -category Widget_History -key {TopLevel.1|qt_left_dock|DockWnd1|HSPane.1|pages|Hier.1|hbox1|Scope Explore} -value_type string -value uvm_custom_install_recording
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd1|HSPane.1|pages|Hier.1|hbox|textfilter -value_type string -value *wb_transaction*
+gui_create_state_key -category Widget_History -key dlgDumpValues|m_Combo -value_type string -value {wb_env_top_mod.slave_if wb_env_top_mod.mast_if}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {+UVM_TESTNAME=wb_env_base_test {-ucligui -l simv.log -do dump.do +UVM_DUMP_REGMODEL +UVM_TESTNAME=simple_reg_access_test_resdb}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/slowfs/vgcs13/srivats/SV/assertion/systemverilog/always /SCRATCH/srivats/vs/new_book_examples/uvm-1.2/UVM_Building_Blocks/generic/run /remote/vgvip_armipforsoc/srivats/integrated_intel_example/registers_example/run}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {simv /remote/vgvip_armipforsoc/srivats/integrated_intel_example/registers_example/run/simv}
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key names -value_type string -value {Group,    , ,  ,   ,Score,Assert,}
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key orders -value_type string -value 4,0,1,2,3,5,6,
+gui_create_state_key -category Layout_CoverageTable_covtblFGroupsList -key widths -value_type string -value 220,0,25,0,0,125,125,
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key names -value_type string -value {Name,    , ,  ,   ,Score,Assert,}
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key orders -value_type string -value 4,0,1,2,3,5,6,
+gui_create_state_key -category Layout_CoverageTable_covtblInstancesList -key widths -value_type string -value 220,0,25,0,0,125,125,
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key names -value_type string -value {Name,    , ,  ,   ,Score,Assert,}
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key orders -value_type string -value 4,0,1,2,3,5,6,
+gui_create_state_key -category Layout_CoverageTable_covtblModulesList -key widths -value_type string -value 220,0,25,0,0,125,125,
+gui_create_state_key -category Layout_CovDetail_lnListView -key names -value_type string -value Category,Coverage,
+gui_create_state_key -category Layout_CovDetail_lnListView -key orders -value_type string -value 0,1,
+gui_create_state_key -category Layout_CovDetail_lnListView -key widths -value_type string -value 111,125,
+gui_create_state_key -category Layout_CovDetail_tglListView -key names -value_type string -value {Variable, ,  ,   ,Type,Coverage,Display,}
+gui_create_state_key -category Layout_CovDetail_tglListView -key orders -value_type string -value 3,0,1,2,4,5,6,
+gui_create_state_key -category Layout_CovDetail_tglListView -key widths -value_type string -value 140,25,0,0,50,125,785,
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key names -value_type string -value {Variable, ,  ,   ,0->1,1->0,}
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key orders -value_type string -value 3,0,1,2,4,5,
+gui_create_state_key -category Layout_CovDetail_tglDetailListView -key widths -value_type string -value 140,25,0,0,50,50,
+gui_create_state_key -category Layout_CovDetail_fsmListView -key names -value_type string -value {FSM, ,  ,   ,State,Transition,Sequence,}
+gui_create_state_key -category Layout_CovDetail_fsmListView -key orders -value_type string -value 3,0,1,2,5,4,6,
+gui_create_state_key -category Layout_CovDetail_fsmListView -key widths -value_type string -value 66,25,0,0,125,125,125,
+gui_create_state_key -category Layout_CovDetail_fsmlist -key names -value_type string -value {Coverage, ,  ,   ,Transition,}
+gui_create_state_key -category Layout_CovDetail_fsmlist -key orders -value_type string -value 3,0,1,2,4,
+gui_create_state_key -category Layout_CovDetail_fsmlist -key widths -value_type string -value 125,25,0,0,70,
+gui_create_state_key -category Layout_CovDetail_cndListView -key names -value_type string -value {Expression, ,  ,   ,ID,Coverage,Line No.,}
+gui_create_state_key -category Layout_CovDetail_cndListView -key orders -value_type string -value 3,0,1,2,4,5,6,
+gui_create_state_key -category Layout_CovDetail_cndListView -key widths -value_type string -value 320,25,0,0,0,125,63,
+gui_create_state_key -category Layout_CovDetail_brListView -key names -value_type string -value {Name, ,  ,   ,Coverage,Line No.,}
+gui_create_state_key -category Layout_CovDetail_brListView -key orders -value_type string -value 3,0,1,2,4,5,
+gui_create_state_key -category Layout_CovDetail_brListView -key widths -value_type string -value 100,25,0,0,125,63,
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key names -value_type string -value {Assert Name,    , ,  ,   ,Attempts,Real Successes,Failures,Incompletes,Category,Severity,}
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,
+gui_create_state_key -category Layout_CovDetail_designAssertListView -key widths -value_type string -value 198,0,25,0,0,87,106,61,106,91,86,
+gui_create_state_key -category Layout_CovDetail_codeMiddleSplitter -key value1 -value_type integer -value 10
+gui_create_state_key -category Layout_CovDetail_codeMiddleSplitter -key value2 -value_type integer -value 294
+gui_create_state_key -category Layout_CovDetail_cndSplitter -key value1 -value_type integer -value 100
+gui_create_state_key -category Layout_CovDetail_cndSplitter -key value2 -value_type integer -value 192
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key names -value_type string -value {Cover Group Item,    , ,  ,   ,Definition,Score,Goal,Weight,At Least,Per Instance,Overlap,Auto Bin Max,Print Missing,Comment,}
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,12,13,14,
+gui_create_state_key -category Layout_CovDetail_covGrpInsListView -key widths -value_type string -value 137,0,25,0,0,68,125,30,42,50,74,0,80,76,55,
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key names -value_type string -value {Cover Group Item,    , ,  ,   ,Score,Goal,Weight,At Least,Per Instance,Overlap,Auto Bin Max,Print Missing,Comment,}
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,12,13,
+gui_create_state_key -category Layout_CovDetail_covGrpDefListView -key widths -value_type string -value 137,0,25,0,0,125,66,78,86,110,0,116,112,91,
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key names -value_type string -value {Bin Name,    , ,  ,   ,Status,Cross,At Least,Size,Hit Count,}
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key orders -value_type string -value 5,0,1,2,3,4,6,7,8,9,
+gui_create_state_key -category Layout_CovDetail_m_CovGrpTable -key widths -value_type string -value 93,0,25,0,0,150,0,62,40,68,
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key names -value_type string -value {Instance,    , ,  ,   ,Assert Name,Attempts,Matches,Vacuous Matches,Incompletes,Category,Severity,}
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key orders -value_type string -value 4,0,1,2,3,5,6,7,8,9,10,11,
+gui_create_state_key -category {Layout_CovDetail_assertion list} -key widths -value_type string -value 86,0,25,0,0,368,87,106,0,106,91,86,
+gui_create_state_key -category Layout_CovDetail_funMiddleSplitter -key value1 -value_type integer -value 727
+gui_create_state_key -category Layout_CovDetail_funMiddleSplitter -key value2 -value_type integer -value 726
+gui_create_state_key -category Layout_CovDetail_splitterWithPrefVal -key value1 -value_type integer -value 100
+gui_create_state_key -category Layout_CovDetail_splitterWithPrefVal -key value2 -value_type integer -value 1
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file inter.vpd
+gui_list_select -id Hier.1 -current_item_name wb_conmax_tb_top -current_item_type Scope  -selected  { wb_conmax_tb_top   }
+gui_list_expand -id Hier.1   wb_conmax_tb_top
+gui_list_action -id  Hier.1 wb_conmax_tb_top
+gui_list_select -id Hier.1 -current_item_name wb_conmax_tb_top.mast_if0 -current_item_type Scope  -selected  { wb_conmax_tb_top.mast_if0   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { wb_conmax_tb_top.mast_if0 } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 0 8597404795
+gui_list_select -id Wave.1 -selected  { {wb_conmax_tb_top.mast_if0.TGA_O[15:0]}   }
+gui_wv_zoom_timerange -id  Wave.1 0 833115150
+gui_wv_zoom_timerange -id  Wave.1 0 254678557
+gui_wv_zoom_timerange -id  Wave.1 0 60807368
+gui_wv_zoom_timerange -id  Wave.1 0 8565274
+gui_wv_zoom_timerange -id  Wave.1 0 556187
+gui_marker_move -id  Wave.1 C1 102792
+gui_list_select -id Wave.1 -selected  { wb_conmax_tb_top.mast_if0.WE_O   }
+#gui_exit
+

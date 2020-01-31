@@ -1,0 +1,253 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('./simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('./simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('./simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('./simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('./simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('./simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('./simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('./simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('./simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('./simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('./simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('./simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('./simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('./simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('./simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('./simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('./simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('./simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('./simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('./simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('./simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('./simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('./simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('./simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('./simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: msvEnableDumpingMode('./simv: undefined symbol: msvEnableDumpingMode')
+ANF: msvGetVersion('./simv: undefined symbol: msvGetVersion')
+ANF: msvGetInstProp('./simv: undefined symbol: msvGetInstProp')
+ANF: msvIsSpiceEngineReady('./simv: undefined symbol: msvIsSpiceEngineReady')
+ANF: msvSetAddProbeCallback('./simv: undefined symbol: msvSetAddProbeCallback')
+ANF: msvGetInstHandle('./simv: undefined symbol: msvGetInstHandle')
+ANF: msvGetProbeByInst('./simv: undefined symbol: msvGetProbeByInst')
+ANF: msvGetSigHandle('./simv: undefined symbol: msvGetSigHandle')
+ANF: msvGetProbeBySig('./simv: undefined symbol: msvGetProbeBySig')
+ANF: msvGetProbeInfo('./simv: undefined symbol: msvGetProbeInfo')
+ANF: msvRelease('./simv: undefined symbol: msvRelease')
+ANF: msvSetVcCallbackFunc('./simv: undefined symbol: msvSetVcCallbackFunc')
+ANF: msvCheckVcCallback('./simv: undefined symbol: msvCheckVcCallback')
+ANF: msvAddVcCallback('./simv: undefined symbol: msvAddVcCallback')
+ANF: msvRemoveVcCallback('./simv: undefined symbol: msvRemoveVcCallback')
+ANF: msvGetLatestValue('./simv: undefined symbol: msvGetLatestValue')
+ANF: msvSetEndofSimCallback('./simv: undefined symbol: msvSetEndofSimCallback')
+ANF: msvIgnoredProbe('./simv: undefined symbol: msvIgnoredProbe')
+ANF: msvGetThruNetInfo('./simv: undefined symbol: msvGetThruNetInfo')
+ANF: msvFreeThruNetInfo('./simv: undefined symbol: msvFreeThruNetInfo')
+ANF: PI_ace_get_output_time_unit('./simv: undefined symbol: PI_ace_get_output_time_unit')
+ANF: PI_ace_sim_sync('./simv: undefined symbol: PI_ace_sim_sync')
+ANF: msvGetRereadInitFile('./simv: undefined symbol: msvGetRereadInitFile')
+ANF: msvSetBeforeRereadCallback('./simv: undefined symbol: msvSetBeforeRereadCallback')
+ANF: msvSetAfterRereadCallback('./simv: undefined symbol: msvSetAfterRereadCallback')
+ANF: msvSetForceCallback('./simv: undefined symbol: msvSetForceCallback')
+ANF: msvSetReleaseCallback('./simv: undefined symbol: msvSetReleaseCallback')
+ANF: msvGetForceStatus('./simv: undefined symbol: msvGetForceStatus')
+ANF: vhdi_dt_get_type('./simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('./simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('./simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('./simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('./simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('./simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('./simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('./simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('./simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('./simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('./simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('./simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('./simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('./simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('./simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('./simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('./simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('./simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('./simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('./simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('./simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('./simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('./simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('./simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('./simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('./simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('./simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('./simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('./simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('./simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('./simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('./simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('./simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('./simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('./simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('./simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('./simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('./simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('./simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('./simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('./simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('./simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('./simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('./simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('./simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('./simv: undefined symbol: vhdi_node_ist_get_value_addr')
+VCS compile option:
+ option[0]: ./simv
+ option[1]: -l
+ option[2]: simv.log
+ option[3]: -lca
+ option[4]: +ntb_random_seed=1
+ option[5]: +UVM_TESTNAME=wb_env_slave_test
+ option[6]: +UVM_TR_RECORD
+ option[7]: +UVM_LOG_RECORD
+ option[8]: /global/apps/vcs_2019.06/linux/bin/vcs1
+ option[9]: -Mcc=gcc
+ option[10]: -Mcplusplus=g++
+ option[11]: -Masflags=--32
+ option[12]: -Mcfl= -pipe -m32 -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -O -I/global/apps/vcs_2019.06/include 
+ option[13]: -Mxcflags= -pipe -m32 -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -I/global/apps/vcs_2019.06/include
+ option[14]: -Mldflags= -m32 -m32 -rdynamic 
+ option[15]: -Mout=simv
+ option[16]: -Mamsrun=
+ option[17]: -Mvcsaceobjs=
+ option[18]: -Mobjects= /global/apps/vcs_2019.06/linux/lib/libvirsim.so /global/apps/vcs_2019.06/linux/lib/liberrorinf.so /global/apps/vcs_2019.06/linux/lib/libsnpsmalloc.so /global/apps/vcs_2019.06/linux/lib/libvfs.so 
+ option[19]: -Mexternalobj=
+ option[20]: -Msaverestoreobj=/global/apps/vcs_2019.06/linux/lib/vcs_save_restore_new.o
+ option[21]: -Mcrt0=
+ option[22]: -Mcrtn=
+ option[23]: -Mcsrc=/global/apps/vcs_2019.06/etc/uvm-ieee/dpi/uvm_dpi.cc /global/apps/vcs_2019.06/etc/uvm-ieee/verdi/dpi/uvm_verdi_dpi.cpp 
+ option[24]: -Msyslibs=/global/apps/verdi_2019.06/share/PLI/VCS/LINUX/pli.a /global/apps/vcs_2019.06/linux/lib/ctype-stubs_32.a -ldl 
+ option[25]: -l
+ option[26]: vcs.log
+ option[27]: +define+UVM_VERDI_VIF_RECORD
+ option[28]: +define+UVM_VCS_RECORD
+ option[29]: +incdir+/global/apps/vcs_2019.06/etc/uvm-ieee/vcs
+ option[30]: /global/apps/vcs_2019.06/etc/uvm-ieee/uvm_pkg.sv
+ option[31]: /global/apps/vcs_2019.06/etc/uvm-ieee/vcs/uvm_custom_install_vcs_recorder.sv
+ option[32]: +incdir+/global/apps/vcs_2019.06/etc/uvm-ieee/verdi
+ option[33]: /global/apps/vcs_2019.06/etc/uvm-ieee/verdi/uvm_custom_install_verdi_recorder.sv
+ option[34]: -ntb_opts
+ option[35]: uvm-ieee
+ option[36]: +incdir+/global/apps/vcs_2019.06/etc/uvm-ieee/
+ option[37]: +define+UVM_NO_DEPRECATED
+ option[38]: +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR
+ option[39]: -debug_access+all
+ option[40]: +vpi
+ option[41]: +vcsd1
+ option[42]: +itf+/global/apps/vcs_2019.06/linux/lib/vcsdp_lite.tab
+ option[43]: -kdb
+ option[44]: -Xufe=2steps
+ option[45]: -picarchive
+ option[46]: -P
+ option[47]: /global/apps/verdi_2019.06/share/PLI/VCS/LINUX/verdi.tab
+ option[48]: -fsdb
+ option[49]: -sverilog
+ option[50]: -gen_obj
+ option[51]: +incdir+../include+../src+../env+../tests+../hdl
+ option[52]: ../tests/wb_env_tb_mod.sv
+ option[53]: ../hdl/wb_env_top.sv
+ option[54]: ../hdl/dut.v
+ option[55]: -load
+ option[56]: /global/apps/verdi_2019.06/share/PLI/VCS/LINUX/libnovas.so:FSDBDumpCmd
+Chronologic Simulation VCS Release P-2019.06
+Linux 2.6.32-754.11.1.el6.x86_64 #1 SMP Tue Feb 26 15:38:56 UTC 2019 x86_64
+CPU cores: 20
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8250 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked		64 kbytes
+maxproc		515633
+======================================
+(Special)Runtime environment variables:
+
+Cannot get runtime environment variables: environ is NULL
+Runtime command line arguments:
+argv[0]=./simv
+argv[1]=-l
+argv[2]=simv.log
+argv[3]=-lca
+argv[4]=+ntb_random_seed=1
+argv[5]=+UVM_TESTNAME=wb_env_slave_test
+argv[6]=+UVM_TR_RECORD
+argv[7]=+UVM_LOG_RECORD
+189 profile - 100
+          CPU/Mem usage: 0.130 sys,  0.410 user,  214.06M mem
+190 Elapsed time:    0:00:01    Sat Aug 31 00:25:15 2019
+191 pliAppInit
+192 [pliEnvSetDefaultValueWithLCA] start
+193 [pliEnvSetDefaultValueWithLCA] end
+194 FSDB_GATE is set.
+195 FSDB_RTL is set.
+196 FSDB_RTL is set.
+197 FSDB_FIELDTYPE is set.
+198 Enable Parallel Dumping.
+199 pliAppMiscSet: New Sim Round
+200 pliEntryInit
+201 LIBSSCORE=found /global/apps/verdi_2019.06/share/PLI/lib/LINUX/libsscore_vcs201906.so through $NOVAS_HOME setting.
+202 FSDB Dumper for VCS, Release Verdi_P-2019.06, Linux, 05/26/2019
+203 (C) 1996 - 2019 by Synopsys, Inc.
+204 DVDI_is_vir_unload_enabled is enable
+205 FSDB_VCS_ENABLE_FAST_VC is enable
+206 sps_call_fsdbDumpvars_vd_main at 0 : ../hdl/wb_env_top.sv(38)
+207 argv[0]: (0)
+208 argv[1]: (handle) wb_env_top_mod
+209 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+210 *Verdi* : Create FSDB file 'novas.fsdb'
+211 compile option from '/SCRATCH/srivats/vs/IEEE_Book/Practical-UVM-IEEE-Edition/Advanced_UVM_Topics/Out_of_order/run/simv.daidir/vcs_rebuild'.
+212   "vcs '-sverilog' '-l' 'vcs.log' '-ntb_opts' 'uvm-ieee' '+incdir+../include+../src+../env+../tests+../hdl' '+define+UVM_NO_DEPRECATED' '+define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR' '-debug_access+all' '-kdb' '../tests/wb_env_tb_mod.sv' '../hdl/wb_env_top.sv' '../hdl/dut.v' 2>&1"
+213 [spi_vcs_vd_ppi_create_root]: no upf option
+214 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+215 Power dumping is enabled and VIR_REDUCTION may not work.
+216 *Verdi* : Begin traversing the scope (wb_env_top_mod), layer (0).
+217 *Verdi* : End of traversing.
+218 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.130 sys,  0.420 user,  309.00M mem
+                   incr: 0.000 sys,  0.000 user,  6.19M mem
+                   accu: 0.000 sys,  0.000 user,  6.19M mem
+              accu incr: 0.000 sys,  0.000 user,  6.19M mem
+
+          Count usage: 112 var,  115 idcode,  110 callback
+                 incr: 112 var,  115 idcode,  110 callback
+                 accu: 112 var,  115 idcode,  110 callback
+            accu incr: 112 var,  115 idcode,  110 callback
+219 Elapsed time:    0:00:01    Sat Aug 31 00:25:15 2019
+220 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.130 sys,  0.420 user,  310.05M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
+                   accu: 0.000 sys,  0.000 user,  7.24M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
+
+          Count usage: 112 var,  115 idcode,  110 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 112 var,  115 idcode,  110 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+221 Elapsed time:    0:00:01    Sat Aug 31 00:25:15 2019
+222 End of simulation at 300
+223 Elapsed time:    0:00:01    Sat Aug 31 00:25:15 2019
+224 Begin FSDB profile info:
+225 FSDB Writer : bc1(510) bcn(312) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.029965) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+226 End FSDB profile info
+227 Parallel profile    -  Flush:2 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:1
+228                        ProduceTime:0.668046427 ConsumerTime:0.000000000 Buffer:64MB
+229 SimExit
+230 Elapsed time:    0:00:01    Sat Aug 31 00:25:15 2019
+231 Sim process exit

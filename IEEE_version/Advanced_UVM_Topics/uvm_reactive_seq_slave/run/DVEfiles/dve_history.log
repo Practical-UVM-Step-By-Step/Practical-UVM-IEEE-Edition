@@ -1,0 +1,73 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file inter.vpd} {gui_open_db -file vcdplus.vpd}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1847
+gui_set_state_value -category Layout -key child_console_size_y -value 159
+gui_set_state_value -category Layout -key child_data_coltype -value 81
+gui_set_state_value -category Layout -key child_data_colvalue -value 114
+gui_set_state_value -category Layout -key child_data_colvariable -value 157
+gui_set_state_value -category Layout -key child_data_size_x -value 356
+gui_set_state_value -category Layout -key child_data_size_y -value 655
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 424
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 133
+gui_set_state_value -category Layout -key child_hier_size_x -value 558
+gui_set_state_value -category Layout -key child_hier_size_y -value 655
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 936
+gui_set_state_value -category Layout -key child_source_size_y -value 650
+gui_set_state_value -category Layout -key child_transaction_col_caller -value 65
+gui_set_state_value -category Layout -key child_transaction_col_expand -value 16
+gui_set_state_value -category Layout -key child_transaction_col_message -value 59
+gui_set_state_value -category Layout -key child_transaction_col_name -value 40
+gui_set_state_value -category Layout -key child_transaction_col_relation -value 53
+gui_set_state_value -category Layout -key child_transaction_col_scope -value 86
+gui_set_state_value -category Layout -key child_transaction_col_severity -value 54
+gui_set_state_value -category Layout -key child_transaction_col_target -value 43
+gui_set_state_value -category Layout -key child_transaction_col_time -value 59
+gui_set_state_value -category Layout -key child_transaction_col_type -value 36
+gui_set_state_value -category Layout -key child_transaction_size_x -value 1856
+gui_set_state_value -category Layout -key child_transaction_size_y -value 149
+gui_set_state_value -category Layout -key child_wave_colname -value 225
+gui_set_state_value -category Layout -key child_wave_colvalue -value 225
+gui_set_state_value -category Layout -key child_wave_left -value 455
+gui_set_state_value -category Layout -key child_wave_right -value 1110
+gui_set_state_value -category Layout -key main_pos_x -value {-132}
+gui_set_state_value -category Layout -key main_pos_y -value 113
+gui_set_state_value -category Layout -key main_size_x -value 1715
+gui_set_state_value -category Layout -key main_size_y -value 1002
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1575
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 620
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 194
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 279
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1764
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1002
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key {TopLevel.1|qt_left_dock|DockWnd1|HSPane.1|pages|Hier.1|hbox1|Scope Explore} -value_type string -value uvm_custom_install_recording
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file inter.vpd
+gui_list_select -id Hier.1 -current_item_name wb_env_top_mod -current_item_type Scope  -selected  { wb_env_top_mod   }
+gui_list_expand -id Hier.1   wb_env_top_mod
+gui_list_action -id  Hier.1 wb_env_top_mod
+gui_list_select -id Hier.1 -current_item_name wb_env_top_mod.test -current_item_type Scope  -selected  { wb_env_top_mod.test   }
+gui_list_select -id Hier.1 -current_item_name wb_env_top_mod.test -current_item_type Scope  -selected  {  }
+gui_list_select -id Hier.1 -current_item_name wb_env_top_mod.mast_if -current_item_type Scope  -selected  { wb_env_top_mod.mast_if   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { wb_env_top_mod.mast_if } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_close_window -window TopLevel.2

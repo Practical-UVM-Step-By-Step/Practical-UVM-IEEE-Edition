@@ -1,0 +1,3 @@
+Command Line: /global/apps/verdi_2019.06/platform/LINUX/bin/Novas -i -simflow -simBin ./simv -simDelim +UVM_TESTNAME=wb_env_slave_test
+uname(Linux snpsemt980 2.6.32-754.11.1.el6.x86_64 #1 SMP Tue Feb 26 15:38:56 UTC 2019 x86_64)
+au time 74.518326 8.151761 1.410785 delta 132141056 132141056 total 481087488 481087488
