@@ -1,3 +1,0 @@
-${ROOT}/tb/verilog_tb/spi_ctrl/spi_slave_model.v
-${ROOT}/tb/verilog_tb/spi_ctrl/wb_master_model.v
-${ROOT}/tb/verilog_tb/spi_ctrl/tst_bench_top.v

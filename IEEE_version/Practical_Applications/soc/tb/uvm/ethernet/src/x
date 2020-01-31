@@ -1,8 +1,0 @@
-`include "sequences/wb_master_agent_heir_sequence_w.sv"
-`include "sequences/wb_master_agent_send_tx_packet.sv"
-`include "sequences/wb_master_agent_send_2_packets.sv"
-`include "sequences/wb_master_agent_send_tx_packet2.sv"
-`include "sequences/wb_master_agent_send_2_packets_barrier.sv"
-`include "sequences/wb_master_agent_tx_interrupt_seq_barrier.sv"
-`include "sequences/wb_master_agent_tx_interrupt_event_seq.sv"
-`include "sequences/wb_master_agent_send_2_packets_event_sync_sequence.sv"

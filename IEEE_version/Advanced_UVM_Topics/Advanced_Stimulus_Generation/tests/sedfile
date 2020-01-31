@@ -1,3 +1,0 @@
-s/GENERIC/LOCK/g
-s/generic/lock/g
-s/repeated_read_sequence/lock_sequence/g

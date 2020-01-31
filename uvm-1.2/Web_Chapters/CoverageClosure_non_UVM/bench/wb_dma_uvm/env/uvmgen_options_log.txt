@@ -1,3 +1,0 @@
-UVM Version : 2 
-Complete Env.(1) OR Individual Template(2)? : 2 
-Ind. Template Type : 18 

@@ -1,1 +1,0 @@
-vi simple_reg_access_test_callback.sv simple_reg_access_test_factory.sv simple_reg_access_test_resdb.sv simple_reg_access_test.sv simple_reg_backdoor.sv simple_reg_hw_reset.sv simple_uvm_reg_bit_bash_seq.sv
