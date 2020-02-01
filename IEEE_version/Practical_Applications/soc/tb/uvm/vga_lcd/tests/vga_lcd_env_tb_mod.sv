@@ -13,33 +13,33 @@
  ************************************************/
 
 `ifndef VGA_LCD_ENV_TB_MOD__SV
- `define VGA_LCD_ENV_TB_MOD__SV
+	`define VGA_LCD_ENV_TB_MOD__SV
 
- `include "mstr_slv_intfs.incl"
- `include "vga_lcd_test_pkg.sv"
-module vga_lcd_env_tb_mod;
+	`include "mstr_slv_intfs.incl"
+	`include "vga_lcd_test_pkg.sv"
+	module vga_lcd_env_tb_mod;
 
-   import uvm_pkg::*;
- `include "vga_lcd_env.sv"
+		import uvm_pkg::*;
+		`include "vga_lcd_env.sv"
 
-   import vga_lcd_test_pkg::*;
+		import vga_lcd_test_pkg::*;
 
-   typedef virtual wb_master_if v_if1;
-   typedef virtual wb_slave_if v_if2;
-   typedef virtual wb_vga_disp_if v_if3;
-   typedef virtual reset_if v_if4;
+		typedef virtual wb_master_if v_if1;
+		typedef virtual wb_slave_if v_if2;
+		typedef virtual wb_vga_disp_if v_if3;
+		typedef virtual reset_if v_if4;
 
-   initial begin
-      uvm_config_db #(v_if4)::set(null,"uvm_test_top.env.rst_agent","rst_if", vga_lcd_env_top.rst_if);
-      uvm_config_db #(v_if1)::set(null,"uvm_test_top.env.master_agent","mst_if",vga_lcd_env_top.mast_if); 
-      uvm_config_db #(v_if2)::set(null,"uvm_test_top.env.slave_agent","slv_if",vga_lcd_env_top.slv_if);
-      uvm_config_db #(v_if3)::set(null,"","disp_if",vga_lcd_env_top.disp_if);
-      uvm_reg::include_coverage("*",UVM_CVR_ALL);
+		initial begin
+			uvm_config_db #(v_if4)::set(null,"uvm_test_top.env.rst_agent","rst_if", vga_lcd_env_top.rst_if);
+			uvm_config_db #(v_if1)::set(null,"uvm_test_top.env.master_agent","mst_if",vga_lcd_env_top.mast_if); 
+			uvm_config_db #(v_if2)::set(null,"uvm_test_top.env.slave_agent","slv_if",vga_lcd_env_top.slv_if);
+			uvm_config_db #(v_if3)::set(null,"","disp_if",vga_lcd_env_top.disp_if);
+			uvm_reg::include_coverage("*",UVM_CVR_ALL);
 
-      run_test();
-   end
+			run_test();
+		end
 
-endmodule: vga_lcd_env_tb_mod
+	endmodule: vga_lcd_env_tb_mod
 
 `endif // VGA_LCD_ENV_TB_MOD__SV
 

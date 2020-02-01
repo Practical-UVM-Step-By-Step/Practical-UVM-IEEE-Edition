@@ -16,102 +16,102 @@
 //
 
 `ifndef WB_ENV_ENV__SV
- `define WB_ENV_ENV__SV
+	`define WB_ENV_ENV__SV
 
-class wb_conmax_env extends uvm_env;
+	class wb_conmax_env extends uvm_env;
 
-   wb_master_agent master_agent[8];
-   wb_slave_agent slave_agent[16]; 
-   wb_conmax_scoreboard conmax_scbd;
-   wb_conmax_virtual_sequencer wb_conmax_virt_seqr;
+		wb_master_agent master_agent[8];
+		wb_slave_agent slave_agent[16]; 
+		wb_conmax_scoreboard conmax_scbd;
+		wb_conmax_virtual_sequencer wb_conmax_virt_seqr;
    
-   // reset Agent
-   reset_agent rst_agent;
+		// reset Agent
+		reset_agent rst_agent;
 
-   // This is the RAL Model.
-   wb_conmax_env_ral_block ral_regmodel;
-   // This is the adapter
-   wb_conmax_ral_adapter   ral_adapter[8];
+		// This is the RAL Model.
+		wb_conmax_env_ral_block ral_regmodel;
+		// This is the adapter
+		wb_conmax_ral_adapter   ral_adapter[8];
 
-   `uvm_component_utils(wb_conmax_env)
+		`uvm_component_utils(wb_conmax_env)
 
-   // Function declarations
-   extern function new(string name="wb_conmax_env", uvm_component parent=null);
-   extern virtual function void build_phase(uvm_phase phase);
-   extern virtual function void connect_phase(uvm_phase phase);
+		// Function declarations
+		extern function new(string name="wb_conmax_env", uvm_component parent=null);
+		extern virtual function void build_phase(uvm_phase phase);
+		extern virtual function void connect_phase(uvm_phase phase);
 
-endclass: wb_conmax_env
+	endclass: wb_conmax_env
 
-function wb_conmax_env::new(string name= "wb_conmax_env",uvm_component parent=null);
-   super.new(name,parent);
-endfunction:new
+	function wb_conmax_env::new(string name= "wb_conmax_env",uvm_component parent=null);
+		super.new(name,parent);
+	endfunction:new
 
-function void wb_conmax_env::build_phase(uvm_phase phase);
-   super.build_phase(phase);
-   // Build Reset Agent
-   rst_agent = reset_agent::type_id::create("rst_agent",this);
+	function void wb_conmax_env::build_phase(uvm_phase phase);
+		super.build_phase(phase);
+		// Build Reset Agent
+		rst_agent = reset_agent::type_id::create("rst_agent",this);
 
-   // Build Masters
-   for(integer i = 0; i < 8; i++) begin
-      master_agent[i] = wb_master_agent::type_id::create($sformatf("master_agent[%02d]",i),this); 
-      uvm_config_db #(uvm_object_wrapper)::set(this, {master_agent[i].get_name(), ".", "seqr.run_phase"}, "default_sequence", sequence_0::get_type());
-   end
-   // Build Slaves
-   for(integer i = 0; i < 16; i++) begin
-      slave_agent[i] = wb_slave_agent::type_id::create($sformatf("slave_agent[%02d]",i),this); 
-      uvm_config_db #(uvm_object_wrapper)::set(this, {slave_agent[i].get_name(), ".", "seqr.run_phase"}, "default_sequence",sequence_0::get_type());
-   end
+		// Build Masters
+		for(integer i = 0; i < 8; i++) begin
+			master_agent[i] = wb_master_agent::type_id::create($sformatf("master_agent[%02d]",i),this); 
+			uvm_config_db #(uvm_object_wrapper)::set(this, {master_agent[i].get_name(), ".", "seqr.run_phase"}, "default_sequence", sequence_0::get_type());
+		end
+		// Build Slaves
+		for(integer i = 0; i < 16; i++) begin
+			slave_agent[i] = wb_slave_agent::type_id::create($sformatf("slave_agent[%02d]",i),this); 
+			uvm_config_db #(uvm_object_wrapper)::set(this, {slave_agent[i].get_name(), ".", "seqr.run_phase"}, "default_sequence",sequence_0::get_type());
+		end
    
-   // Scoreboard
-   conmax_scbd  = wb_conmax_scoreboard::type_id::create("Scoreboard",this);
+		// Scoreboard
+		conmax_scbd  = wb_conmax_scoreboard::type_id::create("Scoreboard",this);
 
-   // Build the RAL Model
-   if(ral_regmodel == null) begin
-      ral_regmodel = wb_conmax_env_ral_block::type_id::create("ral_regmodel",this);
-      ral_regmodel.build;
-      ral_regmodel.lock_model();
-   end
+		// Build the RAL Model
+		if(ral_regmodel == null) begin
+			ral_regmodel = wb_conmax_env_ral_block::type_id::create("ral_regmodel",this);
+			ral_regmodel.build;
+			ral_regmodel.lock_model();
+		end
 
-   // Build the virtual Sequencer
-   wb_conmax_virt_seqr = wb_conmax_virtual_sequencer::type_id::create("wb_conmax_virt_seqr",this);
+		// Build the virtual Sequencer
+		wb_conmax_virt_seqr = wb_conmax_virtual_sequencer::type_id::create("wb_conmax_virt_seqr",this);
 
-   for(integer i = 0; i < 8; i++) begin
-      ral_adapter[i] = new($sformatf("reg2agent_ral_adapter[%d]",i));
-   end
-endfunction: build_phase
+		for(integer i = 0; i < 8; i++) begin
+			ral_adapter[i] = new($sformatf("reg2agent_ral_adapter[%d]",i));
+		end
+	endfunction: build_phase
 
-function void wb_conmax_env::connect_phase(uvm_phase phase);
-   super.connect_phase(phase);
+	function void wb_conmax_env::connect_phase(uvm_phase phase);
+		super.connect_phase(phase);
 
-   // Set up the domain sequencers
+		// Set up the domain sequencers
 
-   ral_regmodel.wb_conmax_domain0.set_sequencer(master_agent[0].mast_sqr,ral_adapter[0]);
-   ral_regmodel.wb_conmax_domain1.set_sequencer(master_agent[1].mast_sqr,ral_adapter[1]);
-   ral_regmodel.wb_conmax_domain2.set_sequencer(master_agent[2].mast_sqr,ral_adapter[2]);
-   ral_regmodel.wb_conmax_domain3.set_sequencer(master_agent[3].mast_sqr,ral_adapter[3]);
-   ral_regmodel.wb_conmax_domain4.set_sequencer(master_agent[4].mast_sqr,ral_adapter[4]);
-   ral_regmodel.wb_conmax_domain5.set_sequencer(master_agent[5].mast_sqr,ral_adapter[5]);
-   ral_regmodel.wb_conmax_domain6.set_sequencer(master_agent[6].mast_sqr,ral_adapter[6]);
-   ral_regmodel.wb_conmax_domain7.set_sequencer(master_agent[7].mast_sqr,ral_adapter[7]);
+		ral_regmodel.wb_conmax_domain0.set_sequencer(master_agent[0].mast_sqr,ral_adapter[0]);
+		ral_regmodel.wb_conmax_domain1.set_sequencer(master_agent[1].mast_sqr,ral_adapter[1]);
+		ral_regmodel.wb_conmax_domain2.set_sequencer(master_agent[2].mast_sqr,ral_adapter[2]);
+		ral_regmodel.wb_conmax_domain3.set_sequencer(master_agent[3].mast_sqr,ral_adapter[3]);
+		ral_regmodel.wb_conmax_domain4.set_sequencer(master_agent[4].mast_sqr,ral_adapter[4]);
+		ral_regmodel.wb_conmax_domain5.set_sequencer(master_agent[5].mast_sqr,ral_adapter[5]);
+		ral_regmodel.wb_conmax_domain6.set_sequencer(master_agent[6].mast_sqr,ral_adapter[6]);
+		ral_regmodel.wb_conmax_domain7.set_sequencer(master_agent[7].mast_sqr,ral_adapter[7]);
 
-   for(integer i = 0; i < 8; i++) begin
-      master_agent[i].mast_mon.mon_analysis_port.connect(conmax_scbd.master_export[i]);
+		for(integer i = 0; i < 8; i++) begin
+			master_agent[i].mast_mon.mon_analysis_port.connect(conmax_scbd.master_export[i]);
 
-   end
-   for(integer i = 0; i < 16; i++) begin
-      slave_agent[i].slv_mon.mon_analysis_port.connect(conmax_scbd.slave_export[i]);
-   end
+		end
+		for(integer i = 0; i < 16; i++) begin
+			slave_agent[i].slv_mon.mon_analysis_port.connect(conmax_scbd.slave_export[i]);
+		end
 
-   wb_conmax_virt_seqr.seqr0 = master_agent[00].mast_sqr;
-   wb_conmax_virt_seqr.seqr1 = master_agent[01].mast_sqr;
-   wb_conmax_virt_seqr.seqr2 = master_agent[02].mast_sqr;
-   wb_conmax_virt_seqr.seqr3 = master_agent[03].mast_sqr;
-   wb_conmax_virt_seqr.seqr4 = master_agent[04].mast_sqr;
-   wb_conmax_virt_seqr.seqr5 = master_agent[05].mast_sqr;
-   wb_conmax_virt_seqr.seqr6 = master_agent[06].mast_sqr;
-   wb_conmax_virt_seqr.seqr7 = master_agent[07].mast_sqr;
+		wb_conmax_virt_seqr.seqr0 = master_agent[00].mast_sqr;
+		wb_conmax_virt_seqr.seqr1 = master_agent[01].mast_sqr;
+		wb_conmax_virt_seqr.seqr2 = master_agent[02].mast_sqr;
+		wb_conmax_virt_seqr.seqr3 = master_agent[03].mast_sqr;
+		wb_conmax_virt_seqr.seqr4 = master_agent[04].mast_sqr;
+		wb_conmax_virt_seqr.seqr5 = master_agent[05].mast_sqr;
+		wb_conmax_virt_seqr.seqr6 = master_agent[06].mast_sqr;
+		wb_conmax_virt_seqr.seqr7 = master_agent[07].mast_sqr;
 
-endfunction: connect_phase
+	endfunction: connect_phase
 
 `endif // WB_ENV_ENV__SV
 

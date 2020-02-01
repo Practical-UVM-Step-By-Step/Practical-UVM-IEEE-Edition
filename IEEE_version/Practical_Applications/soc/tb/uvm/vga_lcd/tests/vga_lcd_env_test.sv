@@ -15,26 +15,26 @@
 //
 
 `ifndef TEST__SV
- `define TEST__SV
+	`define TEST__SV
 
-typedef class vga_lcd_env;
+	typedef class vga_lcd_env;
 
-class vga_lcd_env_test extends uvm_test;
+	class vga_lcd_env_test extends uvm_test;
 
-   `uvm_component_utils(vga_lcd_env_test)
+		`uvm_component_utils(vga_lcd_env_test)
 
-   vga_lcd_env env;
+		vga_lcd_env env;
 
-   function new(string name, uvm_component parent);
-      super.new(name, parent);
-   endfunction
+		function new(string name, uvm_component parent);
+			super.new(name, parent);
+		endfunction
 
-   virtual function void build_phase(uvm_phase phase);
-      super.build_phase(phase);
-      env = vga_lcd_env::type_id::create("env", this);
-   endfunction
+		virtual function void build_phase(uvm_phase phase);
+			super.build_phase(phase);
+			env = vga_lcd_env::type_id::create("env", this);
+		endfunction
 
-endclass : vga_lcd_env_test
+	endclass : vga_lcd_env_test
 
 `endif //TEST__SV
 

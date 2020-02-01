@@ -13,26 +13,26 @@
  ************************************************/
 
 `ifndef VGA_LCD_VGA_LCD_REG_HW_RESET
- `define VGA_LCD_VGA_LCD_REG_HW_RESET
+	`define VGA_LCD_VGA_LCD_REG_HW_RESET
 
-class vga_lcd_reg_hw_reset_test extends vga_lcd_env_base_test;
+	class vga_lcd_reg_hw_reset_test extends vga_lcd_env_base_test;
 
-   `uvm_component_utils(vga_lcd_reg_hw_reset_test)
+		`uvm_component_utils(vga_lcd_reg_hw_reset_test)
 
-   ral_block_vga_lcd ral_regmodel;
-   uvm_status_e status;
+		ral_block_vga_lcd ral_regmodel;
+		uvm_status_e status;
 
-   function new(string name, uvm_component parent);
-      super.new(name, parent);
-   endfunction
+		function new(string name, uvm_component parent);
+			super.new(name, parent);
+		endfunction
 
-   task main_phase(uvm_phase phase);
-      uvm_reg_hw_reset_seq seq = uvm_reg_hw_reset_seq::type_id::create("ral_uvm_reg_hw_reset_seq",this);
-      seq.model = env.ral_regmodel;
-      seq.start(null);
-      seq.wait_for_sequence_state(UVM_FINISHED);
-   endtask : main_phase
+		task main_phase(uvm_phase phase);
+			uvm_reg_hw_reset_seq seq = uvm_reg_hw_reset_seq::type_id::create("ral_uvm_reg_hw_reset_seq",this);
+			seq.model = env.ral_regmodel;
+			seq.start(null);
+			seq.wait_for_sequence_state(UVM_FINISHED);
+		endtask : main_phase
 
-endclass : vga_lcd_reg_hw_reset_test
+	endclass : vga_lcd_reg_hw_reset_test
 
 `endif
