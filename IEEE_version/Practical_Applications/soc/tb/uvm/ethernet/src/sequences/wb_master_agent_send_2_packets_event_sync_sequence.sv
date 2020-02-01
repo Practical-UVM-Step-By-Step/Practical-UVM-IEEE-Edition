@@ -10,7 +10,6 @@ class send_2_packets_event_sync_sequence extends base_sequence;
 
    `uvm_object_utils(send_2_packets_event_sync_sequence)
    `uvm_declare_p_sequencer(wb_master_seqr)
-   
 
    function new(string name = "send_2_packets_event_sync_sequence");
       super.new(name);
@@ -33,8 +32,6 @@ class send_2_packets_event_sync_sequence extends base_sequence;
       single_seq = write_master_single::type_id::create("simple seq read");
       // Clean up descriptors
       initialize_desc_seq.start(p_sequencer);
-      // p_sequencer.regmodel.TX_BD_NUM.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(1));
-
       p_sequencer.regmodel.INT_MASK.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(32'h0000007f));
       p_sequencer.regmodel.MODER.write(.status(reg_status),.path(UVM_FRONTDOOR), .parent(this),.value(32'h00002403));
 
@@ -58,6 +55,3 @@ class send_2_packets_event_sync_sequence extends base_sequence;
       send_2_pkt_event.trigger();
    endtask
 endclass
-
-
-
