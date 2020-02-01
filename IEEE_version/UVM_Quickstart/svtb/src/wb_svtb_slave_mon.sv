@@ -1,13 +1,13 @@
 `ifndef WB_SVTB_SLAVE_MON
- `define WB_SVTB_SLAVE_MON
+	`define WB_SVTB_SLAVE_MON
 
-class wb_svtb_slave_mon;
+	class wb_svtb_slave_mon;
 
 
-   task run();
-   endtask
+		task run();
+		endtask
 
-endclass
+	endclass
 
 
 `endif
