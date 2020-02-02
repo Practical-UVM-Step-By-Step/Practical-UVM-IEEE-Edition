@@ -39,12 +39,7 @@ class wb_conmax_factory_instance_override_test extends wb_conmax_base_test;
       orig_type_name = "wb_master_agent";
       override_type_name = "wb_master_agent_n";
    
-
-      // These are alternatives for you to try out.  comment line 46 and see alternate approaches.
-
       set_inst_override(my_full_path,orig_type_name,override_type_name);
-      //set_inst_override_by_type(my_full_path,wb_master_agent::get_type(),wb_master_agent_n::get_type());
-      
 
       fact.print();
       super.build_phase(phase);
