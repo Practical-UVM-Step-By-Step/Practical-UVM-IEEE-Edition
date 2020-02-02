@@ -1,4 +1,4 @@
-Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l simv.log -lca +UVM_TESTNAME=wb_conmax_instance_callback_test -l wb_conmax_instance_callback_test.log
+Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l simv.log -lca +UVM_TESTNAME=wb_conmax_alter_message_test -l wb_conmax_alter_message_test.log
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
 Compiler version P-2019.06; Runtime version P-2019.06;  Feb  1 18:45 2020
@@ -18,7 +18,7 @@ All Rights Reserved Worldwide
 
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
-UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_instance_callback_test...
+UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_alter_message_test...
 UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
 #### Factory Configuration (*)
 
@@ -108,12 +108,12 @@ UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[13]
 UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[14].slv_seqr [WB_SLAVE_SEQR] Initializing memory
 UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[15].slv_seqr [WB_SLAVE_SEQR] Initializing memory
 UVM_INFO ../../common/reset_driver.sv(79) @ 0: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
-UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Obtained Reset
-UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Completed Reset
+UVM_ERROR ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER_CATCHER] Changing message from SLAVE_DRIVER ..Obtained Reset
+UVM_ERROR ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER_CATCHER] Changing message from SLAVE_DRIVER ..Completed Reset
 ------------------------------------------------
 Name               Type           Size  Value   
 ------------------------------------------------
-slave_configs[00]  wb_config      -     @254    
+slave_configs[00]  wb_config      -     @253    
   port_size        sizes_e        32    DWORD   
   granularity      sizes_e        32    BYTE    
   cycles           cycle_types_e  32    CLASSIC 
@@ -126,7 +126,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[01].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[01]  wb_config      -     @255     
+slave_configs[01]  wb_config      -     @254     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -139,7 +139,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[02].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[02]  wb_config      -     @256     
+slave_configs[02]  wb_config      -     @255     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -152,7 +152,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[03].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[03]  wb_config      -     @257     
+slave_configs[03]  wb_config      -     @256     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -165,7 +165,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[04].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[04]  wb_config      -     @258     
+slave_configs[04]  wb_config      -     @257     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -178,7 +178,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[05].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[05]  wb_config      -     @259     
+slave_configs[05]  wb_config      -     @258     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -191,7 +191,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[06].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[06]  wb_config      -     @260     
+slave_configs[06]  wb_config      -     @259     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -204,7 +204,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[07].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[07]  wb_config      -     @261     
+slave_configs[07]  wb_config      -     @260     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -217,7 +217,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[08].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[08]  wb_config      -     @262     
+slave_configs[08]  wb_config      -     @261     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -230,7 +230,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[09].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[09]  wb_config      -     @263     
+slave_configs[09]  wb_config      -     @262     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -243,7 +243,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[10].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[10]  wb_config      -     @264     
+slave_configs[10]  wb_config      -     @263     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -256,7 +256,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[11].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[11]  wb_config      -     @265     
+slave_configs[11]  wb_config      -     @264     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -269,7 +269,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[12].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[12]  wb_config      -     @266     
+slave_configs[12]  wb_config      -     @265     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -282,7 +282,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[13].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[13]  wb_config      -     @267     
+slave_configs[13]  wb_config      -     @266     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -295,7 +295,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[14].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[14]  wb_config      -     @268     
+slave_configs[14]  wb_config      -     @267     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -308,7 +308,7 @@ UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[15].slv_
 -------------------------------------------------
 Name               Type           Size  Value    
 -------------------------------------------------
-slave_configs[15]  wb_config      -     @269     
+slave_configs[15]  wb_config      -     @268     
   port_size        sizes_e        32    DWORD    
   granularity      sizes_e        32    BYTE     
   cycles           cycle_types_e  32    CLASSIC  
@@ -384,7 +384,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 95000: uvm_test_top.env.master_agent[0
 UVM_INFO ../../common/wb_master.sv(113) @ 95000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9792                                                                    
+req                            wb_transaction  -     @9790                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -402,58 +402,16 @@ req                            wb_transaction  -     @9792
   sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
-UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 95000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
-Name                           Type            Size  Value                                                                    
-------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9792                                                                    
-  address                      integral        32    'h3                                                                      
-  data                         integral        32    'hdeadbeef                                                               
-  sel                          integral        4     'h7                                                                      
-  tga                          integral        16    'hf                                                                      
-  tgc                          integral        16    'h620c                                                                   
-  lock                         integral        1     'h0                                                                      
-  num_wait_states              integral        32    'h0                                                                      
-  kind                         kinds_e         32    WRITE                                                                    
-  status                       status_e        32    OK                                                                       
-  next_cycle                   pipelining_e    32    CLASSIC                                                                  
-  begin_time                   time            64    95000                                                                    
-  depth                        int             32    'd3                                                                      
-  parent sequence (name)       string          9     sequence0                                                                
-  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
-  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr                               
-------------------------------------------------------------------------------------------------------------------------------
-
 UVM_INFO ../../common/wb_master.sv(189) @ 105000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a write transaction
 UVM_INFO ../../common/wb_master_mon.sv(118) @ 105000: uvm_test_top.env.master_agent[00].mast_mon [WB master Monitor] got a write transaction  from Master 
-UVM_INFO ../../common/wb_slave.sv(136) @ 126000: uvm_test_top.env.slave_agent[00].slv_drv [Wb_slave] got a write transaction  from Master 
+UVM_ERROR ../../common/wb_slave.sv(136) @ 126000: uvm_test_top.env.slave_agent[00].slv_drv [Wb_slave] Changing message from SLAVE_DRIVER ..got a write transaction  from Master 
 UVM_INFO ../../common/wb_slave_mon.sv(114) @ 126000: uvm_test_top.env.slave_agent[00].slv_mon [WB slave Monitor] got a write transaction  from Master 
-UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 165000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
-Name                           Type            Size  Value                                                                    
-------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9792                                                                    
-  address                      integral        32    'h3                                                                      
-  data                         integral        32    'hdeadbeef                                                               
-  sel                          integral        4     'h7                                                                      
-  tga                          integral        16    'hf                                                                      
-  tgc                          integral        16    'h1                                                                      
-  lock                         integral        1     'h0                                                                      
-  num_wait_states              integral        32    'h0                                                                      
-  kind                         kinds_e         32    WRITE                                                                    
-  status                       status_e        32    TIMEOUT                                                                  
-  next_cycle                   pipelining_e    32    CLASSIC                                                                  
-  begin_time                   time            64    95000                                                                    
-  depth                        int             32    'd3                                                                      
-  parent sequence (name)       string          9     sequence0                                                                
-  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
-  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr                               
-------------------------------------------------------------------------------------------------------------------------------
-
 UVM_INFO ../../common/wb_master.sv(142) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9833                                                                    
+req                            wb_transaction  -     @9827                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hb1b34cd7                                                               
   sel                          integral        4     'h3                                                                      
@@ -471,50 +429,8 @@ req                            wb_transaction  -     @9833
   sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
-UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 165000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
-Name                           Type            Size  Value                                                                    
-------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9833                                                                    
-  address                      integral        32    'h3                                                                      
-  data                         integral        32    'hb1b34cd7                                                               
-  sel                          integral        4     'h3                                                                      
-  tga                          integral        16    'hf                                                                      
-  tgc                          integral        16    'hf665                                                                   
-  lock                         integral        1     'h0                                                                      
-  num_wait_states              integral        32    'h0                                                                      
-  kind                         kinds_e         32    READ                                                                     
-  status                       status_e        32    OK                                                                       
-  next_cycle                   pipelining_e    32    CLASSIC                                                                  
-  begin_time                   time            64    165000                                                                   
-  depth                        int             32    'd3                                                                      
-  parent sequence (name)       string          9     sequence0                                                                
-  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
-  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr                               
-------------------------------------------------------------------------------------------------------------------------------
-
 UVM_INFO ../../common/wb_master.sv(150) @ 175000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a read transaction
 UVM_INFO ../../common/wb_slave_mon.sv(121) @ 175000: uvm_test_top.env.slave_agent[00].slv_mon [Wb_slave Monitor] got a read transaction  
-UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 235000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
-Name                           Type            Size  Value                                                                    
-------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9833                                                                    
-  address                      integral        32    'h3                                                                      
-  data                         integral        32    'h0                                                                      
-  sel                          integral        4     'h3                                                                      
-  tga                          integral        16    'hf                                                                      
-  tgc                          integral        16    'h1                                                                      
-  lock                         integral        1     'h0                                                                      
-  num_wait_states              integral        32    'h0                                                                      
-  kind                         kinds_e         32    READ                                                                     
-  status                       status_e        32    TIMEOUT                                                                  
-  next_cycle                   pipelining_e    32    CLASSIC                                                                  
-  begin_time                   time            64    165000                                                                   
-  depth                        int             32    'd3                                                                      
-  parent sequence (name)       string          9     sequence0                                                                
-  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
-  sequencer                    string          42    uvm_test_top.env.master_agent[00].mast_sqr                               
-------------------------------------------------------------------------------------------------------------------------------
-
 UVM_INFO ../../common/wb_master.sv(142) @ 235000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
 UVM_INFO ../src/wb_conmax_virtual_sequence.sv(41) @ 235000: uvm_test_top.env.wb_conmax_virt_seqr@@wb_conmax_virtual_sequence [VIRT_SEQQ] Starting Virtual Sequence: PART 1
 UVM_INFO ../src/wb_master_agent_sequence_library.sv(86) @ 235000: uvm_test_top.env.master_agent[01].mast_sqr@@wb_conmax_virtual_sequence.sequence1 [SEQUENCE0] Starting Sequence sequence_1 
@@ -522,7 +438,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 235000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 235000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9868                                                                    
+req                            wb_transaction  -     @9858                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h529f5e07                                                               
   sel                          integral        4     'h7                                                                      
@@ -547,7 +463,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 305000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 305000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9887                                                                    
+req                            wb_transaction  -     @9877                                                                    
   address                      integral        32    'h4                                                                      
   data                         integral        32    'hbeefdead                                                               
   sel                          integral        4     'hf                                                                      
@@ -571,7 +487,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 375000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 375000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9900                                                                    
+req                            wb_transaction  -     @9890                                                                    
   address                      integral        32    'h5                                                                      
   data                         integral        32    'h23456678                                                               
   sel                          integral        4     'h7                                                                      
@@ -595,7 +511,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 445000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 445000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9913                                                                    
+req                            wb_transaction  -     @9903                                                                    
   address                      integral        32    'h4                                                                      
   data                         integral        32    'h711476cb                                                               
   sel                          integral        4     'h7                                                                      
@@ -619,7 +535,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 515000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 515000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9926                                                                    
+req                            wb_transaction  -     @9916                                                                    
   address                      integral        32    'h5                                                                      
   data                         integral        32    'h323985ec                                                               
   sel                          integral        4     'h3                                                                      
@@ -645,7 +561,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 585000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 585000: uvm_test_top.env.master_agent[02].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9952                                                                    
+req                            wb_transaction  -     @9942                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'hf                                                                      
@@ -670,7 +586,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 655000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 655000: uvm_test_top.env.master_agent[02].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9971                                                                    
+req                            wb_transaction  -     @9961                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hc4e6436c                                                               
   sel                          integral        4     'h1                                                                      
@@ -696,7 +612,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 725000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 725000: uvm_test_top.env.master_agent[03].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9997                                                                    
+req                            wb_transaction  -     @9987                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -721,7 +637,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 795000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 795000: uvm_test_top.env.master_agent[03].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10016                                                                   
+req                            wb_transaction  -     @10006                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h66dee5bf                                                               
   sel                          integral        4     'h7                                                                      
@@ -747,7 +663,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 865000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 865000: uvm_test_top.env.master_agent[04].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10042                                                                   
+req                            wb_transaction  -     @10032                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h1                                                                      
@@ -772,7 +688,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 935000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 935000: uvm_test_top.env.master_agent[04].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10061                                                                   
+req                            wb_transaction  -     @10051                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h7499856a                                                               
   sel                          integral        4     'h3                                                                      
@@ -798,7 +714,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1005000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1005000: uvm_test_top.env.master_agent[05].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10087                                                                   
+req                            wb_transaction  -     @10077                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'hf                                                                      
@@ -823,7 +739,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1075000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1075000: uvm_test_top.env.master_agent[05].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10106                                                                   
+req                            wb_transaction  -     @10096                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hddf5bb7d                                                               
   sel                          integral        4     'h3                                                                      
@@ -849,7 +765,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1145000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1145000: uvm_test_top.env.master_agent[06].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10132                                                                   
+req                            wb_transaction  -     @10122                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -874,7 +790,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1215000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1215000: uvm_test_top.env.master_agent[06].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10151                                                                   
+req                            wb_transaction  -     @10141                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h8f15674b                                                               
   sel                          integral        4     'hf                                                                      
@@ -900,7 +816,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1285000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1285000: uvm_test_top.env.master_agent[07].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10177                                                                   
+req                            wb_transaction  -     @10167                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -925,7 +841,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1355000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1355000: uvm_test_top.env.master_agent[07].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10196                                                                   
+req                            wb_transaction  -     @10186                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h277a0535                                                               
   sel                          integral        4     'h7                                                                      
@@ -960,9 +876,9 @@ UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :  195
+UVM_INFO :  188
 UVM_WARNING :    0
-UVM_ERROR :    0
+UVM_ERROR :    3
 UVM_FATAL :    0
 ** Report counts by id
 [RESET_DRIVER]    10
@@ -970,7 +886,8 @@ UVM_FATAL :    0
 [RESET_SEQUENCE]     5
 [RNTST]     1
 [SEQUENCE0]     8
-[SLAVE_DRIVER]    32
+[SLAVE_DRIVER]    30
+[SLAVE_DRIVER_CATCHER]     2
 [UVM/CONFIGDB/SPELLCHK]     9
 [UVM/FACTORY/PRINT]     1
 [UVM/RELNOTES]     1
@@ -985,12 +902,10 @@ UVM_FATAL :    0
 [Wb master]    19
 [Wb_slave]     1
 [Wb_slave Monitor]     1
-[post_tx()]     2
-[pre_tx()]     2
 
 $finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
 $finish at simulation time              1425000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 1425000 ps
-CPU Time:      1.730 seconds;       Data structure size:   1.2Mb
-Sat Feb  1 18:45:48 2020
+CPU Time:      1.780 seconds;       Data structure size:   1.2Mb
+Sat Feb  1 18:45:34 2020

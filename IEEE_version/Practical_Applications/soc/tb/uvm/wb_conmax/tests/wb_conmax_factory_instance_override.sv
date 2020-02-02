@@ -27,6 +27,7 @@ class wb_conmax_factory_instance_override_test extends wb_conmax_base_test;
 
    virtual function void build_phase(uvm_phase phase);
       string my_full_path;
+      string orig_type_name, override_type_name;
       uvm_coreservice_t cs;
       uvm_root r;
       uvm_factory fact;
@@ -34,21 +35,20 @@ class wb_conmax_factory_instance_override_test extends wb_conmax_base_test;
       cs = uvm_coreservice_t::get();
       r = cs.get_root();
       fact = cs.get_factory();
-      my_full_path = get_full_name();
-      my_full_path = $sformatf("%s.env.master_agent[00]",get_full_name());
+      my_full_path = "env.master_agent[00]";
+      orig_type_name = "wb_master_agent";
+      override_type_name = "wb_master_agent_n";
+   
 
       // These are alternatives for you to try out.  comment line 46 and see alternate approaches.
 
-      // fact.set_inst_override_by_type(wb_master_agent::get_type(),wb_master_agent_n::get_type(),"env.master_agent[00]");
-      // set_inst_override_by_type(wb_master_agent::get_type(),wb_master_agent_n::get_type(),my_full_path);
-      // wb_master_agent::type_id::set_inst_override(wb_master_agent_n::get_type(),my_full_path);
-      // uvm_factory::set_inst_override_by_type(wb_master_agent::get_type(),wb_master_agent_n::get_type(),my_full_path);
-
-      set_inst_override_by_type(my_full_path,wb_master_agent::get_type(),wb_master_agent_n::get_type());
+      set_inst_override(my_full_path,orig_type_name,override_type_name);
+      //set_inst_override_by_type(my_full_path,wb_master_agent::get_type(),wb_master_agent_n::get_type());
+      
 
       fact.print();
       super.build_phase(phase);
-      // Set the default sequencer in all the master agents
+      // Set the default sequencer in one of the master agents
       uvm_config_db #(uvm_object_wrapper)::set(this, "env.master_agent[00].mast_sqr.main_phase", "default_sequence", sequence_1::get_type()); 
       r.enable_print_topology=1;
       r.print_topology();

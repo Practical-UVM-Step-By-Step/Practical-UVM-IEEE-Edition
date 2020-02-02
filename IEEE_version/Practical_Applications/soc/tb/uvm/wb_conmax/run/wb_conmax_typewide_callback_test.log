@@ -1,4 +1,4 @@
-Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l simv.log -lca +UVM_TESTNAME=wb_conmax_instance_callback_test -l wb_conmax_instance_callback_test.log
+Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l simv.log -lca +UVM_TESTNAME=wb_conmax_typewide_callback_test -l wb_conmax_typewide_callback_test.log
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
 Compiler version P-2019.06; Runtime version P-2019.06;  Feb  1 18:45 2020
@@ -18,7 +18,7 @@ All Rights Reserved Worldwide
 
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
-UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_instance_callback_test...
+UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_typewide_callback_test...
 UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
 #### Factory Configuration (*)
 
@@ -321,7 +321,7 @@ UVM_INFO ../../common/reset_sequence.sv(32) @ 0: uvm_test_top.env.rst_agent.mast
 UVM_INFO ../../common/reset_driver.sv(81) @ 0: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] -----------------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                             
 -----------------------------------------------------------------------------------------------------
-req                            reset_trans   -     @9503                                             
+req                            reset_trans   -     @9504                                             
   cycles                       integral      32    'h3                                               
   reset_kind                   reset_kind_e  32    DEASSERT                                          
   begin_time                   time          64    0                                                 
@@ -338,7 +338,7 @@ UVM_INFO ../../common/reset_sequence.sv(34) @ 25000: uvm_test_top.env.rst_agent.
 UVM_INFO ../../common/reset_driver.sv(81) @ 25000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] -----------------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                             
 -----------------------------------------------------------------------------------------------------
-req                            reset_trans   -     @9519                                             
+req                            reset_trans   -     @9520                                             
   cycles                       integral      32    'h5                                               
   reset_kind                   reset_kind_e  32    ASSERT                                            
   begin_time                   time          64    25000                                             
@@ -355,7 +355,7 @@ UVM_INFO ../../common/reset_sequence.sv(36) @ 75000: uvm_test_top.env.rst_agent.
 UVM_INFO ../../common/reset_driver.sv(81) @ 75000: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] -----------------------------------------------------------------------------------------------------
 Name                           Type          Size  Value                                             
 -----------------------------------------------------------------------------------------------------
-req                            reset_trans   -     @9533                                             
+req                            reset_trans   -     @9534                                             
   cycles                       integral      32    'h2                                               
   reset_kind                   reset_kind_e  32    DEASSERT                                          
   begin_time                   time          64    75000                                             
@@ -384,7 +384,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 95000: uvm_test_top.env.master_agent[0
 UVM_INFO ../../common/wb_master.sv(113) @ 95000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9792                                                                    
+req                            wb_transaction  -     @9791                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -405,7 +405,7 @@ req                            wb_transaction  -     @9792
 UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 95000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9792                                                                    
+req                            wb_transaction  -     @9791                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -430,7 +430,7 @@ UVM_INFO ../../common/wb_slave_mon.sv(114) @ 126000: uvm_test_top.env.slave_agen
 UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 165000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9792                                                                    
+req                            wb_transaction  -     @9791                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -453,7 +453,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 165000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 165000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9833                                                                    
+req                            wb_transaction  -     @9832                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hb1b34cd7                                                               
   sel                          integral        4     'h3                                                                      
@@ -474,7 +474,7 @@ req                            wb_transaction  -     @9833
 UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 165000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9833                                                                    
+req                            wb_transaction  -     @9832                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hb1b34cd7                                                               
   sel                          integral        4     'h3                                                                      
@@ -497,7 +497,7 @@ UVM_INFO ../../common/wb_slave_mon.sv(121) @ 175000: uvm_test_top.env.slave_agen
 UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 235000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9833                                                                    
+req                            wb_transaction  -     @9832                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h0                                                                      
   sel                          integral        4     'h3                                                                      
@@ -522,7 +522,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 235000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 235000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9868                                                                    
+req                            wb_transaction  -     @9867                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h529f5e07                                                               
   sel                          integral        4     'h7                                                                      
@@ -540,14 +540,56 @@ req                            wb_transaction  -     @9868
   sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 235000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9867                                                                    
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h529f5e07                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h7e63                                                                   
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    235000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 245000: uvm_test_top.env.master_agent[01].mast_drv [Wb master] Got a write transaction
 UVM_INFO ../../common/wb_master_mon.sv(118) @ 245000: uvm_test_top.env.master_agent[01].mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 305000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9867                                                                    
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h529f5e07                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    235000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 305000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 305000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 305000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9887                                                                    
+req                            wb_transaction  -     @9890                                                                    
   address                      integral        32    'h4                                                                      
   data                         integral        32    'hbeefdead                                                               
   sel                          integral        4     'hf                                                                      
@@ -565,13 +607,55 @@ req                            wb_transaction  -     @9887
   sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 305000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9890                                                                    
+  address                      integral        32    'h4                                                                      
+  data                         integral        32    'hbeefdead                                                               
+  sel                          integral        4     'hf                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'hf007                                                                   
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    305000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 315000: uvm_test_top.env.master_agent[01].mast_drv [Wb master] Got a write transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 375000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9890                                                                    
+  address                      integral        32    'h4                                                                      
+  data                         integral        32    'hbeefdead                                                               
+  sel                          integral        4     'hf                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    305000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 375000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 375000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 375000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9900                                                                    
+req                            wb_transaction  -     @9907                                                                    
   address                      integral        32    'h5                                                                      
   data                         integral        32    'h23456678                                                               
   sel                          integral        4     'h7                                                                      
@@ -589,13 +673,55 @@ req                            wb_transaction  -     @9900
   sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 375000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9907                                                                    
+  address                      integral        32    'h5                                                                      
+  data                         integral        32    'h23456678                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h6a7f                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    375000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 385000: uvm_test_top.env.master_agent[01].mast_drv [Wb master] Got a write transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 445000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9907                                                                    
+  address                      integral        32    'h5                                                                      
+  data                         integral        32    'h23456678                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    375000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 445000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Completed           3 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 445000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 445000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9913                                                                    
+req                            wb_transaction  -     @9924                                                                    
   address                      integral        32    'h4                                                                      
   data                         integral        32    'h711476cb                                                               
   sel                          integral        4     'h7                                                                      
@@ -613,13 +739,55 @@ req                            wb_transaction  -     @9913
   sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 445000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9924                                                                    
+  address                      integral        32    'h4                                                                      
+  data                         integral        32    'h711476cb                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h88ea                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    445000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(150) @ 455000: uvm_test_top.env.master_agent[01].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 515000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9924                                                                    
+  address                      integral        32    'h4                                                                      
+  data                         integral        32    'h0                                                                      
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    445000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 515000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Completed           4 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 515000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 515000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9926                                                                    
+req                            wb_transaction  -     @9941                                                                    
   address                      integral        32    'h5                                                                      
   data                         integral        32    'h323985ec                                                               
   sel                          integral        4     'h3                                                                      
@@ -637,7 +805,49 @@ req                            wb_transaction  -     @9926
   sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 515000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9941                                                                    
+  address                      integral        32    'h5                                                                      
+  data                         integral        32    'h323985ec                                                               
+  sel                          integral        4     'h3                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1021                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    515000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(150) @ 525000: uvm_test_top.env.master_agent[01].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 585000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9941                                                                    
+  address                      integral        32    'h5                                                                      
+  data                         integral        32    'h0                                                                      
+  sel                          integral        4     'h3                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    515000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence1                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence1
+  sequencer                    string          42    uvm_test_top.env.master_agent[01].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 585000: uvm_test_top.env.master_agent[01].mast_drv [WB_MASTER_DRV] Completed           5 transactions...
 UVM_INFO ../src/wb_conmax_virtual_sequence.sv(44) @ 585000: uvm_test_top.env.wb_conmax_virt_seqr@@wb_conmax_virtual_sequence [VIRT_SEQQ] Starting Virtual Sequence: PART 2
 UVM_INFO ../src/wb_master_agent_sequence_library.sv(68) @ 585000: uvm_test_top.env.master_agent[02].mast_sqr@@wb_conmax_virtual_sequence.sequence0 [SEQUENCE0] Starting Sequence sequence_0 
@@ -645,7 +855,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 585000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 585000: uvm_test_top.env.master_agent[02].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9952                                                                    
+req                            wb_transaction  -     @9971                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'hf                                                                      
@@ -663,14 +873,56 @@ req                            wb_transaction  -     @9952
   sequencer                    string          42    uvm_test_top.env.master_agent[02].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 585000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9971                                                                    
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'hf                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'hf32f                                                                   
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    585000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[02].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 595000: uvm_test_top.env.master_agent[02].mast_drv [Wb master] Got a write transaction
 UVM_INFO ../../common/wb_master_mon.sv(118) @ 595000: uvm_test_top.env.master_agent[02].mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 655000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9971                                                                    
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'hf                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    585000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[02].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 655000: uvm_test_top.env.master_agent[02].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 655000: uvm_test_top.env.master_agent[02].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 655000: uvm_test_top.env.master_agent[02].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9971                                                                    
+req                            wb_transaction  -     @9994                                                                    
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hc4e6436c                                                               
   sel                          integral        4     'h1                                                                      
@@ -688,7 +940,49 @@ req                            wb_transaction  -     @9971
   sequencer                    string          42    uvm_test_top.env.master_agent[02].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 655000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9994                                                                    
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hc4e6436c                                                               
+  sel                          integral        4     'h1                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h2559                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    655000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[02].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(150) @ 665000: uvm_test_top.env.master_agent[02].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 725000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @9994                                                                    
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h0                                                                      
+  sel                          integral        4     'h1                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    655000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[02].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 725000: uvm_test_top.env.master_agent[02].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
 UVM_INFO ../src/wb_conmax_virtual_sequence.sv(47) @ 725000: uvm_test_top.env.wb_conmax_virt_seqr@@wb_conmax_virtual_sequence [VIRT_SEQQ] Starting Virtual Sequence: PART 3
 UVM_INFO ../src/wb_master_agent_sequence_library.sv(68) @ 725000: uvm_test_top.env.master_agent[03].mast_sqr@@wb_conmax_virtual_sequence.sequence0 [SEQUENCE0] Starting Sequence sequence_0 
@@ -696,7 +990,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 725000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 725000: uvm_test_top.env.master_agent[03].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @9997                                                                    
+req                            wb_transaction  -     @10024                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -714,14 +1008,56 @@ req                            wb_transaction  -     @9997
   sequencer                    string          42    uvm_test_top.env.master_agent[03].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 725000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10024                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h5523                                                                   
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    725000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[03].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 735000: uvm_test_top.env.master_agent[03].mast_drv [Wb master] Got a write transaction
 UVM_INFO ../../common/wb_master_mon.sv(118) @ 735000: uvm_test_top.env.master_agent[03].mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 795000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10024                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    725000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[03].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 795000: uvm_test_top.env.master_agent[03].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 795000: uvm_test_top.env.master_agent[03].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 795000: uvm_test_top.env.master_agent[03].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10016                                                                   
+req                            wb_transaction  -     @10047                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h66dee5bf                                                               
   sel                          integral        4     'h7                                                                      
@@ -739,7 +1075,49 @@ req                            wb_transaction  -     @10016
   sequencer                    string          42    uvm_test_top.env.master_agent[03].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 795000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10047                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h66dee5bf                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h7c74                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    795000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[03].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(150) @ 805000: uvm_test_top.env.master_agent[03].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 865000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10047                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h0                                                                      
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    795000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[03].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 865000: uvm_test_top.env.master_agent[03].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
 UVM_INFO ../src/wb_conmax_virtual_sequence.sv(50) @ 865000: uvm_test_top.env.wb_conmax_virt_seqr@@wb_conmax_virtual_sequence [VIRT_SEQQ] Starting Virtual Sequence: PART 4
 UVM_INFO ../src/wb_master_agent_sequence_library.sv(68) @ 865000: uvm_test_top.env.master_agent[04].mast_sqr@@wb_conmax_virtual_sequence.sequence0 [SEQUENCE0] Starting Sequence sequence_0 
@@ -747,7 +1125,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 865000: uvm_test_top.env.master_agent[
 UVM_INFO ../../common/wb_master.sv(113) @ 865000: uvm_test_top.env.master_agent[04].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10042                                                                   
+req                            wb_transaction  -     @10077                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h1                                                                      
@@ -765,14 +1143,56 @@ req                            wb_transaction  -     @10042
   sequencer                    string          42    uvm_test_top.env.master_agent[04].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 865000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10077                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'h1                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'hcb78                                                                   
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    865000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[04].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 875000: uvm_test_top.env.master_agent[04].mast_drv [Wb master] Got a write transaction
 UVM_INFO ../../common/wb_master_mon.sv(118) @ 875000: uvm_test_top.env.master_agent[04].mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 935000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10077                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'h1                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    865000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[04].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 935000: uvm_test_top.env.master_agent[04].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 935000: uvm_test_top.env.master_agent[04].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 935000: uvm_test_top.env.master_agent[04].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10061                                                                   
+req                            wb_transaction  -     @10100                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h7499856a                                                               
   sel                          integral        4     'h3                                                                      
@@ -790,7 +1210,49 @@ req                            wb_transaction  -     @10061
   sequencer                    string          42    uvm_test_top.env.master_agent[04].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 935000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10100                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h7499856a                                                               
+  sel                          integral        4     'h3                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h5679                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    935000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[04].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(150) @ 945000: uvm_test_top.env.master_agent[04].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 1005000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10100                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h0                                                                      
+  sel                          integral        4     'h3                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    935000                                                                   
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[04].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 1005000: uvm_test_top.env.master_agent[04].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
 UVM_INFO ../src/wb_conmax_virtual_sequence.sv(53) @ 1005000: uvm_test_top.env.wb_conmax_virt_seqr@@wb_conmax_virtual_sequence [VIRT_SEQQ] Starting Virtual Sequence: PART 5
 UVM_INFO ../src/wb_master_agent_sequence_library.sv(68) @ 1005000: uvm_test_top.env.master_agent[05].mast_sqr@@wb_conmax_virtual_sequence.sequence0 [SEQUENCE0] Starting Sequence sequence_0 
@@ -798,7 +1260,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1005000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1005000: uvm_test_top.env.master_agent[05].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10087                                                                   
+req                            wb_transaction  -     @10130                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'hf                                                                      
@@ -816,14 +1278,56 @@ req                            wb_transaction  -     @10087
   sequencer                    string          42    uvm_test_top.env.master_agent[05].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 1005000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10130                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'hf                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'ha5fc                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1005000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[05].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 1015000: uvm_test_top.env.master_agent[05].mast_drv [Wb master] Got a write transaction
 UVM_INFO ../../common/wb_master_mon.sv(118) @ 1015000: uvm_test_top.env.master_agent[05].mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 1075000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10130                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'hf                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1005000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[05].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 1075000: uvm_test_top.env.master_agent[05].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 1075000: uvm_test_top.env.master_agent[05].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 1075000: uvm_test_top.env.master_agent[05].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10106                                                                   
+req                            wb_transaction  -     @10153                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hddf5bb7d                                                               
   sel                          integral        4     'h3                                                                      
@@ -841,7 +1345,49 @@ req                            wb_transaction  -     @10106
   sequencer                    string          42    uvm_test_top.env.master_agent[05].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 1075000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10153                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hddf5bb7d                                                               
+  sel                          integral        4     'h3                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'hc559                                                                   
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1075000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[05].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(150) @ 1085000: uvm_test_top.env.master_agent[05].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 1145000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10153                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h0                                                                      
+  sel                          integral        4     'h3                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1075000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[05].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 1145000: uvm_test_top.env.master_agent[05].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
 UVM_INFO ../src/wb_conmax_virtual_sequence.sv(56) @ 1145000: uvm_test_top.env.wb_conmax_virt_seqr@@wb_conmax_virtual_sequence [VIRT_SEQQ] Starting Virtual Sequence: PART 6
 UVM_INFO ../src/wb_master_agent_sequence_library.sv(68) @ 1145000: uvm_test_top.env.master_agent[06].mast_sqr@@wb_conmax_virtual_sequence.sequence0 [SEQUENCE0] Starting Sequence sequence_0 
@@ -849,7 +1395,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1145000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1145000: uvm_test_top.env.master_agent[06].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10132                                                                   
+req                            wb_transaction  -     @10183                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -867,14 +1413,56 @@ req                            wb_transaction  -     @10132
   sequencer                    string          42    uvm_test_top.env.master_agent[06].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 1145000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10183                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'habb9                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1145000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[06].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 1155000: uvm_test_top.env.master_agent[06].mast_drv [Wb master] Got a write transaction
 UVM_INFO ../../common/wb_master_mon.sv(118) @ 1155000: uvm_test_top.env.master_agent[06].mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 1215000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10183                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1145000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[06].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 1215000: uvm_test_top.env.master_agent[06].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 1215000: uvm_test_top.env.master_agent[06].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 1215000: uvm_test_top.env.master_agent[06].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10151                                                                   
+req                            wb_transaction  -     @10206                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h8f15674b                                                               
   sel                          integral        4     'hf                                                                      
@@ -892,7 +1480,49 @@ req                            wb_transaction  -     @10151
   sequencer                    string          42    uvm_test_top.env.master_agent[06].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 1215000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10206                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h8f15674b                                                               
+  sel                          integral        4     'hf                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'ha315                                                                   
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1215000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[06].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(150) @ 1225000: uvm_test_top.env.master_agent[06].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 1285000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10206                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h0                                                                      
+  sel                          integral        4     'hf                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h0                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1215000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[06].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 1285000: uvm_test_top.env.master_agent[06].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
 UVM_INFO ../src/wb_conmax_virtual_sequence.sv(59) @ 1285000: uvm_test_top.env.wb_conmax_virt_seqr@@wb_conmax_virtual_sequence [VIRT_SEQQ] Starting Virtual Sequence: PART 7
 UVM_INFO ../src/wb_master_agent_sequence_library.sv(68) @ 1285000: uvm_test_top.env.master_agent[07].mast_sqr@@wb_conmax_virtual_sequence.sequence0 [SEQUENCE0] Starting Sequence sequence_0 
@@ -900,7 +1530,7 @@ UVM_INFO ../../common/wb_master.sv(112) @ 1285000: uvm_test_top.env.master_agent
 UVM_INFO ../../common/wb_master.sv(113) @ 1285000: uvm_test_top.env.master_agent[07].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10177                                                                   
+req                            wb_transaction  -     @10236                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'hdeadbeef                                                               
   sel                          integral        4     'h7                                                                      
@@ -918,14 +1548,56 @@ req                            wb_transaction  -     @10177
   sequencer                    string          42    uvm_test_top.env.master_agent[07].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 1285000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10236                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'hbd10                                                                   
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1285000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[07].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(189) @ 1295000: uvm_test_top.env.master_agent[07].mast_drv [Wb master] Got a write transaction
 UVM_INFO ../../common/wb_master_mon.sv(118) @ 1295000: uvm_test_top.env.master_agent[07].mast_mon [WB master Monitor] got a write transaction  from Master 
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 1355000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10236                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'hdeadbeef                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    WRITE                                                                    
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1285000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[07].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 1355000: uvm_test_top.env.master_agent[07].mast_drv [WB_MASTER_DRV] Completed           1 transactions...
 UVM_INFO ../../common/wb_master.sv(112) @ 1355000: uvm_test_top.env.master_agent[07].mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../../common/wb_master.sv(113) @ 1355000: uvm_test_top.env.master_agent[07].mast_drv [WB_MASTER_DRV] ------------------------------------------------------------------------------------------------------------------------------
 Name                           Type            Size  Value                                                                    
 ------------------------------------------------------------------------------------------------------------------------------
-req                            wb_transaction  -     @10196                                                                   
+req                            wb_transaction  -     @10259                                                                   
   address                      integral        32    'h3                                                                      
   data                         integral        32    'h277a0535                                                               
   sel                          integral        4     'h7                                                                      
@@ -943,7 +1615,49 @@ req                            wb_transaction  -     @10196
   sequencer                    string          42    uvm_test_top.env.master_agent[07].mast_sqr                               
 ------------------------------------------------------------------------------------------------------------------------------
 ...
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(35) @ 1355000: reporter [pre_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10259                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h277a0535                                                               
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h28e7                                                                   
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    OK                                                                       
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1355000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[07].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(150) @ 1365000: uvm_test_top.env.master_agent[07].mast_drv [Wb master] Got a read transaction
+UVM_INFO ../tests/wb_conmax_instance_callback_test.sv(30) @ 1425000: reporter [post_tx()] ------------------------------------------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                                                    
+------------------------------------------------------------------------------------------------------------------------------
+req                            wb_transaction  -     @10259                                                                   
+  address                      integral        32    'h3                                                                      
+  data                         integral        32    'h0                                                                      
+  sel                          integral        4     'h7                                                                      
+  tga                          integral        16    'hf                                                                      
+  tgc                          integral        16    'h1                                                                      
+  lock                         integral        1     'h1                                                                      
+  num_wait_states              integral        32    'h0                                                                      
+  kind                         kinds_e         32    READ                                                                     
+  status                       status_e        32    TIMEOUT                                                                  
+  next_cycle                   pipelining_e    32    CLASSIC                                                                  
+  begin_time                   time            64    1355000                                                                  
+  depth                        int             32    'd3                                                                      
+  parent sequence (name)       string          9     sequence0                                                                
+  parent sequence (full name)  string          73    uvm_test_top.env.wb_conmax_virt_seqr.wb_conmax_virtual_sequence.sequence0
+  sequencer                    string          42    uvm_test_top.env.master_agent[07].mast_sqr                               
+------------------------------------------------------------------------------------------------------------------------------
+
 UVM_INFO ../../common/wb_master.sv(142) @ 1425000: uvm_test_top.env.master_agent[07].mast_drv [WB_MASTER_DRV] Completed           2 transactions...
 UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 1425000: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
@@ -960,7 +1674,7 @@ UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :  195
+UVM_INFO :  229
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
@@ -985,12 +1699,12 @@ UVM_FATAL :    0
 [Wb master]    19
 [Wb_slave]     1
 [Wb_slave Monitor]     1
-[post_tx()]     2
-[pre_tx()]     2
+[post_tx()]    19
+[pre_tx()]    19
 
 $finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
 $finish at simulation time              1425000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 1425000 ps
-CPU Time:      1.730 seconds;       Data structure size:   1.2Mb
-Sat Feb  1 18:45:48 2020
+CPU Time:      1.800 seconds;       Data structure size:   1.2Mb
+Sat Feb  1 18:45:55 2020

@@ -1,0 +1,277 @@
+Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l simv.log -lca +UVM_TESTNAME=wb_conmax_alter_verbosity_test -l wb_conmax_alter_verbosity_test.log
+Chronologic VCS simulator copyright 1991-2019
+Contains Synopsys proprietary information.
+Compiler version P-2019.06; Runtime version P-2019.06;  Feb  1 18:45 2020
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  This implementation of the UVM Library deviates from the 1800.2-2017
+  standard.  See the DEVIATIONS.md file contained in the release
+  for more details.
+
+----------------------------------------------------------------
+Accellera:1800.2-2017:UVM:1.0.Synopsys
+
+All copyright owners for this kit are listed in NOTICE.txt
+All Rights Reserved Worldwide
+----------------------------------------------------------------
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_alter_verbosity_test...
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
+#### Factory Configuration (*)
+
+  No instance or type overrides are registered with this factory
+
+All types registered with the factory: 199 total
+  Type Name
+  ---------
+  base_sequence
+  parallel_sequence
+  ral_reg_CFG
+  reset_agent
+  reset_base_sequence
+  reset_driver
+  reset_monitor
+  reset_sequence
+  reset_sequencer
+  reset_trans
+  sequence_0
+  sequence_1
+  sequence_2
+  snps_uvm_reg_bank_group
+  snps_uvm_reg_map
+  wb_config
+  wb_conmax_alter_message_test
+  wb_conmax_alter_verbosity_all_components_test
+  wb_conmax_alter_verbosity_specific_component_test
+  wb_conmax_alter_verbosity_test
+  wb_conmax_base_test
+  wb_conmax_commandline_test_1
+  wb_conmax_env
+  wb_conmax_env_cfg
+  wb_conmax_env_cov
+  wb_conmax_env_ral_block
+  wb_conmax_factory_instance_override_test
+  wb_conmax_factory_instance_override_test_cmdline
+  wb_conmax_factory_type_override_test
+  wb_conmax_flat_seq_test
+  wb_conmax_instance_callback_test
+  wb_conmax_parallel_seq_test
+  wb_conmax_report_file_test
+  wb_conmax_scoreboard
+  wb_conmax_simple_cmdline_proc
+  wb_conmax_typewide_callback_test
+  wb_conmax_virtual_sequence
+  wb_conmax_virtual_sequencer
+  wb_master
+  wb_master_agent
+  wb_master_agent_n
+  wb_master_mon
+  wb_master_monitor_2cov_connect
+  wb_master_seqr
+  wb_master_txn
+  wb_slave
+  wb_slave_agent
+  wb_slave_mon
+  wb_slave_seqr
+  wb_transaction
+(*) Types with no associated type name will be printed as <unknown>
+
+####
+
+
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_ERROR ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Obtained Reset
+UVM_ERROR ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Completed Reset
+------------------------------------------------
+Name               Type           Size  Value   
+------------------------------------------------
+slave_configs[00]  wb_config      -     @254    
+  port_size        sizes_e        32    DWORD   
+  granularity      sizes_e        32    BYTE    
+  cycles           cycle_types_e  32    CLASSIC 
+  max_n_wss        integral       32    'h2     
+  min_addr         integral       32    'h0     
+  max_addr         integral       32    'hfffffe
+------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[01]  wb_config      -     @255     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h1fffffd
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[02]  wb_config      -     @256     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h2fffffc
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[03]  wb_config      -     @257     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h3fffffb
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[04]  wb_config      -     @258     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h4fffffa
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[05]  wb_config      -     @259     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h5fffff9
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[06]  wb_config      -     @260     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h6fffff8
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[07]  wb_config      -     @261     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h7fffff7
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[08]  wb_config      -     @262     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h8fffff6
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[09]  wb_config      -     @263     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h9fffff5
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[10]  wb_config      -     @264     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hafffff4
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[11]  wb_config      -     @265     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hbfffff3
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[12]  wb_config      -     @266     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hcfffff2
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[13]  wb_config      -     @267     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hdfffff1
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[14]  wb_config      -     @268     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hefffff0
+-------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[15]  wb_config      -     @269     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hfffffef
+-------------------------------------------------
+$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish at simulation time              1845000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1845000 ps
+CPU Time:      1.780 seconds;       Data structure size:   1.2Mb
+Sat Feb  1 18:45:36 2020
