@@ -11,8 +11,6 @@
  * See license.txt for details                  *
  *                                              *
  ************************************************/
-
-//
 `ifndef WB_CONMAX_SCOREBOARD__SV
  `define WB_CONMAX_SCOREBOARD__SV
 
@@ -89,8 +87,6 @@ endclass: wb_conmax_scoreboard
    // Master ingress functions
 
    function void wb_conmax_scoreboard::write_master(wb_transaction tr);
-      integer master_id;
-      master_id = get_addr(tr);
       `uvm_info("SCOREBOARD_MASTER",tr.sprint(),UVM_HIGH)
       comparator[get_addr(tr)].before_export.write(tr);
    endfunction

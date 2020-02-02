@@ -11,10 +11,6 @@
  * See license.txt for details                  *
  *                                              *
  ************************************************/
-
-//
-//
-
 `ifndef WB_ENV_ENV__SV
 	`define WB_ENV_ENV__SV
 
