@@ -1,7 +1,6 @@
 // This class is the actual interrupt sequence.
 class tx_interrupt_seq extends base_sequence;
 	`uvm_object_utils(tx_interrupt_seq)
-   
 
 	function new(string name = "tx_interrupt_seq");
 		super.new(name);
