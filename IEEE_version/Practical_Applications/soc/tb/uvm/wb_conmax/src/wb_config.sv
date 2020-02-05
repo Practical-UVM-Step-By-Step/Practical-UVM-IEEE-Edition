@@ -30,7 +30,6 @@ class wb_config extends uvm_object;
 
     constraint wb_slave_cfg_valid {
         max_addr >= min_addr;
-
     }
 
     constraint wb_cfg_valid {
