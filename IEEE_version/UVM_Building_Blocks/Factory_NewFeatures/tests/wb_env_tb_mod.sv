@@ -24,10 +24,11 @@ module wb_env_tb_mod;
       f.set_type_override_by_type(wb_cov_base::get_type(),wb_env_cov::get_type());
       void'(p.get_arg_value("+NEW_PACKET=",new_type));
       if(new_type == "")
-        $fatal("no override. test will fail");
+        `uvm_fatal("MISSING_OVERRIDE","no override. test will fail")
       else
         f.set_type_override_by_name("BasePacket",new_type);
-      //Note that this is equivalent to wb_transaction::type_id::set_type_override(wb_transaction_ext::get_type);
+      // Note that the above is equivalent to wb_transaction::type_id::set_type_override(wb_transaction_ext::get_type);
+      // The one difference is the use of a type alias name
 
       uvm_config_db #(v_if1)::set(null,"uvm_test_top.env.master_agent","mst_if",wb_env_top_mod.mast_if);
       uvm_config_db #(v_if2)::set(null,"uvm_test_top.env.slave_agent","slv_if",wb_env_top_mod.slave_if);
