@@ -19,11 +19,8 @@
 			coverpoint tr.num_wait_states {
 				bins legal[] = {[0:15]};
 				illegal_bins ib = {[16:$]};
-
 			}
-
 		endgroup: cg_trans
-
 
 		function new(string name, uvm_component parent);
 			super.new(name,parent);

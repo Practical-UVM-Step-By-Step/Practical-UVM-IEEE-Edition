@@ -33,7 +33,7 @@
 
 	function void wb_env::connect_phase(uvm_phase phase);
 		super.connect_phase(phase);
-		master_agent.mast_mon.mon_analysis_port.connect(cov.analysis_export);
+		master_agent.analysis_port.connect(cov.analysis_export);
 		master_agent.analysis_port.connect(sb.actual_wb_transaction_fifo.analysis_export);
 		slave_agent.analysis_port.connect(sb.expected_wb_transaction_fifo.analysis_export);
 	endfunction: connect_phase

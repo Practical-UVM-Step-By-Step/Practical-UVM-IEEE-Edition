@@ -4,8 +4,8 @@
 	class wb_scoreboard extends uvm_scoreboard;
 		`uvm_component_utils( wb_scoreboard)
    
-		uvm_tlm_analysis_fifo #( wb_transaction ) expected_wb_transaction_fifo;
-		uvm_tlm_analysis_fifo #( wb_transaction ) actual_wb_transaction_fifo;
+		uvm_tlm_analysis_fifo #(wb_transaction) expected_wb_transaction_fifo;
+		uvm_tlm_analysis_fifo #(wb_transaction) actual_wb_transaction_fifo;
    
 		// Constructor
 
