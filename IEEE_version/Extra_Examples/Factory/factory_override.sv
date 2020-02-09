@@ -1,7 +1,6 @@
 module top;
 	import uvm_pkg::*;
 
-
 	class Class_A_acs extends uvm_component;
 		int my_component_int_prop ;
 		`uvm_component_utils_begin(Class_A_acs)
@@ -39,6 +38,7 @@ module top;
 			return 1;
 		endfunction
 	endclass
+
 	class Class_A_no_acs_ext_2 extends Class_A_acs;
 		`uvm_component_utils(Class_A_no_acs_ext_2)
 		function new(string name="Class_A_no_acs_ext_2",uvm_component parent = null);
@@ -85,11 +85,8 @@ module top;
 			acs1 = Class_A_acs::type_id::create("acs1",this);
 			acs2 = Class_A_acs::type_id::create("acs2",this);
 			my_factory.print();
-        
 		endfunction
 	endclass
-
-
 
 	initial begin
 		run_test();
