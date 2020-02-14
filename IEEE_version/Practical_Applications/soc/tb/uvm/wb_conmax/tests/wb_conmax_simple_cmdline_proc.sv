@@ -42,7 +42,7 @@
 			clp = uvm_cmdline_processor::get_inst();
 			void'(clp.get_arg_values("+slave_adr_max=", arg_values));
 			slave_adr_max = arg_values[0].atoi();
-			$display("SLAVE ADR = %h",slave_adr_max);
+			`uvm_info("CMDLINE_VALUE",$sformatf("SLAVE ADR = %h",slave_adr_max),UVM_LOW)
 
 			// slave_adr_max = 32'h0fffffe;
 			super.build_phase(phase);
