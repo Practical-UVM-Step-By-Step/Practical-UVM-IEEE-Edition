@@ -1,20 +1,18 @@
 # Practical-UVM-IEEE-Edition ISBN 978-0-9977896-1-4
 This is the repository for the IEEE version of the book
 
-├── changes.pdf
-├── IEEE_BOOK_TOC.pdf
-├── cleanup
-├── Listing_Pointers   -- 
-├── log
-├── README.md
-├── IEEE_version
+├── IEEE_BOOK_TOC.pdf      This contains  the Table of Contents for the Book!
+├── changes.pdf		   This lists the changes from the first version to this version
+├── cleanup		   Cleanup Script
+├── Listing_Pointers       Links to Actual listings  used in the book
+├── README.md		   This file
+├── IEEE_version	   This directory contains the IEEE Version examples
 │   ├── Advanced_UVM_Topics
 │   │   ├── Advanced_Stimulus_Generation
 │   │   │   ├── env
 │   │   │   ├── hdl
 │   │   │   ├── include
 │   │   │   ├── run
-│   │   │   │   └── DVEfiles
 │   │   │   ├── src
 │   │   │   │   └── sequences
 │   │   │   └── tests
@@ -40,7 +38,6 @@ This is the repository for the IEEE version of the book
 │   │       ├── hdl
 │   │       ├── include
 │   │       ├── run
-│   │       │   └── DVEfiles
 │   │       ├── src
 │   │       └── tests
 │   ├── Extra_Examples
@@ -127,7 +124,6 @@ This is the repository for the IEEE version of the book
 │   │   │       │       ├── hdl
 │   │   │       │       ├── include
 │   │   │       │       ├── run
-│   │   │       │       │   └── DVEfiles
 │   │   │       │       ├── src
 │   │   │       │       └── tests
 │   │   │       └── verilog_tb
@@ -164,7 +160,6 @@ This is the repository for the IEEE version of the book
 │   │   │   ├── hdl
 │   │   │   ├── include
 │   │   │   ├── run
-│   │   │   │   └── DVEfiles
 │   │   │   ├── src
 │   │   │   │   └── sequences
 │   │   │   └── tests
@@ -190,7 +185,6 @@ This is the repository for the IEEE version of the book
 │   │   │   ├── hdl
 │   │   │   ├── include
 │   │   │   ├── run
-│   │   │   │   └── DVEfiles
 │   │   │   ├── src
 │   │   │   │   └── sequences
 │   │   │   └── tests
@@ -482,5 +476,3 @@ This is the repository for the IEEE version of the book
             ├── rtl
             │   └── verilog
             └── sim
-
-475 directories
