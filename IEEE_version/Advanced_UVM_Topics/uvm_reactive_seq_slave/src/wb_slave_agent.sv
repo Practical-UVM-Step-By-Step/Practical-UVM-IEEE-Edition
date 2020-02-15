@@ -3,7 +3,7 @@
 
     typedef class wb_slave_seqr;
     class wb_slave_agent extends uvm_agent;
-        protected uvm_active_passive_enum is_active = UVM_ACTIVE;
+
         wb_slave slv_drv;
         wb_slave_mon slv_mon;
         wb_slave_seqr slv_seqr;
