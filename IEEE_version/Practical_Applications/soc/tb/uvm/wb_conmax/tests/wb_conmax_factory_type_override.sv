@@ -44,7 +44,6 @@ class wb_conmax_factory_type_override_test extends wb_conmax_base_test;
       // set_inst_override_by_type(wb_master_agent::get_type(),wb_master_agent_n::get_type(),my_full_path);
       // wb_master_agent::type_id::set_inst_override(wb_master_agent_n::get_type(),my_full_path);
       // uvm_factory::set_inst_override_by_type(wb_master_agent::get_type(),wb_master_agent_n::get_type(),my_full_path);
-
       fact.print();
       // Set the default sequencer in all the master agents
       uvm_config_db #(uvm_object_wrapper)::set(this, "env.master_agent[00].mast_sqr.main_phase", "default_sequence", sequence_1::get_type()); 
