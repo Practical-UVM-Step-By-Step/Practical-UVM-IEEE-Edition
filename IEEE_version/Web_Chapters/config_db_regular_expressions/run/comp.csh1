@@ -1,3 +1,0 @@
-#!/bin/csh -f
-rm -rf csrc* simv*
-vcs -sverilog -ntb_opts uvm-ieee ../src/top.sv -l comp.log +define+UVM_NO_DEPRECATED +incdir+../src

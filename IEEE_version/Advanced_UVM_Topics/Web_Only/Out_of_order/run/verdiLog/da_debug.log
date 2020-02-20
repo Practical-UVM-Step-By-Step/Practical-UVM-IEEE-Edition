@@ -1,7 +1,0 @@
-#####################################################################################################
-# da_debug.log : log primitive debug message of Data Agent (Verdi internal layer to access FSDB).   #
-#                This is for R&D to analyze when there are issues happening when Verdi reading FSDB #
-#####################################################################################################
-[DA][EVDP][XML]: start update xml in interactive mode at init[DA][EVDP][XML]: start update xml file in interactive mode
-[DA][EVDP]: update_event_data fail due to ffrSync didn't success
-[DA][EVDP][XML]: start update xml in interactive mode at update[DA][EVDP][XML]: start update xml file in interactive mode
