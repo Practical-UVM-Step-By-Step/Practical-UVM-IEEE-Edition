@@ -50,7 +50,7 @@
         int 		num_wait_states;
 
         constraint reasonable_data_size {
-            data.size < 64;
+            data.size() < 64;
         }   
 
         constraint supported {

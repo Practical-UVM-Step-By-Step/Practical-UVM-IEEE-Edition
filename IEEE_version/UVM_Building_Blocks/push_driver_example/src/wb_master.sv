@@ -96,7 +96,7 @@
                 read(tr);
             end
             wb_transaction::WRITE: begin
-                // ToDo: Implement DISPLAY transaction
+    
                 write(tr);
             end
             wb_transaction::BLK_RD: begin

@@ -1,6 +1,6 @@
 `include "class_A.sv"
-class class_P extends uvm_object;
 
+class class_P extends uvm_object;
 
    // basic datatypes
    rand int par_int; 
@@ -8,9 +8,9 @@ class class_P extends uvm_object;
    string par_string;
 
    // Some objects to demonstrate the copy recursion policy
-
    class_A cl1; // UVM_SHALLOW
    class_A cl3; // UVM_DEEP
+
 
    `uvm_object_utils_begin(class_P)
       `uvm_field_int(par_int,UVM_DEFAULT)

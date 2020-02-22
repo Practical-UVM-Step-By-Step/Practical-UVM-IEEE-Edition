@@ -135,7 +135,6 @@ class uvm_reg_single_all_access_seq_resdb extends uvm_reg_sequence #(uvm_sequenc
     ral_block_simple_ral_env regmodel;
     string regname_string;
 
-
     uvm_status_e status;
     uvm_reg_data_t  read_val, write_val, set_val, mirror_val, get_val, peek_val, poke_val;
     uvm_reg_data_t  peek_bkup_1, read_bkup1;
@@ -151,9 +150,6 @@ class uvm_reg_single_all_access_seq_resdb extends uvm_reg_sequence #(uvm_sequenc
 
         uvm_resource_db#(string)::read_by_name("reg_seq","regname_string",regname_string,this);
 
-        $display("name of path %s : %s",this.get_full_name(), regname_string);
-
-
         rg = regmodel.get_reg_by_name(regname_string);
         write_val = 32'hdeadbeef;
         set_val = 32'hbeefdead;
@@ -167,21 +163,17 @@ class uvm_reg_single_all_access_seq_resdb extends uvm_reg_sequence #(uvm_sequenc
         rg.poke(.status(status), .value(poke_val), .parent(this));
         `uvm_info("reg_single_all_access_seq_resdb" , $sformatf("Status was %s when performing poke() from %s poke_value = %x",status.name(), rg.get_full_name(),poke_val),UVM_LOW)
 
-
         rg.peek(.status(status), .value(peek_val),  .parent(this));
         `uvm_info("reg_single_all_access_seq_resdb" , $sformatf("Status was %s when performing peek() from %s peek_value = %x",status.name(), rg.get_full_name(),peek_val),UVM_LOW)
 
         rg.read(.status(status), .value(read_val), .path(UVM_FRONTDOOR),  .parent(this));
         `uvm_info("reg_single_all_access_seq_resdb" , $sformatf("Status was %s when performing read() from %s read_value = %x",status.name(), rg.get_full_name(),read_val),UVM_LOW)
 
-
         rg.peek(.status(status), .value(peek_val),   .parent(this));
         `uvm_info("reg_single_all_access_seq_resdb" , $sformatf("Status was %s when performing peek() from %s peek_value = %x",status.name(), rg.get_full_name(),peek_val),UVM_LOW)
 
-
         rg.write(.status(status), .value(write_val), .path(UVM_BACKDOOR),  .parent(this));
         `uvm_info("reg_single_all_access_seq_resdb" , $sformatf("Status was %s when performing FRONTDOOR write() from %s write_value = %x",status.name(), rg.get_full_name(),write_val),UVM_LOW)
-
 
         rg.peek(.status(status), .value(peek_val),   .parent(this));
         `uvm_info("reg_single_all_access_seq_resdb" , $sformatf("Status was %s when performing peek() from %s peek_value = %x",status.name(), rg.get_full_name(),peek_val),UVM_LOW)
@@ -204,8 +196,6 @@ class uvm_reg_single_all_access_seq_resdb extends uvm_reg_sequence #(uvm_sequenc
         `uvm_info("reg_single_all_access_seq_resdb" , $sformatf("Status was %s when performing peek() from %s peek_value = %x",status.name(), rg.get_full_name(),peek_val),UVM_LOW)
         // mirror_val =   rg.get_mirrored_value("r_R_field");
         `uvm_info(get_full_name(),$sformatf("AFTER Read Value : %08h\nWrite Value %08h \nSet Value: %08h\n MirrorValue:%08h\n GetValue : %08h\n", read_val, write_val, set_val, mirror_val, get_val),UVM_LOW);
-
-      
         // 	`uvm_info("reg_single_all_access_seq_resdb_resdb" , {" Mirrored value was : ", $sformatf("%d",rg.get_mirrored_value())}, UVM_LOW)
     endtask
 
