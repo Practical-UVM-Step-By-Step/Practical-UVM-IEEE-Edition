@@ -38,19 +38,6 @@ class wb_env_test extends uvm_test;
       phase.phase_done.set_drain_time(this, 50);
    endtask : run_phase
 
-   function void extract_phase(uvm_phase phase);
-
-   endfunction 
-
-   function void report_phase(uvm_phase phase);
-      if(test_pass) begin
-	 `uvm_info(get_type_name(), "** UVM TEST PASSED **", UVM_NONE)
-      end
-      else begin
-	 `uvm_error(get_type_name(), "** UVM TEST FAIL **")
-      end
-   endfunction
-
 
 endclass : wb_env_test
 

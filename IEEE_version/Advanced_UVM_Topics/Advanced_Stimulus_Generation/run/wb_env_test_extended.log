@@ -1,8 +1,8 @@
-Command: /slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Advanced_UVM_Topics/Advanced_Stimulus_Generation/run/./simv +UVM_TESTNAME=wb_env_test_extended -l wb_env_test_extended.log
+Command: /u/srivats/proj_area/Practical-UVM-IEEE-Edition/IEEE_version/Advanced_UVM_Topics/Advanced_Stimulus_Generation/run/./simv +UVM_TESTNAME=wb_env_test_extended -l wb_env_test_extended.log
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
-Compiler version P-2019.06; Runtime version P-2019.06;  Jan 26 15:33 2020
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+Compiler version P-2019.06-SP2-1; Runtime version P-2019.06-SP2-1;  Feb 22 20:03 2020
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
   ***********       IMPORTANT RELEASE NOTES         ************
 
   This implementation of the UVM Library deviates from the 1800.2-2017
@@ -173,7 +173,7 @@ tr                 wb_transaction_extended  -     @1366
 --------------------------------------------------------------------
 UVM_INFO ../src/wb_scoreboard.sv(63) @ 455: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
 UVM_INFO ../src/sequences/sequence_0.sv(31) @ 455: uvm_test_top.env.master_agent.mast_sqr@@sequence_0 [SEQUENCE0] sequence_0 post_start() dropping main objection
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 455: reporter [UVM/REPORT/CATCHER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 455: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
 
@@ -184,7 +184,7 @@ Number of caught UVM_FATAL reports   :    0
 Number of caught UVM_ERROR reports   :    0
 Number of caught UVM_WARNING reports :    0
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 455: reporter [UVM/REPORT/SERVER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 455: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
@@ -212,9 +212,9 @@ UVM_FATAL :    0
 [Wb_slave]     3
 [Wb_slave Monitor]     1
 
-$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish called from file "/global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh", line 596.
 $finish at simulation time                  455
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 455
-CPU Time:      0.700 seconds;       Data structure size:   0.5Mb
-Sun Jan 26 15:33:31 2020
+CPU Time:      0.680 seconds;       Data structure size:   0.6Mb
+Sat Feb 22 20:03:25 2020

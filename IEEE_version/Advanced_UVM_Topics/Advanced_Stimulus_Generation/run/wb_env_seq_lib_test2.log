@@ -1,8 +1,8 @@
-Command: /slowfs/vgcs13/srivats/new_book_examples/IEEE_version/Advanced_UVM_Topics/Advanced_Stimulus_Generation/run/./simv +UVM_TESTNAME=wb_env_seq_lib_test_2 -l wb_env_seq_lib_test2.log
+Command: /u/srivats/proj_area/Practical-UVM-IEEE-Edition/IEEE_version/Advanced_UVM_Topics/Advanced_Stimulus_Generation/run/./simv +UVM_TESTNAME=wb_env_seq_lib_test_2 -l wb_env_seq_lib_test2.log
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
-Compiler version P-2019.06; Runtime version P-2019.06;  Jan 26 15:33 2020
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+Compiler version P-2019.06-SP2-1; Runtime version P-2019.06-SP2-1;  Feb 22 20:03 2020
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
   ***********       IMPORTANT RELEASE NOTES         ************
 
   This implementation of the UVM Library deviates from the 1800.2-2017
@@ -46,7 +46,7 @@ UVM_INFO ../src/reset_sequence.sv(36) @ 75: uvm_test_top.env.rst_agent.mast_sqr@
 UVM_INFO ../src/reset_driver.sv(107) @ 95: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Completed transaction...
 UVM_INFO ../src/reset_driver.sv(79) @ 95: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
 UVM_INFO ../src/reset_sequence.sv(39) @ 95: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Ended Reset Sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequence_library.svh(648) @ 95: uvm_test_top.env.master_agent.mast_sqr@@wb_master_seqr_sequence_library [SEQLIB/START] Starting sequence library wb_master_seqr_sequence_library in main phase: 10 iterations in mode UVM_SEQ_LIB_RAND
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/seq/uvm_sequence_library.svh(648) @ 95: uvm_test_top.env.master_agent.mast_sqr@@wb_master_seqr_sequence_library [SEQLIB/START] Starting sequence library wb_master_seqr_sequence_library in main phase: 10 iterations in mode UVM_SEQ_LIB_RAND
 UVM_INFO ../src/wb_master.sv(110) @ 95: uvm_test_top.env.master_agent.mast_drv [WB_MASTER_DRV] Starting transaction...
 UVM_INFO ../src/wb_master.sv(147) @ 105: uvm_test_top.env.master_agent.mast_drv [Wb master] Got a read transaction
 UVM_INFO ../src/wb_master_mon.sv(124) @ 105: uvm_test_top.env.master_agent.mast_mon [Wb_master Monitor] got a read transaction  
@@ -1594,8 +1594,8 @@ tr                 wb_transaction  -     @2695
   next_cycle       pipelining_e    32    CLASSIC
 ------------------------------------------------
 UVM_INFO ../src/wb_scoreboard.sv(63) @ 4775: uvm_test_top.env.sb [WB SCOREBOARD] TRANSACTIONS MATCH
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/seq/uvm_sequence_library.svh(725) @ 4775: uvm_test_top.env.master_agent.mast_sqr@@wb_master_seqr_sequence_library [SEQLIB/END] Ending sequence library in phase main
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 4775: reporter [UVM/REPORT/CATCHER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/seq/uvm_sequence_library.svh(725) @ 4775: uvm_test_top.env.master_agent.mast_sqr@@wb_master_seqr_sequence_library [SEQLIB/END] Ending sequence library in phase main
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 4775: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
 
@@ -1606,7 +1606,7 @@ Number of caught UVM_FATAL reports   :    0
 Number of caught UVM_ERROR reports   :    0
 Number of caught UVM_WARNING reports :    0
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 4775: reporter [UVM/REPORT/SERVER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 4775: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
@@ -1635,9 +1635,9 @@ UVM_FATAL :    0
 [Wb_slave]    24
 [Wb_slave Monitor]    18
 
-$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish called from file "/global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh", line 596.
 $finish at simulation time                 4775
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 4775
-CPU Time:      0.760 seconds;       Data structure size:   0.5Mb
-Sun Jan 26 15:33:36 2020
+CPU Time:      0.740 seconds;       Data structure size:   0.6Mb
+Sat Feb 22 20:03:30 2020

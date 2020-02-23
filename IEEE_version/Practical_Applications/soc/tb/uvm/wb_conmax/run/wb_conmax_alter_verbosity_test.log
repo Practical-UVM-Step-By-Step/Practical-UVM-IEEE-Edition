@@ -1,8 +1,8 @@
-Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l simv.log -lca +UVM_TESTNAME=wb_conmax_alter_verbosity_test -l wb_conmax_alter_verbosity_test.log
+Command: /u/srivats/proj_area/Practical-UVM-IEEE-Edition/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l simv.log -lca +UVM_TESTNAME=wb_conmax_alter_verbosity_test -l wb_conmax_alter_verbosity_test.log
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
-Compiler version P-2019.06; Runtime version P-2019.06;  Feb  1 18:45 2020
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+Compiler version P-2019.06-SP2-1; Runtime version P-2019.06-SP2-1;  Feb 22 20:23 2020
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
   ***********       IMPORTANT RELEASE NOTES         ************
 
   This implementation of the UVM Library deviates from the 1800.2-2017
@@ -19,7 +19,7 @@ All Rights Reserved Worldwide
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
 UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_alter_verbosity_test...
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
 #### Factory Configuration (*)
 
   No instance or type overrides are registered with this factory
@@ -82,15 +82,15 @@ All types registered with the factory: 199 total
 ####
 
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
 UVM_ERROR ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_ERROR ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Completed Reset
 ------------------------------------------------
@@ -269,9 +269,9 @@ slave_configs[15]  wb_config      -     @269
   min_addr         integral       32    'h0      
   max_addr         integral       32    'hfffffef
 -------------------------------------------------
-$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish called from file "/global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh", line 596.
 $finish at simulation time              1845000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 1845000 ps
-CPU Time:      1.780 seconds;       Data structure size:   1.2Mb
-Sat Feb  1 18:45:36 2020
+CPU Time:      1.880 seconds;       Data structure size:   1.3Mb
+Sat Feb 22 20:23:06 2020

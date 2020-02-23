@@ -1,8 +1,8 @@
-Command: /SCRATCH/srivats/vs/new_book_examples/IEEE_version/Advanced_UVM_Topics/registers_example/run/./simv +UVM_TESTNAME=simple_ral_env_test -l simple_ral_env_test.log
+Command: /u/srivats/proj_area/Practical-UVM-IEEE-Edition/IEEE_version/Advanced_UVM_Topics/registers_example/run/./simv +UVM_TESTNAME=simple_ral_env_test -l simple_ral_env_test.log
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
-Compiler version P-2019.06; Runtime version P-2019.06;  Dec  6 20:56 2019
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+Compiler version P-2019.06-SP2-1; Runtime version P-2019.06-SP2-1;  Feb 22 20:09 2020
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
   ***********       IMPORTANT RELEASE NOTES         ************
 
   This implementation of the UVM Library deviates from the 1800.2-2017
@@ -19,201 +19,202 @@ All Rights Reserved Worldwide
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
 UVM_INFO @ 0: reporter [RNTST] Running test simple_ral_env_test...
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
-UVM_WARNING /global/apps/vcs_2019.06/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean mst_if|mstr_agent_cfg
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
+UVM_WARNING /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/reg/uvm_reg_map.svh(1309) @ 0: reporter [RegModel] map 'uvm_reg_map' does not seem to be initialized correctly, check that the top register model is locked()
 -----------------------------------------------------------------------------------------------------------
 Name                  Type                                     Size  Value                                 
 -----------------------------------------------------------------------------------------------------------
-regmodel              ral_block_simple_ral_env                 -     @213                                  
-  r_RW_register       ral_reg_simple_ral_env_r_RW_register     -     @235                                  
+regmodel              ral_block_simple_ral_env                 -     @212                                  
+  r_RW_register       ral_reg_simple_ral_env_r_RW_register     -     @234                                  
     r_RW_field        uvm_reg_field                            ...    RW r_RW_register[14:0]=15'h0000      
-  CHIP_ID             ral_reg_simple_ral_env_CHIP_ID           -     @219                                  
+  CHIP_ID             ral_reg_simple_ral_env_CHIP_ID           -     @218                                  
     REVISION_ID       uvm_reg_field                            ...    RO CHIP_ID[37:0]=38'h0000000000      
     CHIP_ID           uvm_reg_field                            ...    RO CHIP_ID[45:38]=8'h00              
     PRODUCT_ID        uvm_reg_field                            ...    RO CHIP_ID[55:46]=10'h000            
-  r_RO_register       ral_reg_simple_ral_env_r_RO_register     -     @228                                  
+  r_RO_register       ral_reg_simple_ral_env_r_RO_register     -     @227                                  
     r_RO_field        uvm_reg_field                            ...    RO r_RO_register[14:0]=15'h0000      
-  r_RC_register       ral_reg_simple_ral_env_r_RC_register     -     @242                                  
+  r_RC_register       ral_reg_simple_ral_env_r_RC_register     -     @241                                  
     r_RC_field        uvm_reg_field                            ...    RC r_RC_register[14:0]=15'h0000      
-  r_RS_register       ral_reg_simple_ral_env_r_RS_register     -     @249                                  
+  r_RS_register       ral_reg_simple_ral_env_r_RS_register     -     @248                                  
     r_RS_field        uvm_reg_field                            ...    RS r_RS_register[14:0]=15'h0000      
-  r_WRC_register      ral_reg_simple_ral_env_r_WRC_register    -     @256                                  
+  r_WRC_register      ral_reg_simple_ral_env_r_WRC_register    -     @255                                  
     r_WRC_field       uvm_reg_field                            ...    WRC r_WRC_register[14:0]=15'h0000    
-  r_WRS_register      ral_reg_simple_ral_env_r_WRS_register    -     @263                                  
+  r_WRS_register      ral_reg_simple_ral_env_r_WRS_register    -     @262                                  
     r_WRS_field       uvm_reg_field                            ...    WRS r_WRS_register[14:0]=15'h0000    
-  r_WC_register       ral_reg_simple_ral_env_r_WC_register     -     @270                                  
+  r_WC_register       ral_reg_simple_ral_env_r_WC_register     -     @269                                  
     r_WC_field        uvm_reg_field                            ...    WC r_WC_register[14:0]=15'h0000      
-  r_WS_register       ral_reg_simple_ral_env_r_WS_register     -     @277                                  
+  r_WS_register       ral_reg_simple_ral_env_r_WS_register     -     @276                                  
     r_WS_field        uvm_reg_field                            ...    WS r_WS_register[14:0]=15'h0000      
-  r_WSRC_register     ral_reg_simple_ral_env_r_WSRC_register   -     @284                                  
+  r_WSRC_register     ral_reg_simple_ral_env_r_WSRC_register   -     @283                                  
     r_WSRC_field      uvm_reg_field                            ...    WSRC r_WSRC_register[14:0]=15'h0000  
-  r_WCRS_register     ral_reg_simple_ral_env_r_WCRS_register   -     @291                                  
+  r_WCRS_register     ral_reg_simple_ral_env_r_WCRS_register   -     @290                                  
     r_WCRS_field      uvm_reg_field                            ...    WCRS r_WCRS_register[14:0]=15'h0000  
-  r_W1C_register      ral_reg_simple_ral_env_r_W1C_register    -     @298                                  
+  r_W1C_register      ral_reg_simple_ral_env_r_W1C_register    -     @297                                  
     r_W1C_field       uvm_reg_field                            ...    W1C r_W1C_register[14:0]=15'h0000    
-  r_W1S_register      ral_reg_simple_ral_env_r_W1S_register    -     @305                                  
+  r_W1S_register      ral_reg_simple_ral_env_r_W1S_register    -     @304                                  
     r_W1S_field       uvm_reg_field                            ...    W1S r_W1S_register[14:0]=15'h0000    
-  r_W1T_register      ral_reg_simple_ral_env_r_W1T_register    -     @312                                  
+  r_W1T_register      ral_reg_simple_ral_env_r_W1T_register    -     @311                                  
     r_W1T_field       uvm_reg_field                            ...    W1T r_W1T_register[14:0]=15'h0000    
-  r_W0C_register      ral_reg_simple_ral_env_r_W0C_register    -     @319                                  
+  r_W0C_register      ral_reg_simple_ral_env_r_W0C_register    -     @318                                  
     r_W0C_field       uvm_reg_field                            ...    W0C r_W0C_register[14:0]=15'h0000    
-  r_W0S_register      ral_reg_simple_ral_env_r_W0S_register    -     @326                                  
+  r_W0S_register      ral_reg_simple_ral_env_r_W0S_register    -     @325                                  
     r_W0S_field       uvm_reg_field                            ...    W0S r_W0S_register[14:0]=15'h0000    
-  r_W0T_register      ral_reg_simple_ral_env_r_W0T_register    -     @333                                  
+  r_W0T_register      ral_reg_simple_ral_env_r_W0T_register    -     @332                                  
     r_W0T_field       uvm_reg_field                            ...    W0T r_W0T_register[14:0]=15'h0000    
-  r_W1SRC_register    ral_reg_simple_ral_env_r_W1SRC_register  -     @340                                  
+  r_W1SRC_register    ral_reg_simple_ral_env_r_W1SRC_register  -     @339                                  
     r_W1SRC_field     uvm_reg_field                            ...    W1SRC r_W1SRC_register[14:0]=15'h0000
-  r_W1CRS_register    ral_reg_simple_ral_env_r_W1CRS_register  -     @347                                  
+  r_W1CRS_register    ral_reg_simple_ral_env_r_W1CRS_register  -     @346                                  
     r_W1CRS_field     uvm_reg_field                            ...    W1CRS r_W1CRS_register[14:0]=15'h0000
-  r_W0SRC_register    ral_reg_simple_ral_env_r_W0SRC_register  -     @354                                  
+  r_W0SRC_register    ral_reg_simple_ral_env_r_W0SRC_register  -     @353                                  
     r_W0SRC_field     uvm_reg_field                            ...    W0SRC r_W0SRC_register[14:0]=15'h0000
-  r_W0CRS_register    ral_reg_simple_ral_env_r_W0CRS_register  -     @361                                  
+  r_W0CRS_register    ral_reg_simple_ral_env_r_W0CRS_register  -     @360                                  
     r_W0CRS_field     uvm_reg_field                            ...    W0CRS r_W0CRS_register[14:0]=15'h0000
-  r_WO_register       ral_reg_simple_ral_env_r_WO_register     -     @368                                  
+  r_WO_register       ral_reg_simple_ral_env_r_WO_register     -     @367                                  
     r_WO_field        uvm_reg_field                            ...    WO r_WO_register[14:0]=15'h0000      
-  r_WOC_register      ral_reg_simple_ral_env_r_WOC_register    -     @375                                  
+  r_WOC_register      ral_reg_simple_ral_env_r_WOC_register    -     @374                                  
     r_WOC_field       uvm_reg_field                            ...    W0C r_WOC_register[14:0]=15'h0000    
-  r_WOS_register      ral_reg_simple_ral_env_r_WOS_register    -     @382                                  
+  r_WOS_register      ral_reg_simple_ral_env_r_WOS_register    -     @381                                  
     r_WOS_field       uvm_reg_field                            ...    W0S r_WOS_register[14:0]=15'h0000    
-  r_W1_register       ral_reg_simple_ral_env_r_W1_register     -     @389                                  
+  r_W1_register       ral_reg_simple_ral_env_r_W1_register     -     @388                                  
     r_W1_field        uvm_reg_field                            ...    W1 r_W1_register[14:0]=15'h0000      
-  r_WO1_register      ral_reg_simple_ral_env_r_WO1_register    -     @396                                  
+  r_WO1_register      ral_reg_simple_ral_env_r_WO1_register    -     @395                                  
     r_WO1_field       uvm_reg_field                            ...    WO1 r_WO1_register[14:0]=15'h0000    
-  r_aliased_1         ral_reg_simple_ral_env_r_aliased_1       -     @403                                  
+  r_aliased_1         ral_reg_simple_ral_env_r_aliased_1       -     @402                                  
     r_aliased_1       uvm_reg_field                            ...    RW r_aliased_1[14:0]=15'h0000        
-  r_aliased_2         ral_reg_simple_ral_env_r_aliased_2       -     @409                                  
+  r_aliased_2         ral_reg_simple_ral_env_r_aliased_2       -     @408                                  
     r_aliased_2       uvm_reg_field                            ...    RO r_aliased_2[14:0]=15'h0000        
-  master_index        ral_reg_simple_ral_env_master_index      -     @415                                  
+  master_index        ral_reg_simple_ral_env_master_index      -     @414                                  
     master_index      uvm_reg_field                            ...    RW master_index[14:0]=15'h0000       
-  master_data         ral_reg_simple_ral_env_master_data       -     @421                                  
+  master_data         ral_reg_simple_ral_env_master_data       -     @420                                  
     field_data        uvm_reg_field                            ...    RW master_data[31:0]=32'h00000000    
-  uvm_reg_map         uvm_reg_map                              -     @215                                  
+  uvm_reg_map         uvm_reg_map                              -     @214                                  
     endian                                                     ...   UVM_LITTLE_ENDIAN                     
     n_bytes           integral                                 64    'd4                                   
     byte addressing   integral                                 64    'd0                                   
-    r_RW_register     ral_reg_simple_ral_env_r_RW_register     ...   @235 +'h0                             
-    CHIP_ID           ral_reg_simple_ral_env_CHIP_ID           ...   @219 +'h0                             
-    r_RO_register     ral_reg_simple_ral_env_r_RO_register     ...   @228 +'h0                             
-    r_RC_register     ral_reg_simple_ral_env_r_RC_register     ...   @242 +'h0                             
-    r_RS_register     ral_reg_simple_ral_env_r_RS_register     ...   @249 +'h0                             
-    r_WRC_register    ral_reg_simple_ral_env_r_WRC_register    ...   @256 +'h0                             
-    r_WRS_register    ral_reg_simple_ral_env_r_WRS_register    ...   @263 +'h0                             
-    r_WC_register     ral_reg_simple_ral_env_r_WC_register     ...   @270 +'h0                             
-    r_WS_register     ral_reg_simple_ral_env_r_WS_register     ...   @277 +'h0                             
-    r_WSRC_register   ral_reg_simple_ral_env_r_WSRC_register   ...   @284 +'h0                             
-    r_WCRS_register   ral_reg_simple_ral_env_r_WCRS_register   ...   @291 +'h0                             
-    r_W1C_register    ral_reg_simple_ral_env_r_W1C_register    ...   @298 +'h0                             
-    r_W1S_register    ral_reg_simple_ral_env_r_W1S_register    ...   @305 +'h0                             
-    r_W1T_register    ral_reg_simple_ral_env_r_W1T_register    ...   @312 +'h0                             
-    r_W0C_register    ral_reg_simple_ral_env_r_W0C_register    ...   @319 +'h0                             
-    r_W0S_register    ral_reg_simple_ral_env_r_W0S_register    ...   @326 +'h0                             
-    r_W0T_register    ral_reg_simple_ral_env_r_W0T_register    ...   @333 +'h0                             
-    r_W1SRC_register  ral_reg_simple_ral_env_r_W1SRC_register  ...   @340 +'h0                             
-    r_W1CRS_register  ral_reg_simple_ral_env_r_W1CRS_register  ...   @347 +'h0                             
-    r_W0SRC_register  ral_reg_simple_ral_env_r_W0SRC_register  ...   @354 +'h0                             
-    r_W0CRS_register  ral_reg_simple_ral_env_r_W0CRS_register  ...   @361 +'h0                             
-    r_WO_register     ral_reg_simple_ral_env_r_WO_register     ...   @368 +'h0                             
-    r_WOC_register    ral_reg_simple_ral_env_r_WOC_register    ...   @375 +'h0                             
-    r_WOS_register    ral_reg_simple_ral_env_r_WOS_register    ...   @382 +'h0                             
-    r_W1_register     ral_reg_simple_ral_env_r_W1_register     ...   @389 +'h0                             
-    r_WO1_register    ral_reg_simple_ral_env_r_WO1_register    ...   @396 +'h0                             
-    r_aliased_1       ral_reg_simple_ral_env_r_aliased_1       ...   @403 +'h0                             
-    r_aliased_2       ral_reg_simple_ral_env_r_aliased_2       ...   @409 +'h0                             
-    master_index      ral_reg_simple_ral_env_master_index      ...   @415 +'h0                             
-    master_data       ral_reg_simple_ral_env_master_data       ...   @421 +'h0                             
+    r_RW_register     ral_reg_simple_ral_env_r_RW_register     ...   @234 +'h0                             
+    CHIP_ID           ral_reg_simple_ral_env_CHIP_ID           ...   @218 +'h0                             
+    r_RO_register     ral_reg_simple_ral_env_r_RO_register     ...   @227 +'h0                             
+    r_RC_register     ral_reg_simple_ral_env_r_RC_register     ...   @241 +'h0                             
+    r_RS_register     ral_reg_simple_ral_env_r_RS_register     ...   @248 +'h0                             
+    r_WRC_register    ral_reg_simple_ral_env_r_WRC_register    ...   @255 +'h0                             
+    r_WRS_register    ral_reg_simple_ral_env_r_WRS_register    ...   @262 +'h0                             
+    r_WC_register     ral_reg_simple_ral_env_r_WC_register     ...   @269 +'h0                             
+    r_WS_register     ral_reg_simple_ral_env_r_WS_register     ...   @276 +'h0                             
+    r_WSRC_register   ral_reg_simple_ral_env_r_WSRC_register   ...   @283 +'h0                             
+    r_WCRS_register   ral_reg_simple_ral_env_r_WCRS_register   ...   @290 +'h0                             
+    r_W1C_register    ral_reg_simple_ral_env_r_W1C_register    ...   @297 +'h0                             
+    r_W1S_register    ral_reg_simple_ral_env_r_W1S_register    ...   @304 +'h0                             
+    r_W1T_register    ral_reg_simple_ral_env_r_W1T_register    ...   @311 +'h0                             
+    r_W0C_register    ral_reg_simple_ral_env_r_W0C_register    ...   @318 +'h0                             
+    r_W0S_register    ral_reg_simple_ral_env_r_W0S_register    ...   @325 +'h0                             
+    r_W0T_register    ral_reg_simple_ral_env_r_W0T_register    ...   @332 +'h0                             
+    r_W1SRC_register  ral_reg_simple_ral_env_r_W1SRC_register  ...   @339 +'h0                             
+    r_W1CRS_register  ral_reg_simple_ral_env_r_W1CRS_register  ...   @346 +'h0                             
+    r_W0SRC_register  ral_reg_simple_ral_env_r_W0SRC_register  ...   @353 +'h0                             
+    r_W0CRS_register  ral_reg_simple_ral_env_r_W0CRS_register  ...   @360 +'h0                             
+    r_WO_register     ral_reg_simple_ral_env_r_WO_register     ...   @367 +'h0                             
+    r_WOC_register    ral_reg_simple_ral_env_r_WOC_register    ...   @374 +'h0                             
+    r_WOS_register    ral_reg_simple_ral_env_r_WOS_register    ...   @381 +'h0                             
+    r_W1_register     ral_reg_simple_ral_env_r_W1_register     ...   @388 +'h0                             
+    r_WO1_register    ral_reg_simple_ral_env_r_WO1_register    ...   @395 +'h0                             
+    r_aliased_1       ral_reg_simple_ral_env_r_aliased_1       ...   @402 +'h0                             
+    r_aliased_2       ral_reg_simple_ral_env_r_aliased_2       ...   @408 +'h0                             
+    master_index      ral_reg_simple_ral_env_master_index      ...   @414 +'h0                             
+    master_data       ral_reg_simple_ral_env_master_data       ...   @420 +'h0                             
 -----------------------------------------------------------------------------------------------------------
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 35000: reporter [UVM/REPORT/CATCHER] 
+UVM_FATAL ../src/wb_master_agent.sv(33) @ 0: uvm_test_top.env.master_agent [AGT/NOVIF] No virtual interface specified for this agent instance Master Agent
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 0: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
 
@@ -224,24 +225,25 @@ Number of caught UVM_FATAL reports   :    0
 Number of caught UVM_ERROR reports   :    0
 Number of caught UVM_WARNING reports :    0
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 35000: reporter [UVM/REPORT/SERVER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 0: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
 UVM_INFO :   34
 UVM_WARNING :   62
 UVM_ERROR :    0
-UVM_FATAL :    0
+UVM_FATAL :    1
 ** Report counts by id
+[AGT/NOVIF]     1
 [RNTST]     1
 [RegModel]    62
 [UVM/CONFIGDB/SPELLCHK]    31
 [UVM/RELNOTES]     1
 [UVM/REPORT/CATCHER]     1
 
-$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
-$finish at simulation time                35000
+$finish called from file "/global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh", line 172.
+$finish at simulation time                    0
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 35000 ps
-CPU Time:      0.520 seconds;       Data structure size:   0.4Mb
-Fri Dec  6 20:56:46 2019
+Time: 0 ps
+CPU Time:      0.650 seconds;       Data structure size:   0.4Mb
+Sat Feb 22 20:09:36 2020

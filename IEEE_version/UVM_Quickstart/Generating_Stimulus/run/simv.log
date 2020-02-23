@@ -1,8 +1,8 @@
-Command: /SCRATCH/srivats/vs/new_book_examples/IEEE_version/UVM_Quickstart/Generating_Stimulus/run/./simv -l simv.log -lca +ntb_random_seed=1 +UVM_TESTNAME=wb_env_base_test +UVM_TR_RECORD +UVM_LOG_RECORD
+Command: /u/srivats/proj_area/Practical-UVM-IEEE-Edition/IEEE_version/UVM_Quickstart/Generating_Stimulus/run/./simv -l simv.log -lca +ntb_random_seed=1 +UVM_TESTNAME=wb_env_base_test +UVM_TR_RECORD +UVM_LOG_RECORD
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
-Compiler version P-2019.06; Runtime version P-2019.06;  Dec  3 14:31 2019
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+Compiler version P-2019.06-SP2-1; Runtime version P-2019.06-SP2-1;  Feb 22 20:02 2020
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
   ***********       IMPORTANT RELEASE NOTES         ************
 
   This implementation of the UVM Library deviates from the 1800.2-2017
@@ -18,8 +18,8 @@ All Rights Reserved Worldwide
 
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
-VCD+ Writer P-2019.06 Copyright (c) 1991-2019 by Synopsys Inc.
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/vcs/uvm_custom_install_vcs_recorder.sv(85) @ 0: reporter [VCS_TR_AUTO] +UVM_TR_RECORD implicitly enables recording_details to UVM_FULL for all components. For explicit control use +UVM_DISABLE_AUTO_COMPONENT and set recording_detail on components accordingly
+VCD+ Writer P-2019.06-SP2-1 Copyright (c) 1991-2019 by Synopsys Inc.
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/vcs/uvm_custom_install_vcs_recorder.sv(85) @ 0: reporter [VCS_TR_AUTO] +UVM_TR_RECORD implicitly enables recording_details to UVM_FULL for all components. For explicit control use +UVM_DISABLE_AUTO_COMPONENT and set recording_detail on components accordingly
 UVM_INFO @ 0: reporter [RNTST] Running test wb_env_base_test...
 UVM_INFO ../src/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent.slv_seqr [WB_SLAVE_SEQR] Initializing memory
 ----------------------------------------------
@@ -278,7 +278,7 @@ req                            wb_transaction  -     @1230
 ------------------------------------------------------------------------------------------------------
 
 UVM_INFO ../src/wb_master.sv(174) @ 715: uvm_test_top.env.master_agent.mast_drv [wb_env_DRIVER] Completed transaction...
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 715: reporter [UVM/REPORT/CATCHER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 715: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
 
@@ -289,7 +289,7 @@ Number of caught UVM_FATAL reports   :    0
 Number of caught UVM_ERROR reports   :    0
 Number of caught UVM_WARNING reports :    0
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 715: reporter [UVM/REPORT/SERVER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 715: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
@@ -313,9 +313,9 @@ UVM_FATAL :    0
 [uvm_test_top.env.slave_agent.slv_seqr.ram_sequence]    12
 [wb_env_DRIVER]    18
 
-$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish called from file "/global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh", line 596.
 $finish at simulation time                  715
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 715
-CPU Time:      0.770 seconds;       Data structure size:   0.4Mb
-Tue Dec  3 14:31:03 2019
+CPU Time:      0.900 seconds;       Data structure size:   0.6Mb
+Sat Feb 22 20:02:23 2020

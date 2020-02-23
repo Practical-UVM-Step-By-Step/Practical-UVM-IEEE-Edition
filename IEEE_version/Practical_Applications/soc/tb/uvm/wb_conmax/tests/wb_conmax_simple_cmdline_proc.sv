@@ -29,8 +29,6 @@
 
 		`uvm_component_utils(wb_conmax_simple_cmdline_proc)
 
-		wb_conmax_env env;
-
 		function new(string name, uvm_component parent);
 			super.new(name, parent);
 		endfunction
@@ -46,8 +44,6 @@
 
 			// slave_adr_max = 32'h0fffffe;
 			super.build_phase(phase);
-			env = wb_conmax_env::type_id::create("env", this);
-
 			// create the configurations
 			// Master config
 			for(int i = 0; i < 8; i++) begin

@@ -1,8 +1,8 @@
-Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l uvm_inst_override_cmdline.log +uvm_set_inst_override=wb_master_agent,wb_master_agent_n,uvm_test_top.env.master_agent[00] +UVM_TESTNAME=wb_conmax_factory_instance_override_test_cmdline
+Command: /u/srivats/proj_area/Practical-UVM-IEEE-Edition/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l uvm_inst_override_cmdline.log +uvm_set_inst_override=wb_master_agent,wb_master_agent_n,uvm_test_top.env.master_agent[00] +UVM_TESTNAME=wb_conmax_factory_instance_override_test_cmdline
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
-Compiler version P-2019.06; Runtime version P-2019.06;  Feb  1 18:45 2020
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+Compiler version P-2019.06-SP2-1; Runtime version P-2019.06-SP2-1;  Feb 22 20:23 2020
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
   ***********       IMPORTANT RELEASE NOTES         ************
 
   This implementation of the UVM Library deviates from the 1800.2-2017
@@ -20,7 +20,7 @@ All Rights Reserved Worldwide
 
 UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_factory_instance_override_test_cmdline...
 UVM_INFO @ 0: reporter [INSTOVR] Applying instance override from the command line: +uvm_set_inst_override=wb_master_agent,wb_master_agent_n,uvm_test_top.env.master_agent[00]
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
 #### Factory Configuration (*)
 
 Instance Overrides:
@@ -89,7 +89,7 @@ All types registered with the factory: 199 total
 ####
 
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
 #### Factory Configuration (*)
 
 Instance Overrides:
@@ -158,7 +158,7 @@ All types registered with the factory: 199 total
 ####
 
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
 -----------------------------------------------------------------------------
 Name            Type                                              Size  Value
 -----------------------------------------------------------------------------
@@ -166,23 +166,23 @@ Name            Type                                              Size  Value
   uvm_test_top  wb_conmax_factory_instance_override_test_cmdline  -     @195 
     env         wb_conmax_env                                     -     @307 
 -----------------------------------------------------------------------------
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
 -----------------------------------------------------------------------------------------------
 Name                              Type                                              Size  Value
 -----------------------------------------------------------------------------------------------
 <unnamed>                         uvm_root                                          -     @73  
   uvm_test_top                    wb_conmax_factory_instance_override_test_cmdline  -     @195 
     env                           wb_conmax_env                                     -     @307 
-      conmax_scbd                 wb_conmax_scoreboard                              -     @576 
+      Scoreboard                  wb_conmax_scoreboard                              -     @576 
         comparator          0     wb_conmax_in_order_class_comparator #(T)          -     @939 
           after                   uvm_tlm_analysis_fifo #(T)                        -     @1037
             analysis_export       uvm_analysis_imp                                  -     @1086
@@ -1266,7 +1266,7 @@ req                            wb_transaction  -     @10533
 UVM_INFO ../../common/wb_master.sv(150) @ 385000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a read transaction
 UVM_INFO ../../common/wb_slave_mon.sv(121) @ 385000: uvm_test_top.env.slave_agent[00].slv_mon [Wb_slave Monitor] got a read transaction  
 UVM_INFO ../../common/wb_master.sv(142) @ 445000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Completed           5 transactions...
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 445000: reporter [UVM/REPORT/CATCHER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 445000: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
 
@@ -1277,7 +1277,7 @@ Number of caught UVM_FATAL reports   :    0
 Number of caught UVM_ERROR reports   :    0
 Number of caught UVM_WARNING reports :    0
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 445000: reporter [UVM/REPORT/SERVER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 445000: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
@@ -1307,9 +1307,9 @@ UVM_FATAL :    0
 [Wb_slave]     1
 [Wb_slave Monitor]     3
 
-$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish called from file "/global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh", line 596.
 $finish at simulation time               445000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 445000 ps
-CPU Time:      1.750 seconds;       Data structure size:   1.2Mb
-Sat Feb  1 18:45:59 2020
+CPU Time:      1.850 seconds;       Data structure size:   1.3Mb
+Sat Feb 22 20:23:34 2020

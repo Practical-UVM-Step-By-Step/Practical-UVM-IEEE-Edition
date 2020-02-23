@@ -1,8 +1,8 @@
 Command: vcs -sverilog -l vcs.log -ntb_opts uvm-ieee +incdir+../include+../src+../env+../tests+../hdl \
 +define+UVM_NO_DEPRECATED +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR -debug_access+all \
-../tests/wb_env_tb_mod.sv ../hdl/wb_env_top.sv ../hdl/dut.v
+../tests/wb_env_tb_mod.sv ../hdl/wb_env_top.sv ../hdl/dut2.v
                          Chronologic VCS (TM)
-         Version P-2019.06-SP2-1 -- Sat Feb 22 20:00:40 2020
+         Version P-2019.06-SP2-1 -- Sat Feb 22 20:10:11 2020
                Copyright (c) 1991-2019 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -369,22 +369,9 @@ Back to file '../include/mstr_slv_intfs.incl'.
 Parsing included file '../src/wb_slave_if.sv'.
 Back to file '../include/mstr_slv_intfs.incl'.
 Back to file '../tests/wb_env_tb_mod.sv'.
-Parsing included file '../tests/wb_test.pkg'.
-Parsing included file '../env/wb_env.sv'.
-Parsing included file '../include/wb_env_inc.sv'.
+Parsing included file '../env/wb_env_env.sv'.
+Parsing included file '../include/wb_env.sv'.
 Parsing included file '../include/mstr_slv_src.incl'.
-Parsing included file '../src/reset_trans.sv'.
-Back to file '../include/mstr_slv_src.incl'.
-Parsing included file '../src/reset_driver.sv'.
-Back to file '../include/mstr_slv_src.incl'.
-Parsing included file '../src/reset_monitor.sv'.
-Back to file '../include/mstr_slv_src.incl'.
-Parsing included file '../src/reset_sequencer.sv'.
-Back to file '../include/mstr_slv_src.incl'.
-Parsing included file '../src/reset_agent.sv'.
-Back to file '../include/mstr_slv_src.incl'.
-Parsing included file '../src/reset_sequence.sv'.
-Back to file '../include/mstr_slv_src.incl'.
 Parsing included file '../src/wb_master_mon.sv'.
 Back to file '../include/mstr_slv_src.incl'.
 Parsing included file '../src/wb_master_seqr.sv'.
@@ -410,43 +397,26 @@ Back to file '../include/mstr_slv_src.incl'.
 Parsing included file '../src/wb_config.sv'.
 Back to file '../include/mstr_slv_src.incl'.
 Parsing included file '../src/wb_master_agent_sequence_library.sv'.
-Parsing included file '../src/sequences/base_sequence.sv'.
-Back to file '../src/wb_master_agent_sequence_library.sv'.
-Parsing included file '../src/sequences/sequence_0.sv'.
-Back to file '../src/wb_master_agent_sequence_library.sv'.
-Parsing included file '../src/sequences/sequence_1.sv'.
-Back to file '../src/wb_master_agent_sequence_library.sv'.
-Parsing included file '../src/sequences/repeated_read_sequence.sv'.
-Back to file '../src/wb_master_agent_sequence_library.sv'.
-Parsing included file '../src/sequences/objection_in_sequence.sv'.
-Back to file '../src/wb_master_agent_sequence_library.sv'.
 Back to file '../include/mstr_slv_src.incl'.
 Parsing included file '../src/wb_slave_agent_sequence_library.sv'.
 Back to file '../include/mstr_slv_src.incl'.
-Parsing included file '../src/wb_scoreboard.sv'.
-Back to file '../include/mstr_slv_src.incl'.
-Parsing included file '../src/wb_transaction_extended.sv'.
-Back to file '../include/mstr_slv_src.incl'.
-Back to file '../include/wb_env_inc.sv'.
+Back to file '../include/wb_env.sv'.
 Parsing included file '../src/wb_env_cfg.sv'.
-Back to file '../include/wb_env_inc.sv'.
+Back to file '../include/wb_env.sv'.
 Parsing included file '../src/wb_env_cov.sv'.
-Back to file '../include/wb_env_inc.sv'.
-Back to file '../env/wb_env.sv'.
-Back to file '../tests/wb_test.pkg'.
-Parsing included file '../tests/wb_env_base_test.sv'.
-Back to file '../tests/wb_test.pkg'.
-Parsing included file '../tests/wb_env_seq_lib_test.sv'.
-Back to file '../tests/wb_test.pkg'.
-Parsing included file '../tests/wb_env_test_extended.sv'.
-Back to file '../tests/wb_test.pkg'.
+Back to file '../include/wb_env.sv'.
+Parsing included file '../src/mon_2cov.sv'.
+Back to file '../include/wb_env.sv'.
+Back to file '../env/wb_env_env.sv'.
+Back to file '../tests/wb_env_tb_mod.sv'.
+Parsing included file '../tests/wb_env_slave_test.sv'.
 Back to file '../tests/wb_env_tb_mod.sv'.
 Parsing design file '../hdl/wb_env_top.sv'
-Parsing design file '../hdl/dut.v'
+Parsing design file '../hdl/dut2.v'
 Parsing included file '../src/wb_master_if.sv'.
-Back to file '../hdl/dut.v'.
+Back to file '../hdl/dut2.v'.
 Parsing included file '../src/wb_slave_if.sv'.
-Back to file '../hdl/dut.v'.
+Back to file '../hdl/dut2.v'.
 Top Level Modules:
        uvm_custom_install_recording
        uvm_custom_install_verdi_recording
@@ -463,10 +433,10 @@ recompiling module uvm_custom_install_recording
 recompiling module uvm_custom_install_verdi_recording
 recompiling module wb_master_if
 recompiling module wb_slave_if
-recompiling package wb_tests
+recompiling module wb_env_tb_mod
 recompiling module wb_env_top_mod
 All of 10 modules done
-make[1]: Entering directory `/slowfs/vgcs13/srivats/Practical-UVM-IEEE-Edition/IEEE_version/UVM_Quickstart/UVM_TestBench/run/csrc' \
+make[1]: Entering directory `/slowfs/vgcs13/srivats/Practical-UVM-IEEE-Edition/IEEE_version/Advanced_UVM_Topics/uvm_reactive_seq_slave/run/csrc' \
 
 rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 g++ -w  -pipe -m32 -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -O -I/global/apps/vcs_2019.06-SP2-1/include \
@@ -476,7 +446,7 @@ g++ -w  -pipe -m32 -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -O -I/global/apps/vcs_2019.06
 if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv    -m32 -m32 -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/global/apps/vcs_2019.06-SP2-1/linux/lib -L/global/apps/vcs_2019.06-SP2-1/linux/lib \
--Wl,-rpath-link=./  uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _21810_archive_1.so \
+-Wl,-rpath-link=./  uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _29981_archive_1.so \
 SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
 -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /global/apps/vcs_2019.06-SP2-1/linux/lib/vcs_tls.o \
 -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o \
@@ -484,6 +454,6 @@ _vcs_pli_stub_.o   /global/apps/vcs_2019.06-SP2-1/linux/lib/vcs_save_restore_new
 /global/apps/verdi_2019.06-SP2-1/share/PLI/VCS/LINUX/pli.a /global/apps/vcs_2019.06-SP2-1/linux/lib/ctype-stubs_32.a \
 -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-make[1]: Leaving directory `/slowfs/vgcs13/srivats/Practical-UVM-IEEE-Edition/IEEE_version/UVM_Quickstart/UVM_TestBench/run/csrc' \
+make[1]: Leaving directory `/slowfs/vgcs13/srivats/Practical-UVM-IEEE-Edition/IEEE_version/Advanced_UVM_Topics/uvm_reactive_seq_slave/run/csrc' \
 
-CPU time: 19.894 seconds to compile + .424 seconds to elab + 1.330 seconds to link
+CPU time: 18.678 seconds to compile + .413 seconds to elab + 1.296 seconds to link

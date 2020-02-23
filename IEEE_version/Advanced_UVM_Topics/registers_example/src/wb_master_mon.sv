@@ -109,7 +109,6 @@ endclass: wb_master_mon
 
 
    task wb_master_mon::master_monitor_task();
-      int repeat_count = this.mstr_mon_cfg.max_n_wss + 1;
       int timeout_count = 0;
 
       integer master_transaction_timeout;

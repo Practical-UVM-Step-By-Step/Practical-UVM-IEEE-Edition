@@ -112,7 +112,7 @@ help:
 	@echo "*  make MODE=RECORD  [To enable UVM TR Record mechanism]       *"
 	@echo "*  make MODE=DEBUG  [To enable -debug_all]                     *"
 	@echo "****************************************************************"
-all_tests:
+all_tests: comp
 	./simv +UVM_TESTNAME=simple_ral_env_test -l simple_ral_env_test.log
 	./simv +UVM_TESTNAME=simple_reg_access_test_callback_test -l simple_reg_access_test_callback_test.log
 	./simv +UVM_TESTNAME=simple_reg_access_test_factory -l simple_reg_access_test_factory.log

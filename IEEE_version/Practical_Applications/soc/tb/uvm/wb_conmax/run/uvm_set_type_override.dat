@@ -1,8 +1,8 @@
-Command: /u/srivats/proj_area/new_book_examples/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l uvm_set_type_override.dat +uvm_set_type_override=wb_master_agent,wb_master_agent_n +UVM_TESTNAME=wb_conmax_factory_instance_override_test_cmdline
+Command: /u/srivats/proj_area/Practical-UVM-IEEE-Edition/IEEE_version/Practical_Applications/soc/tb/uvm/wb_conmax/run/./simv -l uvm_set_type_override.dat +uvm_set_type_override=wb_master_agent,wb_master_agent_n +UVM_TESTNAME=wb_conmax_factory_instance_override_test_cmdline
 Chronologic VCS simulator copyright 1991-2019
 Contains Synopsys proprietary information.
-Compiler version P-2019.06; Runtime version P-2019.06;  Jan 10 22:12 2020
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
+Compiler version P-2019.06-SP2-1; Runtime version P-2019.06-SP2-1;  Feb 22 20:23 2020
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(460) @ 0: reporter [UVM/RELNOTES] 
   ***********       IMPORTANT RELEASE NOTES         ************
 
   This implementation of the UVM Library deviates from the 1800.2-2017
@@ -20,7 +20,7 @@ All Rights Reserved Worldwide
 
 UVM_INFO @ 0: reporter [RNTST] Running test wb_conmax_factory_instance_override_test_cmdline...
 UVM_INFO @ 0: reporter [UVM_CMDLINE_PROC] Applying type override from the command line: +uvm_set_type_override=wb_master_agent,wb_master_agent_n
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
 #### Factory Configuration (*)
 
 No instance overrides are registered with this factory
@@ -89,7 +89,7 @@ All types registered with the factory: 199 total
 ####
 
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_factory.svh(1875) @ 0: reporter [UVM/FACTORY/PRINT] 
 #### Factory Configuration (*)
 
 No instance overrides are registered with this factory
@@ -158,7 +158,7 @@ All types registered with the factory: 199 total
 ####
 
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
 -----------------------------------------------------------------------------
 Name            Type                                              Size  Value
 -----------------------------------------------------------------------------
@@ -166,16 +166,16 @@ Name            Type                                              Size  Value
   uvm_test_top  wb_conmax_factory_instance_override_test_cmdline  -     @195 
     env         wb_conmax_env                                     -     @307 
 -----------------------------------------------------------------------------
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_spell_chkr.svh(124) @ 0: reporter [UVM/CONFIGDB/SPELLCHK] include_coverage not located, did you mean config|default_sequence
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh(729) @ 0: reporter [UVMTOP] UVM testbench topology:
 -----------------------------------------------------------------------------------------------
 Name                              Type                                              Size  Value
 -----------------------------------------------------------------------------------------------
@@ -871,212 +871,212 @@ UVM_INFO ../../common/wb_slave_seqr.sv(42) @ 0: uvm_test_top.env.slave_agent[15]
 UVM_INFO ../../common/reset_driver.sv(79) @ 0: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] Starting transaction...
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[00].slv_drv [SLAVE_DRIVER] Completed Reset
-------------------------------------------------------
-Name                     Type           Size  Value   
-------------------------------------------------------
-slave_configuration[00]  wb_config      -     @256    
-  port_size              sizes_e        32    DWORD   
-  granularity            sizes_e        32    BYTE    
-  cycles                 cycle_types_e  32    CLASSIC 
-  max_n_wss              integral       32    'h2     
-  min_addr               integral       32    'h0     
-  max_addr               integral       32    'hfffffe
-------------------------------------------------------
+------------------------------------------------
+Name               Type           Size  Value   
+------------------------------------------------
+slave_configs[00]  wb_config      -     @256    
+  port_size        sizes_e        32    DWORD   
+  granularity      sizes_e        32    BYTE    
+  cycles           cycle_types_e  32    CLASSIC 
+  max_n_wss        integral       32    'h2     
+  min_addr         integral       32    'h0     
+  max_addr         integral       32    'hfffffe
+------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[01].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[01].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[01]  wb_config      -     @257     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h1fffffd
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[01]  wb_config      -     @257     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h1fffffd
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[02].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[02].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[02]  wb_config      -     @258     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h2fffffc
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[02]  wb_config      -     @258     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h2fffffc
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[03].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[03].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[03]  wb_config      -     @259     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h3fffffb
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[03]  wb_config      -     @259     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h3fffffb
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[04].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[04].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[04]  wb_config      -     @260     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h4fffffa
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[04]  wb_config      -     @260     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h4fffffa
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[05].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[05].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[05]  wb_config      -     @261     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h5fffff9
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[05]  wb_config      -     @261     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h5fffff9
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[06].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[06].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[06]  wb_config      -     @262     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h6fffff8
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[06]  wb_config      -     @262     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h6fffff8
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[07].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[07].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[07]  wb_config      -     @263     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h7fffff7
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[07]  wb_config      -     @263     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h7fffff7
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[08].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[08].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[08]  wb_config      -     @264     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h8fffff6
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[08]  wb_config      -     @264     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h8fffff6
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[09].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[09].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[09]  wb_config      -     @265     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'h9fffff5
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[09]  wb_config      -     @265     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'h9fffff5
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[10].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[10].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[10]  wb_config      -     @266     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'hafffff4
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[10]  wb_config      -     @266     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hafffff4
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[11].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[11].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[11]  wb_config      -     @267     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'hbfffff3
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[11]  wb_config      -     @267     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hbfffff3
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[12].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[12].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[12]  wb_config      -     @268     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'hcfffff2
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[12]  wb_config      -     @268     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hcfffff2
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[13].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[13].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[13]  wb_config      -     @269     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'hdfffff1
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[13]  wb_config      -     @269     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hdfffff1
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[14].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[14].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[14]  wb_config      -     @270     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'hefffff0
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[14]  wb_config      -     @270     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hefffff0
+-------------------------------------------------
 UVM_INFO ../../common/wb_slave.sv(83) @ 0: uvm_test_top.env.slave_agent[15].slv_drv [SLAVE_DRIVER] Obtained Reset
 UVM_INFO ../../common/wb_slave.sv(89) @ 0: uvm_test_top.env.slave_agent[15].slv_drv [SLAVE_DRIVER] Completed Reset
--------------------------------------------------------
-Name                     Type           Size  Value    
--------------------------------------------------------
-slave_configuration[15]  wb_config      -     @271     
-  port_size              sizes_e        32    DWORD    
-  granularity            sizes_e        32    BYTE     
-  cycles                 cycle_types_e  32    CLASSIC  
-  max_n_wss              integral       32    'h2      
-  min_addr               integral       32    'h0      
-  max_addr               integral       32    'hfffffef
--------------------------------------------------------
+-------------------------------------------------
+Name               Type           Size  Value    
+-------------------------------------------------
+slave_configs[15]  wb_config      -     @271     
+  port_size        sizes_e        32    DWORD    
+  granularity      sizes_e        32    BYTE     
+  cycles           cycle_types_e  32    CLASSIC  
+  max_n_wss        integral       32    'h2      
+  min_addr         integral       32    'h0      
+  max_addr         integral       32    'hfffffef
+-------------------------------------------------
 UVM_INFO ../../common/reset_sequence.sv(30) @ 0: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Starting Reset Sequence
 UVM_INFO ../../common/reset_sequence.sv(32) @ 0: uvm_test_top.env.rst_agent.mast_sqr@@reset_sequence [RESET_SEQUENCE] Deasserting Reset 
 UVM_INFO ../../common/reset_driver.sv(81) @ 0: uvm_test_top.env.rst_agent.mast_drv [RESET_DRIVER] -----------------------------------------------------------------------------------------------------
@@ -1266,7 +1266,7 @@ req                            wb_transaction  -     @10533
 UVM_INFO ../../common/wb_master.sv(150) @ 385000: uvm_test_top.env.master_agent[00].mast_drv [Wb master] Got a read transaction
 UVM_INFO ../../common/wb_slave_mon.sv(121) @ 385000: uvm_test_top.env.slave_agent[00].slv_mon [Wb_slave Monitor] got a read transaction  
 UVM_INFO ../../common/wb_master.sv(142) @ 445000: uvm_test_top.env.master_agent[00].mast_drv [WB_MASTER_DRV] Completed           5 transactions...
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 445000: reporter [UVM/REPORT/CATCHER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_catcher.svh(675) @ 445000: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
 
@@ -1277,7 +1277,7 @@ Number of caught UVM_FATAL reports   :    0
 Number of caught UVM_ERROR reports   :    0
 Number of caught UVM_WARNING reports :    0
 
-UVM_INFO /global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 445000: reporter [UVM/REPORT/SERVER] 
+UVM_INFO /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_report_server.svh(899) @ 445000: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
@@ -1307,9 +1307,9 @@ UVM_FATAL :    0
 [Wb_slave]     1
 [Wb_slave Monitor]     3
 
-$finish called from file "/global/apps/vcs_2019.06/etc/uvm-ieee/base/uvm_root.svh", line 596.
+$finish called from file "/global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/base/uvm_root.svh", line 596.
 $finish at simulation time               445000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 445000 ps
-CPU Time:      1.810 seconds;       Data structure size:   1.2Mb
-Fri Jan 10 22:12:55 2020
+CPU Time:      1.860 seconds;       Data structure size:   1.3Mb
+Sat Feb 22 20:23:46 2020
