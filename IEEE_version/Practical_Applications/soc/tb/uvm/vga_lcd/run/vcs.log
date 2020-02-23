@@ -3,7 +3,7 @@ Command: vcs -sverilog -l vcs.log -ntb_opts uvm-ieee +incdir+../include+../src+.
 -file ../../../../rtl/vga_lcd/filelist +define+RAL_HDL_PATH=vga_lcd_env_top.vga_enh_top.u0 \
 
                          Chronologic VCS (TM)
-         Version P-2019.06-SP2-1 -- Sat Feb 22 20:24:55 2020
+         Version P-2019.06-SP2-1 -- Sat Feb 22 20:32:35 2020
                Copyright (c) 1991-2019 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -1182,10 +1182,16 @@ make[1]: Entering directory `/slowfs/vgcs13/srivats/Practical-UVM-IEEE-Edition/I
 rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 g++ -w  -pipe -m32 -DVCSMX -DUVM_DPI_DO_TYPE_CHECK -O -I/global/apps/vcs_2019.06-SP2-1/include \
 -c /global/apps/vcs_2019.06-SP2-1/etc/uvm-ieee/dpi/uvm_dpi.cc
-ar: archive.0/_8532_archive_1.a: Disk quota exceeded
-make[2]: *** [_8532_archive_1.so] Error 1
-make[1]: *** [product_clean_order] Error 2
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv    -m32 -m32 -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/global/apps/vcs_2019.06-SP2-1/linux/lib -L/global/apps/vcs_2019.06-SP2-1/linux/lib \
+-Wl,-rpath-link=./  uvm_dpi.o   objs/amcQw_d.o   _10619_archive_1.so  SIM_l.o    \
+rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o        \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /global/apps/vcs_2019.06-SP2-1/linux/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o \
+/global/apps/vcs_2019.06-SP2-1/linux/lib/vcs_save_restore_new.o /global/apps/vcs_2019.06-SP2-1/linux/lib/ctype-stubs_32.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
 make[1]: Leaving directory `/slowfs/vgcs13/srivats/Practical-UVM-IEEE-Edition/IEEE_version/Practical_Applications/soc/tb/uvm/vga_lcd/run/csrc' \
 
-Make exited with status 2
-CPU time: 16.938 seconds to compile + .463 seconds to elab + .392 seconds to link
+CPU time: 17.071 seconds to compile + .457 seconds to elab + .877 seconds to link
