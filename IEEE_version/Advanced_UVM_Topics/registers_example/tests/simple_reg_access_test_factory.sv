@@ -21,7 +21,6 @@
 		virtual function void build_phase(uvm_phase phase);
 			super.build_phase(phase);
 			f.set_type_override_by_type(ral_reg_simple_ral_env_r_RW_register::get_type(),simple_WR_extension::get_type(),1);
-      
 		endfunction
 
 		task run_phase(uvm_phase phase) ;
@@ -38,9 +37,7 @@
 			phase_done = phase.get_objection();
 			phase_done.set_drain_time(this,2000);
 			phase.drop_objection(this);
-      
 		endtask
-
 	endclass : simple_reg_access_test_factory
 
 `endif //TEST_FACTORY_SV

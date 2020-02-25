@@ -2,7 +2,7 @@ typedef class sequence_0;
    typedef class sequence_1;
    typedef class sequence_2;
 
-class wb_virtual_seq extends uvm_sequence #(wb_transaction);
+class wb_virtual_seq extends uvm_sequence ;
 
    `uvm_object_utils(wb_virtual_seq);
    `uvm_declare_p_sequencer(wb_virt_sequencer)
