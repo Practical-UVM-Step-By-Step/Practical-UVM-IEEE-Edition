@@ -11,10 +11,10 @@
         // Common Signals
         wire CYC_I;
         wire [63:0] DAT_I;
-        wire [63:0] DAT_O;
+        logic [63:0] DAT_O;
         wire        RST_I;
         wire [15:0] TGD_I;
-        wire [15:0] TGD_O;
+        logic [15:0] TGD_O;
         // Slave Signals
         logic       ACK_O	;
         logic [63:0] ADR_I;	

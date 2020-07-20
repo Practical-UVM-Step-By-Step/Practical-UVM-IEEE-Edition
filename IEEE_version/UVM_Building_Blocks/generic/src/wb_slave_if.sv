@@ -1,8 +1,9 @@
 `ifndef WB_SLAVE_IF__SV
     `define WB_SLAVE_IF__SV
 
-    interface wb_slave_if (input bit clk);
+    interface wb_slave_if (input bit clk, input bit rst);
 
+        // ToDo: Define default setup & hold times
 
         parameter setup_time = 5/*ns*/;
         parameter hold_time  = 3/*ns*/;
@@ -10,10 +11,10 @@
         // Common Signals
         wire CYC_I;
         wire [63:0] DAT_I;
-        wire [63:0] DAT_O;
+        logic [63:0] DAT_O;
         wire        RST_I;
         wire [15:0] TGD_I;
-        wire [15:0] TGD_O;
+        logic [15:0] TGD_O;
         // Slave Signals
         logic       ACK_O	;
         logic [63:0] ADR_I;	
