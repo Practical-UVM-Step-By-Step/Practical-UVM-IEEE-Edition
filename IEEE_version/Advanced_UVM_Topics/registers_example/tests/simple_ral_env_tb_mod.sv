@@ -3,6 +3,7 @@
 	`define SIMPLE_RAL_ENV_TB_MOD__SV
 
 	`include "timescale.v"
+	`include "uvm_macros.svh"
 	`include "mstr_slv_intfs.incl"
 	module simple_ral_env_tb_mod;
 

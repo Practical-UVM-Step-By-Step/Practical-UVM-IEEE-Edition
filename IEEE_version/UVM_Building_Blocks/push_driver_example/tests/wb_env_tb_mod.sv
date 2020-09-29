@@ -3,6 +3,8 @@
 
 `ifndef WB_ENV_TB_MOD__SV
  `define WB_ENV_TB_MOD__SV
+ 
+ `include "uvm_macros.svh"
 
  `include "mstr_slv_intfs.incl"
 module wb_env_tb_mod;

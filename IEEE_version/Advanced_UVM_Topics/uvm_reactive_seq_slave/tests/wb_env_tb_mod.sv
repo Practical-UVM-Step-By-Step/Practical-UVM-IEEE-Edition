@@ -2,6 +2,7 @@
  `define WB_ENV_TB_MOD__SV
 
  `include "mstr_slv_intfs.incl"
+`include "uvm_macros.svh"
 module wb_env_tb_mod;
 
    import uvm_pkg::*;

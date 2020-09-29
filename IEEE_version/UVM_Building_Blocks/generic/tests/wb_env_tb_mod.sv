@@ -3,6 +3,7 @@
     `define WB_ENV_TB_MOD__SV
 
     `include "mstr_slv_intfs.incl"
+    `include "uvm_macros.svh"
     `include "wb_test.pkg"
     module wb_env_tb_mod;
 
