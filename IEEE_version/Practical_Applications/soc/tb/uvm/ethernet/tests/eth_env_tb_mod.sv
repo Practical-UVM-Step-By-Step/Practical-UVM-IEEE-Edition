@@ -17,7 +17,7 @@
  `define ETH_BLK_ENV_TB_MOD__SV
 
  `include "mstr_slv_intfs.incl"
-
+ `include "uvm_macros.svh"
  `include "wb_test_pkg.sv"
 module eth_blk_env_tb_mod;
    import uvm_pkg::*;

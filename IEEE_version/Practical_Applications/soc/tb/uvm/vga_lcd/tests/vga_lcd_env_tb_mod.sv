@@ -16,6 +16,7 @@
 	`define VGA_LCD_ENV_TB_MOD__SV
 
 	`include "mstr_slv_intfs.incl"
+	`include "uvm_macros.svh"
 	`include "vga_lcd_test_pkg.sv"
 	module vga_lcd_env_tb_mod;
 

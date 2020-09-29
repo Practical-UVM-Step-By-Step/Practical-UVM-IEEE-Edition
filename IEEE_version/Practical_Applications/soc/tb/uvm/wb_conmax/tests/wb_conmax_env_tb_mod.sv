@@ -15,6 +15,7 @@
 	`define WB_CONMAX_ENV_TB_MOD__SV
 	`include "mstr_slv_intfs.incl"
 	`timescale 1ns/1ps
+	`include "uvm_macros.svh"
 	`include "wb_tests.pkg"
 	module wb_conmax_env_tb_mod;
 
